@@ -4,6 +4,7 @@ import unicodedata
 import urllib.request
 from urllib.parse import urlsplit
 
+
 TV_URL = "https://iptv-org.github.io/iptv/countries/il.m3u"
 
 RADIO_URLS = [
@@ -20,11 +21,11 @@ RADIO_URLS = [
 ]
 
 OUTPUT = "israel.m3u"
-USER_AGENT = "Israel-TV-Radio-Playlist/2.0"
+USER_AGENT = "Israel-TV-Radio-Playlist/2.1"
 
 
 # Well-known/main Israeli stations.
-# These aliases are also used to collapse obvious duplicate listings.
+# Aliases are also used to collapse obvious duplicate listings.
 MAIN_STATIONS = {
     "galgalatz": {
         "label": "Galgalatz",
@@ -36,6 +37,7 @@ MAIN_STATIONS = {
             "גלגלצ - Glglz",
         ],
     },
+
     "galei_zahal": {
         "label": "Galei Zahal",
         "aliases": [
@@ -45,6 +47,7 @@ MAIN_STATIONS = {
             "גלצ",
         ],
     },
+
     "kan_88": {
         "label": "KAN 88",
         "aliases": [
@@ -53,6 +56,7 @@ MAIN_STATIONS = {
             "כאן 88",
         ],
     },
+
     "kan_bet": {
         "label": "KAN Bet",
         "aliases": [
@@ -63,6 +67,7 @@ MAIN_STATIONS = {
             "כאן ב׳",
         ],
     },
+
     "kan_gimel": {
         "label": "KAN Gimel",
         "aliases": [
@@ -71,6 +76,7 @@ MAIN_STATIONS = {
             "כאן גימל",
         ],
     },
+
     "kan_kol_hamusica": {
         "label": "KAN Kol HaMusica",
         "aliases": [
@@ -79,6 +85,7 @@ MAIN_STATIONS = {
             "כאן קול המוזיקה",
         ],
     },
+
     "kan_tarbut": {
         "label": "KAN Tarbut",
         "aliases": [
@@ -87,6 +94,7 @@ MAIN_STATIONS = {
             "כאן תרבות",
         ],
     },
+
     "kan_reka": {
         "label": "KAN Reka",
         "aliases": [
@@ -95,6 +103,7 @@ MAIN_STATIONS = {
             "כאן רקע Kan Reka",
         ],
     },
+
     "103fm": {
         "label": "103FM",
         "aliases": [
@@ -103,6 +112,7 @@ MAIN_STATIONS = {
             "רדיו 103FM",
         ],
     },
+
     "eco99": {
         "label": "Eco 99FM",
         "aliases": [
@@ -112,6 +122,7 @@ MAIN_STATIONS = {
             "99FM",
         ],
     },
+
     "radios100": {
         "label": "Radios 100FM",
         "aliases": [
@@ -120,14 +131,18 @@ MAIN_STATIONS = {
             "רדיוס 100FM",
         ],
     },
+
     "102fm": {
         "label": "Radio Tel Aviv 102FM",
         "aliases": [
             "Tel Aviv 102FM",
             "Tel Aviv 102FM רדיו תל אביב",
+            "תל אביב Tel Aviv 102FM",
             "רדיו תל אביב 102FM",
+            "102FM",
         ],
     },
+
     "radio_haifa": {
         "label": "Radio Haifa",
         "aliases": [
@@ -136,6 +151,7 @@ MAIN_STATIONS = {
             "רדיו חיפה",
         ],
     },
+
     "radio_darom": {
         "label": "Radio Darom",
         "aliases": [
@@ -145,6 +161,7 @@ MAIN_STATIONS = {
             "רדיו דרום",
         ],
     },
+
     "radio_jerusalem": {
         "label": "Radio Jerusalem 101FM",
         "aliases": [
@@ -153,14 +170,17 @@ MAIN_STATIONS = {
             "רדיו ירושלים",
         ],
     },
+
     "radio_north": {
         "label": "Radio North 104.5FM",
         "aliases": [
             "104.5FM צפון",
+            "104.5fm radio זשכםמ",
             "Radio North 104.5FM",
             "רדיו צפון 104.5FM",
         ],
     },
+
     "galei_israel": {
         "label": "Galei Israel",
         "aliases": [
@@ -170,6 +190,7 @@ MAIN_STATIONS = {
             "גלי ישראל",
         ],
     },
+
     "kol_rega": {
         "label": "Kol Rega",
         "aliases": [
@@ -178,6 +199,7 @@ MAIN_STATIONS = {
             "קול רגע",
         ],
     },
+
     "kol_chai": {
         "label": "Kol Chai",
         "aliases": [
@@ -186,6 +208,7 @@ MAIN_STATIONS = {
             "קול חי - Kol Chai",
         ],
     },
+
     "kol_barama": {
         "label": "Kol Barama",
         "aliases": [
@@ -194,6 +217,7 @@ MAIN_STATIONS = {
             "קול ברמה - Kol Barama",
         ],
     },
+
     "lev_hamedina": {
         "label": "Radio Lev HaMedina",
         "aliases": [
@@ -202,6 +226,7 @@ MAIN_STATIONS = {
             "רדיו לב המדינה",
         ],
     },
+
     "90fm": {
         "label": "Radio 90FM",
         "aliases": [
@@ -209,6 +234,16 @@ MAIN_STATIONS = {
             "90FM",
         ],
     },
+}
+
+
+# Known-good streams for cases where Radio Browser may associate
+# a main station name with one of its themed/subchannel streams.
+PREFERRED_STREAMS = {
+    "radios100": (
+        "https://cdn.cybercdn.live/"
+        "Radios_100FM/Audio/icecast.audio"
+    ),
 }
 
 
@@ -229,6 +264,7 @@ RELIGIOUS_WORDS = {
     "קבלה",
     "יהודי",
 }
+
 
 MUSIC_WORDS = {
     "music",
@@ -253,20 +289,30 @@ MUSIC_WORDS = {
     "mizrahit",
     "מזרח",
     "מוזיקה",
-    "music",
 }
 
 
 def normalize_name(text):
-    text = unicodedata.normalize("NFKC", text or "").casefold()
-    return re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
+    text = unicodedata.normalize(
+        "NFKC",
+        text or "",
+    ).casefold()
+
+    return re.sub(
+        r"[\W_]+",
+        "",
+        text,
+        flags=re.UNICODE,
+    )
 
 
 MAIN_ALIAS_LOOKUP = {}
 
 for station_key, info in MAIN_STATIONS.items():
     for alias in info["aliases"]:
-        MAIN_ALIAS_LOOKUP[normalize_name(alias)] = station_key
+        MAIN_ALIAS_LOOKUP[
+            normalize_name(alias)
+        ] = station_key
 
 
 def download_text(url, accept="text/plain"):
@@ -278,8 +324,13 @@ def download_text(url, accept="text/plain"):
         },
     )
 
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8-sig")
+    with urllib.request.urlopen(
+        request,
+        timeout=30,
+    ) as response:
+        return response.read().decode(
+            "utf-8-sig"
+        )
 
 
 def download_radio():
@@ -287,12 +338,21 @@ def download_radio():
 
     for url in RADIO_URLS:
         try:
-            return json.loads(download_text(url, "application/json"))
+            return json.loads(
+                download_text(
+                    url,
+                    "application/json",
+                )
+            )
+
         except Exception as exc:
-            errors.append(f"{url}: {exc}")
+            errors.append(
+                f"{url}: {exc}"
+            )
 
     raise RuntimeError(
-        "All Radio Browser mirrors failed:\n" + "\n".join(errors)
+        "All Radio Browser mirrors failed:\n"
+        + "\n".join(errors)
     )
 
 
@@ -310,13 +370,18 @@ def make_tv_section(playlist):
             continue
 
         if stripped.startswith("#EXTINF:"):
-            # Put every television channel under one clear TV group.
-            if re.search(r'group-title="[^"]*"', line):
+            # Put every television channel under
+            # one clear TV group.
+            if re.search(
+                r'group-title="[^"]*"',
+                line,
+            ):
                 line = re.sub(
                     r'group-title="[^"]*"',
                     'group-title="Israel TV"',
                     line,
                 )
+
             else:
                 comma = line.find(",")
 
@@ -336,39 +401,73 @@ def canonical_stream_key(url):
     """
     Make a comparison key for duplicate detection.
 
-    Query strings are deliberately ignored for duplicate detection because
-    Radio Browser often contains the same station with slightly different
-    tracking/redirect parameters.
+    Query strings are deliberately ignored because
+    Radio Browser sometimes contains the same station
+    with different tracking parameters.
     """
+
     try:
         parts = urlsplit(url)
 
-        host = (parts.hostname or "").casefold()
-        port = f":{parts.port}" if parts.port else ""
-        path = parts.path.rstrip("/").casefold()
+        host = (
+            parts.hostname or ""
+        ).casefold()
+
+        port = (
+            f":{parts.port}"
+            if parts.port
+            else ""
+        )
+
+        path = (
+            parts.path
+            .rstrip("/")
+            .casefold()
+        )
 
         return f"{host}{port}{path}"
+
     except Exception:
-        return url.casefold().strip()
+        return (
+            url
+            .casefold()
+            .strip()
+        )
 
 
 def identify_main_station(name):
-    return MAIN_ALIAS_LOOKUP.get(normalize_name(name))
+    return MAIN_ALIAS_LOOKUP.get(
+        normalize_name(name)
+    )
 
 
-def choose_radio_group(station, main_key):
+def choose_radio_group(
+    station,
+    main_key,
+):
     if main_key:
         return "Israel Radio | Main"
 
-    name = (station.get("name") or "").casefold()
-    tags = (station.get("tags") or "").casefold()
+    name = (
+        station.get("name") or ""
+    ).casefold()
+
+    tags = (
+        station.get("tags") or ""
+    ).casefold()
 
     combined = f"{name} {tags}"
 
-    if any(word in combined for word in RELIGIOUS_WORDS):
+    if any(
+        word in combined
+        for word in RELIGIOUS_WORDS
+    ):
         return "Israel Radio | Religious"
 
-    if any(word in combined for word in MUSIC_WORDS):
+    if any(
+        word in combined
+        for word in MUSIC_WORDS
+    ):
         return "Israel Radio | Music"
 
     return "Israel Radio | Other"
@@ -386,17 +485,28 @@ def clean_attribute(value):
 
 def clean_station_name(value):
     value = clean_attribute(value)
-    return re.sub(r"\s+", " ", value).strip()
+
+    return re.sub(
+        r"\s+",
+        " ",
+        value,
+    ).strip()
 
 
 def build_radio_section(stations):
-    # Radio Browser gives us votes/bitrate metadata, so prefer the most
-    # established/higher-quality entry when duplicates exist.
+    # Prefer higher-voted / higher-bitrate entries
+    # when duplicate stations exist.
     stations = sorted(
         stations,
         key=lambda station: (
-            int(station.get("votes") or 0),
-            int(station.get("bitrate") or 0),
+            int(
+                station.get("votes")
+                or 0
+            ),
+            int(
+                station.get("bitrate")
+                or 0
+            ),
         ),
         reverse=True,
     )
@@ -408,16 +518,21 @@ def build_radio_section(stations):
     result = []
 
     for station in stations:
-        if int(station.get("lastcheckok") or 0) != 1:
+        if int(
+            station.get("lastcheckok")
+            or 0
+        ) != 1:
             continue
 
-        name = clean_station_name(station.get("name"))
+        name = clean_station_name(
+            station.get("name")
+        )
 
         if not name:
             continue
 
-        # url_resolved is preferable because Radio Browser has already
-        # followed redirects and decoded PLS/M3U-style redirectors.
+        # Prefer url_resolved because Radio Browser
+        # has already resolved redirects when possible.
         stream_url = (
             station.get("url_resolved")
             or station.get("url")
@@ -428,33 +543,77 @@ def build_radio_section(stations):
             continue
 
         name_key = normalize_name(name)
-        stream_key = canonical_stream_key(stream_url)
-        main_key = identify_main_station(name)
 
-        # Collapse obvious duplicate listings.
-        if main_key and main_key in seen_main_stations:
+        main_key = identify_main_station(
+            name
+        )
+
+        # Override known problematic main stations
+        # with a verified preferred stream.
+        if main_key in PREFERRED_STREAMS:
+            stream_url = (
+                PREFERRED_STREAMS[
+                    main_key
+                ]
+            )
+
+        stream_key = canonical_stream_key(
+            stream_url
+        )
+
+        # Collapse duplicate main station aliases.
+        if (
+            main_key
+            and main_key
+            in seen_main_stations
+        ):
             continue
 
+        # Collapse duplicate station names.
         if name_key in seen_names:
             continue
 
-        if stream_key and stream_key in seen_streams:
+        # Collapse duplicate stream URLs.
+        if (
+            stream_key
+            and stream_key
+            in seen_streams
+        ):
             continue
 
         seen_names.add(name_key)
 
         if stream_key:
-            seen_streams.add(stream_key)
+            seen_streams.add(
+                stream_key
+            )
 
         if main_key:
-            seen_main_stations.add(main_key)
-            display_name = MAIN_STATIONS[main_key]["label"]
+            seen_main_stations.add(
+                main_key
+            )
+
+            display_name = (
+                MAIN_STATIONS[
+                    main_key
+                ]["label"]
+            )
+
         else:
             display_name = name
 
-        group = choose_radio_group(station, main_key)
-        favicon = clean_attribute(station.get("favicon"))
-        uuid = clean_attribute(station.get("stationuuid"))
+        group = choose_radio_group(
+            station,
+            main_key,
+        )
+
+        favicon = clean_attribute(
+            station.get("favicon")
+        )
+
+        uuid = clean_attribute(
+            station.get("stationuuid")
+        )
 
         attrs = [
             'radio="true"',
@@ -462,10 +621,16 @@ def build_radio_section(stations):
         ]
 
         if uuid:
-            attrs.append(f'tvg-id="radio-{uuid}"')
+            attrs.append(
+                f'tvg-id="radio-{uuid}"'
+            )
 
-        if favicon.startswith(("http://", "https://")):
-            attrs.append(f'tvg-logo="{favicon}"')
+        if favicon.startswith(
+            ("http://", "https://")
+        ):
+            attrs.append(
+                f'tvg-logo="{favicon}"'
+            )
 
         extinf = (
             "#EXTINF:-1 "
@@ -493,54 +658,123 @@ def build_radio_section(stations):
 
     main_order = {
         key: number
-        for number, key in enumerate(MAIN_STATIONS.keys())
+        for number, key
+        in enumerate(
+            MAIN_STATIONS.keys()
+        )
     }
 
     def sort_key(item):
-        if item["group"] == "Israel Radio | Main":
-            secondary = main_order.get(item["main_key"], 9999)
+        if (
+            item["group"]
+            == "Israel Radio | Main"
+        ):
+            secondary = (
+                main_order.get(
+                    item["main_key"],
+                    9999,
+                )
+            )
+
         else:
-            secondary = item["name"].casefold()
+            secondary = (
+                item["name"]
+                .casefold()
+            )
 
         return (
-            group_order.get(item["group"], 99),
+            group_order.get(
+                item["group"],
+                99,
+            ),
             secondary,
         )
 
-    result.sort(key=sort_key)
+    result.sort(
+        key=sort_key
+    )
 
     lines = []
 
     for item in result:
-        lines.append(item["extinf"])
-        lines.append(item["url"])
+        lines.append(
+            item["extinf"]
+        )
+
+        lines.append(
+            item["url"]
+        )
 
     return lines, len(result)
 
 
 def main():
-    print("Downloading Israeli TV playlist...")
-    tv_playlist = download_text(TV_URL)
+    print(
+        "Downloading Israeli TV playlist..."
+    )
 
-    print("Downloading Israeli radio database...")
+    tv_playlist = download_text(
+        TV_URL
+    )
+
+    print(
+        "Downloading Israeli radio database..."
+    )
+
     radio_stations = download_radio()
 
-    tv_lines = make_tv_section(tv_playlist)
-    radio_lines, radio_count = build_radio_section(radio_stations)
+    tv_lines = make_tv_section(
+        tv_playlist
+    )
 
-    with open(OUTPUT, "w", encoding="utf-8", newline="\n") as file:
-        file.write("#EXTM3U\n\n")
+    radio_lines, radio_count = (
+        build_radio_section(
+            radio_stations
+        )
+    )
 
-        file.write("# Israel TV\n")
-        file.write("\n".join(tv_lines))
+    with open(
+        OUTPUT,
+        "w",
+        encoding="utf-8",
+        newline="\n",
+    ) as file:
 
-        file.write("\n\n# Israel Radio\n")
-        file.write("\n".join(radio_lines))
+        file.write(
+            "#EXTM3U\n\n"
+        )
+
+        file.write(
+            "# Israel TV\n"
+        )
+
+        file.write(
+            "\n".join(
+                tv_lines
+            )
+        )
+
+        file.write(
+            "\n\n# Israel Radio\n"
+        )
+
+        file.write(
+            "\n".join(
+                radio_lines
+            )
+        )
 
         file.write("\n")
 
-    print(f"Created {OUTPUT}")
-    print(f"Included {radio_count} deduplicated Israeli radio stations.")
+    print(
+        f"Created {OUTPUT}"
+    )
+
+    print(
+        f"Included {radio_count} "
+        "deduplicated Israeli "
+        "radio stations."
+    )
 
 
 if __name__ == "__main__":
