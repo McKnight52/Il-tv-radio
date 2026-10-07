@@ -1,0 +1,37 @@
+name: Update Israel TV and Radio Playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build combined playlist
+        run: python scripts/build_playlist.py
+
+      - name: Commit updated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add israel.m3u
+          if git diff --cached --quiet; then
+            echo "Playlist has not changed."
+          else
+            git commit -m "Update Israel TV and radio playlist"
+            git push
+          fi
