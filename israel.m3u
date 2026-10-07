@@ -1,744 +1,359 @@
 #EXTM3U
 
 # Israel TV
-#EXTINF:-1 tvg-id="5Gold.il@SD" tvg-logo="https://i.imgur.com/zFLRfXh.png" group-title="Sports",5Gold (1080p)
+#EXTINF:-1 tvg-id="5Gold.il@SD" tvg-logo="https://i.imgur.com/zFLRfXh.png" group-title="Israel TV",5Gold (1080p)
 http://str2.iptvhd.ru:8080/sport5gold/index.m3u8
-#EXTINF:-1 tvg-id="5Live.il@SD" tvg-logo="https://i.imgur.com/0yr3yvd.png" group-title="Sports",5Live (1080p)
+#EXTINF:-1 tvg-id="5Live.il@SD" tvg-logo="https://i.imgur.com/0yr3yvd.png" group-title="Israel TV",5Live (1080p)
 http://str2.iptvhd.ru:8080/5live/index.m3u8
-#EXTINF:-1 tvg-id="5Plus.il@SD" tvg-logo="https://i.imgur.com/L3RA9Lv.png" group-title="Sports",5Plus (1080p)
+#EXTINF:-1 tvg-id="5Plus.il@SD" tvg-logo="https://i.imgur.com/L3RA9Lv.png" group-title="Israel TV",5Plus (1080p)
 http://89.33.29.115:8080/sportplus/index.m3u8
-#EXTINF:-1 tvg-id="5Sport4K.il@SD" tvg-logo="https://i.imgur.com/Msfhpqd.png" group-title="Sports",5Sport 4K (2160p)
+#EXTINF:-1 tvg-id="5Sport4K.il@SD" tvg-logo="https://i.imgur.com/Msfhpqd.png" group-title="Israel TV",5Sport 4K (2160p)
 http://str2.iptvhd.ru:8080/5SPORT_4K/index.m3u8
-#EXTINF:-1 tvg-id="5Sport.il@SD" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Sports",5Sport (1080p)
+#EXTINF:-1 tvg-id="5Sport.il@SD" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Israel TV",5Sport (1080p)
 http://str2.iptvhd.ru:8080/5sport/index.m3u8
-#EXTINF:-1 tvg-id="5Stars.il@SD" tvg-logo="https://i.imgur.com/IQtAKIa.png" group-title="Sports",5Stars (1080p)
+#EXTINF:-1 tvg-id="5Stars.il@SD" tvg-logo="https://i.imgur.com/IQtAKIa.png" group-title="Israel TV",5Stars (1080p)
 http://89.33.29.115:8080/IL_5Stars/index.m3u8
-#EXTINF:-1 tvg-id="AngelTV.in@Hebrew" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Hebrew (720p)
+#EXTINF:-1 tvg-id="AngelTV.in@Hebrew" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Israel TV",Angel TV Hebrew (720p)
 https://janya-digimix.akamaized.net/vglive-sk-150533/hebrew/ngrp:angelhebrew_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel9.il@SD" tvg-logo="https://i.imgur.com/pttM3KQ.png" group-title="News",Channel 9 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Channel9.il@SD" tvg-logo="https://i.imgur.com/pttM3KQ.png" group-title="Israel TV",Channel 9 (Israel) (1080p)
 https://contact.gostreaming.tv/Con-11/index.m3u8
-#EXTINF:-1 tvg-id="Channel13.il@SD" tvg-logo="https://i.imgur.com/eFM3bTq.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",Channel 13 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Channel13.il@SD" tvg-logo="https://i.imgur.com/eFM3bTq.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Channel 13 (Israel) (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/295/index.m3u8
-#EXTINF:-1 tvg-id="Channel16.il@SD" tvg-logo="https://ch16israel.vod.immergo.tv/ch16israel/uploaded/bfbd4781-67a7-437e-8f7e-898a5cbc4ab4.png" group-title="Undefined",Channel 16
+#EXTINF:-1 tvg-id="Channel16.il@SD" tvg-logo="https://ch16israel.vod.immergo.tv/ch16israel/uploaded/bfbd4781-67a7-437e-8f7e-898a5cbc4ab4.png" group-title="Israel TV",Channel 16
 https://ch16israel-cdn.encoders.immergo.tv/2/streamPlaylist.m3u8
-#EXTINF:-1 tvg-id="Channel24.il@SD" tvg-logo="https://i.imgur.com/WLs67QI.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",Channel 24 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Channel24.il@SD" tvg-logo="https://i.imgur.com/WLs67QI.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Channel 24 (Israel) (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/42/index.m3u8
-#EXTINF:-1 tvg-id="ComedyChannel.il@SD" tvg-logo="https://images.frp1.ott.kaltura.com/Service.svc/GetImage/p/5031/entry_id/fc0d8109a18a4db3b585f154d32bd5b1/version/93/width/288/height/153/" group-title="Undefined",Comedy Channel (1080p)
+#EXTINF:-1 tvg-id="ComedyChannel.il@SD" tvg-logo="https://images.frp1.ott.kaltura.com/Service.svc/GetImage/p/5031/entry_id/fc0d8109a18a4db3b585f154d32bd5b1/version/93/width/288/height/153/" group-title="Israel TV",Comedy Channel (1080p)
 https://d15ds134q59udk.cloudfront.net/out/v1/fbba879221d045598540ee783b140fe2/index.m3u8
-#EXTINF:-1 tvg-id="DisneyChannel.il@SD" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2022_Disney_Channel_logo.svg/3840px-2022_Disney_Channel_logo.svg.png" group-title="Kids",Disney Channel (Israel) (576p)
+#EXTINF:-1 tvg-id="DisneyChannel.il@SD" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/2022_Disney_Channel_logo.svg/3840px-2022_Disney_Channel_logo.svg.png" group-title="Israel TV",Disney Channel (Israel) (576p)
 http://str2.iptvhd.ru:8080/disney/index.m3u8
-#EXTINF:-1 tvg-id="FoodChannel.il@SD" tvg-logo="https://images.open-epg.com/x1723.png" group-title="Cooking",Food Channel (1080p)
+#EXTINF:-1 tvg-id="FoodChannel.il@SD" tvg-logo="https://images.open-epg.com/x1723.png" group-title="Israel TV",Food Channel (1080p)
 http://str2.iptvhd.ru:8080/FoodChannel/index.m3u8
-#EXTINF:-1 tvg-id="GoodLife.il@SD" tvg-logo="https://cdn.epg.one/img2/2686.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Lifestyle",Good Life (576p)
+#EXTINF:-1 tvg-id="GoodLife.il@SD" tvg-logo="https://cdn.epg.one/img2/2686.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Israel TV",Good Life (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/47/index.m3u8
-#EXTINF:-1 tvg-id="HalaTV.il@SD" tvg-logo="https://i.imgur.com/028M4Ew.png" group-title="General",Hala TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="HalaTV.il@SD" tvg-logo="https://i.imgur.com/028M4Ew.png" group-title="Israel TV",Hala TV (1080p) [Not 24/7]
 https://stream.panet.com/edge/halaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="HealthChannel.il@SD" tvg-logo="https://cdn.epg.one/img2/2709.png" group-title="Lifestyle",Health Channel (1080p)
+#EXTINF:-1 tvg-id="HealthChannel.il@SD" tvg-logo="https://cdn.epg.one/img2/2709.png" group-title="Israel TV",Health Channel (1080p)
 http://89.33.29.115:8080/Health/index.m3u8
-#EXTINF:-1 tvg-id="Hidabroot.il@SD" tvg-logo="https://i.imgur.com/CTH4Hu2.png" group-title="Religious",Hidabroot (1080p)
+#EXTINF:-1 tvg-id="Hidabroot.il@SD" tvg-logo="https://i.imgur.com/CTH4Hu2.png" group-title="Israel TV",Hidabroot (1080p)
 https://cdn.cybercdn.live/HidabrootIL/Live97/playlist.m3u8
-#EXTINF:-1 tvg-id="HomePlus.il@SD" tvg-logo="https://i.imgur.com/HPsxqMx.png" group-title="Undefined",Home + (576p)
+#EXTINF:-1 tvg-id="HomePlus.il@SD" tvg-logo="https://i.imgur.com/HPsxqMx.png" group-title="Israel TV",Home + (576p)
 http://str2.iptvhd.ru:8080/home_plus/index.m3u8
-#EXTINF:-1 tvg-id="Hop.il@SD" tvg-logo="https://i.imgur.com/bScuilD.png" group-title="Kids",Hop! (1080p)
+#EXTINF:-1 tvg-id="Hop.il@SD" tvg-logo="https://i.imgur.com/bScuilD.png" group-title="Israel TV",Hop! (1080p)
 http://stream.mcquack.net/44/index.m3u8
-#EXTINF:-1 tvg-id="HOT8.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/a/a9/HOT8_2018_Logo.svg/250px-HOT8_2018_Logo.svg.png" group-title="General",HOT8 (1080p)
+#EXTINF:-1 tvg-id="HOT8.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/a/a9/HOT8_2018_Logo.svg/250px-HOT8_2018_Logo.svg.png" group-title="Israel TV",HOT8 (1080p)
 http://str2.iptvhd.ru:8080/channel8/index.m3u8
-#EXTINF:-1 tvg-id="HOTCinema1.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/f14b95e0e8b95995de6e7accdba34762.png" group-title="Movies",HOT Cinema 1 (1080p)
+#EXTINF:-1 tvg-id="HOTCinema1.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/f14b95e0e8b95995de6e7accdba34762.png" group-title="Israel TV",HOT Cinema 1 (1080p)
 http://str2.iptvhd.ru:8080/Gold/index.m3u8
-#EXTINF:-1 tvg-id="HOTCinema2.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/f18976e8a3236dbdabbb35f73f6e8988.png" group-title="Movies",HOT Cinema 2 (1080p)
+#EXTINF:-1 tvg-id="HOTCinema2.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/f18976e8a3236dbdabbb35f73f6e8988.png" group-title="Israel TV",HOT Cinema 2 (1080p)
 http://str2.iptvhd.ru:8080/action/index.m3u8
-#EXTINF:-1 tvg-id="HOTCinema3.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/2edb1bb63076c75baacf2674ce8c8c37.png" group-title="Movies",HOT Cinema 3 (1080p)
+#EXTINF:-1 tvg-id="HOTCinema3.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/2edb1bb63076c75baacf2674ce8c8c37.png" group-title="Israel TV",HOT Cinema 3 (1080p)
 http://str2.iptvhd.ru:8080/fun/index.m3u8
-#EXTINF:-1 tvg-id="HOTCinema4.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/e055cf2620f58c60b1e65be4717d2c22.png" group-title="Movies",HOT Cinema 4 (1080p)
+#EXTINF:-1 tvg-id="HOTCinema4.il@SD" tvg-logo="https://antifriz.tv/storage/images/pack_logos/e055cf2620f58c60b1e65be4717d2c22.png" group-title="Israel TV",HOT Cinema 4 (1080p)
 http://str2.iptvhd.ru:8080/drama/index.m3u8
-#EXTINF:-1 tvg-id="HOTComedy.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/0/08/HOTComedyCentral.svg/250px-HOTComedyCentral.svg.png" group-title="Comedy;Series",HOT Comedy (1080p)
+#EXTINF:-1 tvg-id="HOTComedy.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/0/08/HOTComedyCentral.svg/250px-HOTComedyCentral.svg.png" group-title="Israel TV",HOT Comedy (1080p)
 http://str2.iptvhd.ru:8080/HOTComedy/index.m3u8
-#EXTINF:-1 tvg-id="HOTDrama.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HotNewLogo.svg/250px-HotNewLogo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Series",HOT Drama (1080p)
+#EXTINF:-1 tvg-id="HOTDrama.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HotNewLogo.svg/250px-HotNewLogo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",HOT Drama (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/381/index.m3u8
-#EXTINF:-1 tvg-id="HOTSenior.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HotNewLogo.svg/250px-HotNewLogo.svg.png" group-title="General",HOT Senior (1080p)
+#EXTINF:-1 tvg-id="HOTSenior.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HotNewLogo.svg/250px-HotNewLogo.svg.png" group-title="Israel TV",HOT Senior (1080p)
 http://str2.iptvhd.ru:8080/HOT_Senior/index.m3u8
-#EXTINF:-1 tvg-id="HOTZone.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/0/00/HOT_Zone.svg/250px-HOT_Zone.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",HOT Zone (1080p)
+#EXTINF:-1 tvg-id="HOTZone.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/0/00/HOT_Zone.svg/250px-HOT_Zone.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",HOT Zone (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/379/index.m3u8
-#EXTINF:-1 tvg-id="i24NEWSArabic.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="News",i24NEWS Arabic (1080p)
+#EXTINF:-1 tvg-id="i24NEWSArabic.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Israel TV",i24NEWS Arabic (1080p)
 https://i24newsarabic-cdn.encoders.immergo.tv/master.m3u8
-#EXTINF:-1 tvg-id="i24NEWSFrench.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="News",i24NEWS French (1080p)
+#EXTINF:-1 tvg-id="i24NEWSFrench.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Israel TV",i24NEWS French (1080p)
 https://i24newsfrench-cdn.encoders.immergo.tv/master.m3u8
-#EXTINF:-1 tvg-id="i24NEWSHebrew.il@SD" tvg-logo="https://www.i24news.tv/images/favicon.png" group-title="News",i24NEWS Hebrew (1080p)
+#EXTINF:-1 tvg-id="i24NEWSHebrew.il@SD" tvg-logo="https://www.i24news.tv/images/favicon.png" group-title="Israel TV",i24NEWS Hebrew (1080p)
 https://i24newshebrew-cdn.encoders.immergo.tv/master.m3u8
-#EXTINF:-1 tvg-id="Junior.il@SD" tvg-logo="https://i.imgur.com/w8fYTnw.png" group-title="Kids",Junior (1080p)
+#EXTINF:-1 tvg-id="Junior.il@SD" tvg-logo="https://i.imgur.com/w8fYTnw.png" group-title="Israel TV",Junior (1080p)
 http://str2.iptvhd.ru:8080/junior/index.m3u8
-#EXTINF:-1 tvg-id="KabbalahforthePeopleIsrael.il@SD" tvg-logo="https://i.imgur.com/VxAHOgr.png" group-title="Religious",Kabbalah for the People Israel (504p) [Not 24/7]
+#EXTINF:-1 tvg-id="KabbalahforthePeopleIsrael.il@SD" tvg-logo="https://i.imgur.com/VxAHOgr.png" group-title="Israel TV",Kabbalah for the People Israel (504p) [Not 24/7]
 https://edge3.uk.kab.tv/live/tv66-heb-high/playlist.m3u8
-#EXTINF:-1 tvg-id="Kan11.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kan11Logo.svg/960px-Kan11Logo.svg.png" group-title="General",Kan 11 (1080p)
+#EXTINF:-1 tvg-id="Kan11.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kan11Logo.svg/960px-Kan11Logo.svg.png" group-title="Israel TV",Kan 11 (1080p)
 https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="KanEducational.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/KanHinuchit.svg/960px-KanHinuchit.svg.png" group-title="Education",Kan Educational (720p)
+#EXTINF:-1 tvg-id="KanEducational.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/KanHinuchit.svg/960px-KanHinuchit.svg.png" group-title="Israel TV",Kan Educational (720p)
 http://stream.mcquack.net/378/index.m3u8
-#EXTINF:-1 tvg-id="Keshet12.il@SD" tvg-logo="https://i.imgur.com/fY3eakc.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",Keshet 12 (1080p)
+#EXTINF:-1 tvg-id="Keshet12.il@SD" tvg-logo="https://i.imgur.com/fY3eakc.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Keshet 12 (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/294/index.m3u8
-#EXTINF:-1 tvg-id="KnessetChannel.il@SD" tvg-logo="https://i.imgur.com/QXB1jv8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Legislative",Knesset Channel (576p)
+#EXTINF:-1 tvg-id="KnessetChannel.il@SD" tvg-logo="https://i.imgur.com/QXB1jv8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Knesset Channel (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/48/index.m3u8
-#EXTINF:-1 tvg-id="Luli.il@SD" tvg-logo="https://cdn.epg.one/img2/2695.png" group-title="Kids",Luli (1080p)
+#EXTINF:-1 tvg-id="Luli.il@SD" tvg-logo="https://cdn.epg.one/img2/2695.png" group-title="Israel TV",Luli (1080p)
 http://str2.iptvhd.ru:8080/HOT_Luli/index.m3u8
-#EXTINF:-1 tvg-id="Makan33.il@SD" tvg-logo="https://i.imgur.com/RVtQTed.png" group-title="News",Makan 33 (1080p)
+#EXTINF:-1 tvg-id="Makan33.il@SD" tvg-logo="https://i.imgur.com/RVtQTed.png" group-title="Israel TV",Makan 33 (1080p)
 https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/makan/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="NickJr.il@SD" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. (Israel) (576p)
+#EXTINF:-1 tvg-id="NickJr.il@SD" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Israel TV",Nick Jr. (Israel) (576p)
 http://str2.iptvhd.ru:8080/nickjr/index.m3u8
-#EXTINF:-1 tvg-id="Now14.il@SD" tvg-logo="https://i.imgur.com/Iq2Kb69.png" group-title="General",Now 14 (1080p)
+#EXTINF:-1 tvg-id="Now14.il@SD" tvg-logo="https://i.imgur.com/Iq2Kb69.png" group-title="Israel TV",Now 14 (1080p)
 https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="One2.il@SD" tvg-logo="https://i.imgur.com/JQLhYEs.png" group-title="Sports",One 2 (1080p)
+#EXTINF:-1 tvg-id="One2.il@SD" tvg-logo="https://i.imgur.com/JQLhYEs.png" group-title="Israel TV",One 2 (1080p)
 http://str2.iptvhd.ru:8080/One/index.m3u8
-#EXTINF:-1 tvg-id="RealityChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/yes-reality-channel-il-hd.png" group-title="Entertainment",Reality Channel
+#EXTINF:-1 tvg-id="RealityChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/yes-reality-channel-il-hd.png" group-title="Israel TV",Reality Channel
 https://d2dffl3588mvfk.cloudfront.net/out/v1/d8e15050ca4148aab0ee387a5e2eb46b/index_1.m3u8
-#EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Travel",RTG int.
+#EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Israel TV",RTG int.
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://213.91.179.28:8000/play/a0bw
-#EXTINF:-1 tvg-id="ShelanuTV.il@SD" tvg-logo="https://i.imgur.com/UVz2Ojq.png" group-title="Religious",Shelanu.TV (720p)
+#EXTINF:-1 tvg-id="ShelanuTV.il@SD" tvg-logo="https://i.imgur.com/UVz2Ojq.png" group-title="Israel TV",Shelanu.TV (720p)
 https://1247634592.rsc.cdn77.org/1247634592/playlist.m3u8
-#EXTINF:-1 tvg-id="Sport2.il@SD" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Sports",Sport 2 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Sport2.il@SD" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Israel TV",Sport 2 (Israel) (1080p)
 http://str2.iptvhd.ru:8080/Sport_2/index.m3u8
-#EXTINF:-1 tvg-id="Sport3.il@SD" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Sports",Sport 3 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Sport3.il@SD" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Israel TV",Sport 3 (Israel) (1080p)
 http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BWGFFCU59AE6AEV3KF3FXTBA/12251/index.m3u8
-#EXTINF:-1 tvg-id="Sport4.il@SD" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Sports",Sport 4 (Israel) (1080p)
+#EXTINF:-1 tvg-id="Sport4.il@SD" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Israel TV",Sport 4 (Israel) (1080p)
 http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BWGFFCU59AE6AEV3KF3FXTBA/2389/index.m3u8
-#EXTINF:-1 tvg-id="TeenNick.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/TeenNick_2019_logo.svg/960px-TeenNick_2019_logo.svg.png" group-title="Kids",TeenNick (406p)
+#EXTINF:-1 tvg-id="TeenNick.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/TeenNick_2019_logo.svg/960px-TeenNick_2019_logo.svg.png" group-title="Israel TV",TeenNick (406p)
 http://89.33.29.115:8080/TeenNick/index.m3u8
-#EXTINF:-1 tvg-id="VacationChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/vacation-channel-il-hd.png" group-title="Entertainment",Vacation Channel
+#EXTINF:-1 tvg-id="VacationChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/vacation-channel-il-hd.png" group-title="Israel TV",Vacation Channel
 https://d1yd8hohnldm33.cloudfront.net/out/v1/19dee23c2cc24f689bd4e1288661ee0c/index_2.m3u8
-#EXTINF:-1 tvg-id="VivaIstanbul.il@SD" tvg-logo="https://cdn.epg.one/img2/88006.png" group-title="General",Viva Istanbul (1080p)
+#EXTINF:-1 tvg-id="VivaIstanbul.il@SD" tvg-logo="https://cdn.epg.one/img2/88006.png" group-title="Israel TV",Viva Istanbul (1080p)
 http://str2.iptvhd.ru:8080/viva_plus/index.m3u8
-#EXTINF:-1 tvg-id="VivaPremium.il@SD" tvg-logo="https://cdn.epg.one/img2/9055.png" group-title="General",Viva Premium (1080p)
+#EXTINF:-1 tvg-id="VivaPremium.il@SD" tvg-logo="https://cdn.epg.one/img2/9055.png" group-title="Israel TV",Viva Premium (1080p)
 http://stream.mcquack.net/43/index.m3u8
-#EXTINF:-1 tvg-id="VivaTelenovelas.il@SD" tvg-logo="https://static.g-cdn.app/streams/viva-il.png" group-title="Series",Viva Telenovelas (1080p)
+#EXTINF:-1 tvg-id="VivaTelenovelas.il@SD" tvg-logo="https://static.g-cdn.app/streams/viva-il.png" group-title="Israel TV",Viva Telenovelas (1080p)
 http://str2.iptvhd.ru:8080/VIVA/index.m3u8
-#EXTINF:-1 tvg-id="YamTichoni.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/5/58/YamTichoniChannel.svg/1280px-YamTichoniChannel.svg.png" group-title="Series",Yam Tichoni (1080p)
+#EXTINF:-1 tvg-id="YamTichoni.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/5/58/YamTichoniChannel.svg/1280px-YamTichoniChannel.svg.png" group-title="Israel TV",Yam Tichoni (1080p)
 http://stream.mcquack.net/46/index.m3u8
-#EXTINF:-1 tvg-id="YesMoviesAction.il@SD" tvg-logo="https://i.imgur.com/Bgz7p5F.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",Yes Movies Action (1080p)
+#EXTINF:-1 tvg-id="YesMoviesAction.il@SD" tvg-logo="https://i.imgur.com/Bgz7p5F.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Israel TV",Yes Movies Action (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://stream.mcquack.net/380/index.m3u8
-#EXTINF:-1 tvg-id="Zoom.il@SD" tvg-logo="https://i.imgur.com/KnBzNtA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Kids",Zoom (Israel) (576p)
+#EXTINF:-1 tvg-id="Zoom.il@SD" tvg-logo="https://i.imgur.com/KnBzNtA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Zoom (Israel) (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/377/index.m3u8
 
 # Israel Radio
-#RADIOBROWSERUUID:f30e4028-6047-4cb3-ad6a-9073a89ef74f
-#EXTINF:1,????? ?????? | Prayer Radio
-https://radio.sandrokob.com/stream
-
-#RADIOBROWSERUUID:bf1cebbf-a58d-41a4-95f2-8abd5e50f6bf
-#EXTINF:1,.assalam
-https://backup.qurango.net/radio/ahmad_khader_altarabulsi
-
-#RADIOBROWSERUUID:0324180d-596a-4b6b-a486-67e606e23d36
-#EXTINF:1,#joint radio Beat Trance
-https://jointil.com/stream-beat
-
-#RADIOBROWSERUUID:13d86ff8-058f-44e6-ba21-ccd065fb5dca
-#EXTINF:1,#joint radio Blues Rock
-https://jointil.com/stream-blues
-
-#RADIOBROWSERUUID:06327e45-5b95-4164-b335-a1a5b8095a1b
-#EXTINF:1,#Joint Radio Reggae
-https://jointil.com/stream-reggae
-
-#RADIOBROWSERUUID:9684cbbc-ea62-422c-bc93-20cf4ed4bac1
-#EXTINF:1,#joint radio Reggae
-https://jointil.com/stream-reggae
-
-#RADIOBROWSERUUID:7cee6800-7c93-497f-9c9d-7efc55756757
-#EXTINF:1,#Radio CS
-https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2g
-
-#RADIOBROWSERUUID:49aa910d-859e-4f2b-a1ca-04f163de07bb
-#EXTINF:1,100fm - 100% Movies
-http://gb25.streamgates.net/radios-audio/100Movies/icecast.audio
-
-#RADIOBROWSERUUID:e673a4df-e224-4787-a8ec-52c391992bb6
-#EXTINF:1,101.5fm נותנים למוזיקה לדבר רדיו דרום
-https://cdn.cybercdn.live/Darom_1015FM/Live/icecast.audio
-
-#RADIOBROWSERUUID:b42c9d1b-22c2-41a0-b13c-207a8c92f982
-#EXTINF:1,101.5fm רדיו התחנה
-https://cdn.cybercdn.live/Hatahana_1015/Live_Audio/icecast.audio
-
-#RADIOBROWSERUUID:51342243-d0eb-4265-b2b4-7d5c7c836f1a
-#EXTINF:1,101fm radio jerusalem 
-https://radio.streamgates.net/stream/101fm
-
-#RADIOBROWSERUUID:8cca0e0b-ccd9-416e-89cc-325ecc325f69
-#EXTINF:1,104.5fm radio זשכםמ
-https://radio.streamgates.net/stream/1045fm
-
-#RADIOBROWSERUUID:36a1608a-e982-4000-82f4-eb6e279cf744
-#EXTINF:1,104.5FM צפון
-https://radio.streamgates.net/stream/1045fm
-
-#RADIOBROWSERUUID:cf46c74f-1c46-4956-a3a5-245fbe7b4d6d
-#EXTINF:1,88 FM
-https://29073.live.streamtheworld.com/KAN_88.mp3
-
-#RADIOBROWSERUUID:23dca315-cf08-4b87-9622-4cd205b89f26
-#EXTINF:1,91FM
-https://cdn.cybercdn.live/Lev_Hamedina/Audio/icecast.audio
-
-#RADIOBROWSERUUID:d793e2f9-5532-4033-96a0-33d021ec0c86
-#EXTINF:1,94fm רדיו גלי ישראל
-https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio
-
-#RADIOBROWSERUUID:4e044620-577e-4622-8114-461d2b1d55bf
-#EXTINF:1,Abdulbasit Abdulsamad
-https://radio.mp3islam.com/listen/abdulbasit/radio.mp3
-
-#RADIOBROWSERUUID:9687cb4b-6c60-429e-a7f0-28180e746075
-#EXTINF:1,AudioVersity
-https://1062onair.runi.ac.il/idc123.mp3
-
-#RADIOBROWSERUUID:1a524655-ad7a-454b-ac8d-855188b740a3
-#EXTINF:1,AVIVmedia
-https://equinox.shoutca.st/tunein/avivmediafm.pls
-
-#RADIOBROWSERUUID:dd08fbb3-277e-4a49-9866-7fd6c21bb124
-#EXTINF:1,Eco 99fm 
-https://eco01.livecdn.biz/ecolive/99fm_aac/icecast.audio?hash=1559501510715.m4a
-
-#RADIOBROWSERUUID:5357dc24-46cc-4671-9b55-26b811820c6c
-#EXTINF:1,ECO99FM
-https://eco-live.mediacast.co.il/99fm_aac
-
-#RADIOBROWSERUUID:e7230036-0803-4aea-aa87-938db8b2d4eb
-#EXTINF:1,ELI NISMAN
-http://listen6.myradio24.com:9000/25715
-
-#RADIOBROWSERUUID:044e0f59-3df8-42f2-a50b-670b2956e278
-#EXTINF:1,Eli Nisman Radio
-https://listen6.myradio24.com/25715
-
-#RADIOBROWSERUUID:962326cb-0601-11e8-ae97-52543be04c81
-#EXTINF:1,Galei Zahal
-http://glzwizzlv.bynetcdn.com/glz_mp3
-
-#RADIOBROWSERUUID:45700958-16ab-422a-85bb-d402722463f0
-#EXTINF:1,Galgalatz
-https://glzwizzlv.bynetcdn.com/glglz_mp3?awCollectionId=misc&awEpisodeId=glglz
-
-#RADIOBROWSERUUID:8407749b-aa65-4aee-b503-bd6e196bea9d
-#EXTINF:1,Galgalatz 91.8 FM
-https://glzicylv01.bynetcdn.com/glglz_mp3
-
-#RADIOBROWSERUUID:29cd4b62-14e2-11e9-a80b-52543be04c81
-#EXTINF:1,Glglz
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-29cd4b62-14e2-11e9-a80b-52543be04c81" tvg-logo="https://static-media.streema.com/media/cache/34/ee/34ee4ed52c07ad09122cbe047a7c0bfd.jpg",Galgalatz
 https://api.bynetcdn.com/Redirector/glz/glglz/ICE-LIVE
-
-#RADIOBROWSERUUID:73c94920-e308-48f4-962e-f67abf8af331
-#EXTINF:1,Glglz - Rock
-https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
-
-#RADIOBROWSERUUID:396ed271-76d3-4771-8faf-3db7cadb126a
-#EXTINF:1,Glglz - רגוע (סופשבוע)
-https://glzwizzlv.bynetcdn.com/glglz_sofshavua_mp3
-
-#RADIOBROWSERUUID:2f605613-f5f8-4c8f-8edc-c7c3945023fb
-#EXTINF:1,Glz
-http://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz
-
-#RADIOBROWSERUUID:ef4cfa77-f36d-4b08-a24a-4288cae3b7fe
-#EXTINF:1,Glz
-http://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz
-
-#RADIOBROWSERUUID:d902048f-5fcf-445a-9494-77d74dee9e43
-#EXTINF:1,GUITAR - J. WILLIAMS 
-http://drive.uber.radio/uber/crjohnwilliamsguitarist/icecast.audio
-
-#RADIOBROWSERUUID:0eb7423c-bb73-4772-8d12-ea602e875d9f
-#EXTINF:1,Hedva Shaltiel
-https://icecast.live/ivr
-
-#RADIOBROWSERUUID:0b67ac8c-516d-4251-92c6-51991696f253
-#EXTINF:1,Israeli voice radio
-https://icecast.live/ivr
-
-#RADIOBROWSERUUID:07c8fe2a-af70-4b7e-8aee-2eabb89d9368
-#EXTINF:1,Israeli voice radio
-https://icecast.live/ivr
-
-#RADIOBROWSERUUID:2687dea7-8484-4156-ae36-5aa5ca56bc7b
-#EXTINF:1,Israeli voice radio
-https://icecast.live/ivr
-
-#RADIOBROWSERUUID:b1a2d866-eeff-427f-9d92-f53b290e16c9
-#EXTINF:1,Ivri 6
-https://streaming.radio.co/sa06221901/listen
-
-#RADIOBROWSERUUID:006ffcf8-e541-11e8-a9cc-52543be04c81
-#EXTINF:1,Jewish Music Stream
-https://stream.jewishmusicstream.com:8000/
-
-#RADIOBROWSERUUID:fe0b12d8-2953-11e9-a80b-52543be04c81
-#EXTINF:1,Kabbalah Fr
-http://icecast.kab.tv/live1-spa-574bcfd5.mp3
-
-#RADIOBROWSERUUID:4add95c3-ddf9-49bc-9815-bb729d66c1f8
-#EXTINF:1,KAN 88
-https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_88/live.livx/playlist.m3u8?renditions&dvr=7200000
-
-#RADIOBROWSERUUID:0dd41509-199c-458c-84d5-44ed192ba9a8
-#EXTINF:1,Kan Bet 
-https://25583.live.streamtheworld.com/KAN_BET.mp3?dist=bynetredirect&1737047133
-
-#RADIOBROWSERUUID:c2b724db-9ddb-41e2-b190-324014c55467
-#EXTINF:1,Kan Bet 
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-962326cb-0601-11e8-ae97-52543be04c81",Galei Zahal
+http://glzwizzlv.bynetcdn.com/glz_mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-cf46c74f-1c46-4956-a3a5-245fbe7b4d6d",KAN 88
+https://29073.live.streamtheworld.com/KAN_88.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-c2b724db-9ddb-41e2-b190-324014c55467" tvg-logo="https://www.kan.org.il/media/wgtfcyp2/%D7%91-%D7%9C%D7%95%D7%92%D7%95-%D7%9C%D7%91%D7%9F-2.svg",KAN Bet
 https://28563.live.streamtheworld.com/KAN_BET.mp3
-
-#RADIOBROWSERUUID:0f0442d1-c903-4967-a961-bde7b475d083
-#EXTINF:1,Kan Bet 64K
-https://n-121-4.il.cdn-redge.media/livehls/oil/kancdn-live/live/radio/kan_reshet_bet/live.livx/playlist.m3u8?bitrate=64000&audioId=1&lang=pol&renditions
-
-#RADIOBROWSERUUID:e8c19fc3-7409-4999-a9dd-b3d81cf934ed
-#EXTINF:1,KAN Gimel כאן גימל
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-e8c19fc3-7409-4999-a9dd-b3d81cf934ed",KAN Gimel
 https://27873.live.streamtheworld.com/KAN_GIMMEL.mp3
-
-#RADIOBROWSERUUID:7ded7fe1-a2b5-4de4-b906-a1a4bd1c3c99
-#EXTINF:1,KAN Kol HaMusica כאן קול המוזיקה
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-7ded7fe1-a2b5-4de4-b906-a1a4bd1c3c99",KAN Kol HaMusica
 https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_KOL_HAMUSICA.mp3
-
-#RADIOBROWSERUUID:4bb9a454-1028-40c0-a302-4980377178bf
-#EXTINF:1,KAN TARBUT
-https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_TARBUT.mp3?dist=tunein
-
-#RADIOBROWSERUUID:5f9d9e6b-20ff-4901-98bc-fd42bcbee477
-#EXTINF:1,Kan Tarbut
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-5f9d9e6b-20ff-4901-98bc-fd42bcbee477",KAN Tarbut
 https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_TARBUT.mp3?dist
-
-#RADIOBROWSERUUID:5b7a953b-98a6-4823-a9f9-3ad52aa2ed88
-#EXTINF:1,Kcm FM Channel 01 Live
-https://media2.93fm.co.il/livemusic
-
-#RADIOBROWSERUUID:c7d74330-9ead-467e-8f33-0ed78d26917d
-#EXTINF:1,KHZ - רדיו קול הצפון
-https://live.ecast.co.il/stream/khz
-
-#RADIOBROWSERUUID:ed1d2969-5c0e-4575-a0ac-dd76b29c9ddd
-#EXTINF:1,kol hai
-https://live.kcm.fm/livemusic
-
-#RADIOBROWSERUUID:b83ca2b1-4674-4944-9110-35c41fe25d70
-#EXTINF:1,Kol Rega קול רגע 91.5/96
-https://cdn.cybercdn.live/Kol_Rega/Live_Audio/icecast.audio
-
-#RADIOBROWSERUUID:f520dfc7-dd5d-4c0e-a62f-9ab411e28b8b
-#EXTINF:1,kzradio
-https://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
-
-#RADIOBROWSERUUID:abfcd777-432c-4c66-b622-d8582080e743
-#EXTINF:1,Mizrahit FM Best
-http://rs.mizrahit.fm:7777/arabellavie
-
-#RADIOBROWSERUUID:d55bf952-b767-426e-9376-e932f169f36e
-#EXTINF:1,Mizrahit_Fm
-http://rs.mizrahit.fm:7777/arabellavie
-
-#RADIOBROWSERUUID:7b7b87ce-eeab-439a-91aa-7e37597a0ed0
-#EXTINF:1,Music-ToraVeZimra
-https://cast.breslevforyou.co.il/listen/music-toravezimra/radio.mp3
-
-#RADIOBROWSERUUID:a46e3a39-40cc-441f-b9f6-9fbaecaa4de3
-#EXTINF:1,Nachman
-https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
-
-#RADIOBROWSERUUID:692ae6f6-a6bd-4b69-991c-818a674b0e20
-#EXTINF:1,Radio 100% 90s
-https://gb25.streamgates.net/radios-audio/10090s/icecast.audio
-
-#RADIOBROWSERUUID:f522ee54-34f3-49fd-91c3-5498273f205b
-#EXTINF:1,Radio 100% Latina
-https://gb25.streamgates.net/radios-audio/100Latin/icecast.audio
-
-#RADIOBROWSERUUID:91935dcb-e4fb-49fc-81d9-8b8f8e2549d5
-#EXTINF:1,Radio 103FM
-https://cdn.cybercdn.live/103FM/Live/icecast.audio
-
-#RADIOBROWSERUUID:9443edb8-3a88-463d-9e61-b88de4727a4d
-#EXTINF:1,Radio 90FM
-https://cdn.cybercdn.live/Emtza_Haderech/Live_Audio/icecast.audio
-
-#RADIOBROWSERUUID:91929581-befa-4f52-bb5b-07cb376906d5
-#EXTINF:1,radio darom 95.8fm 97fm
-https://cdn.cybercdn.live/Darom_97FM/Live/icecast.audio
-
-#RADIOBROWSERUUID:353e22a8-1026-4b8e-bef4-5b94b91f049d
-#EXTINF:1,Radio France Israël
-https://stream10.vestaradio.com/Radio-France-Israel
-
-#RADIOBROWSERUUID:4a3e0c55-774e-47db-929b-e8841d38a871
-#EXTINF:1,Radio Haifa רדיו חיפה
-https://1075.livecdn.biz/radiohaifa
-
-#RADIOBROWSERUUID:40bbb648-fa7b-469b-86bc-153f6b4aec54
-#EXTINF:1,radio lev hamedina
-https://cdn.cybercdn.live/Lev_Hamedina/Audio/icecast.audio
-
-#RADIOBROWSERUUID:241af301-da67-417b-8267-f38177100b6d
-#EXTINF:1,Radio Lev Hamedina
-http://91fm.streamgates.net/Lev91Fm
-
-#RADIOBROWSERUUID:03a782b9-13b8-462a-9da5-0a19a7f44a0f
-#EXTINF:1,Radio Love Soft Romantic
-https://liveradio.co.il:9000/stream
-
-#RADIOBROWSERUUID:508a19e3-3d7b-4b0c-9d75-cb7c228522b0
-#EXTINF:1,Radio Nahariya
-https://cast.radionahariya.com:8443/main.mp3
-
-#RADIOBROWSERUUID:12bdb972-b398-4b3b-b7bd-c960ee884b78
-#EXTINF:1,Radio Nas
-https://cdna.streamgates.net/RadioNas/Live-Audio/icecast.audio
-
-#RADIOBROWSERUUID:66ddc564-98ec-4901-a9e7-91fc2e64fcaa
-#EXTINF:1,Radio Qualita
-https://www.radioking.com/play/radio-qualita
-
-#RADIOBROWSERUUID:e1be6105-91ef-4190-80ec-f93928837323
-#EXTINF:1,Radio Sahar
-https://live.ecast.co.il/stream/sahar/stream
-
-#RADIOBROWSERUUID:b5b9d7ed-2c9f-4f8a-98ac-440631f2b100
-#EXTINF:1,Radio Sahar
-https://live.ecast.co.il/stream/sahar/stream
-
-#RADIOBROWSERUUID:37e8f5fa-23b1-4e8f-ba02-5323e5ead172
-#EXTINF:1,Radio Yasoo
-http://radio-yasoo.ath.cx:7500/;
-
-#RADIOBROWSERUUID:e35759c0-9e8f-422d-8da4-46d032c64e4e
-#EXTINF:1,RadioPlus
-http://s3.yesstreaming.net:7049/stream
-
-#RADIOBROWSERUUID:962f863e-0601-11e8-ae97-52543be04c81
-#EXTINF:1,Radios 100FM
-http://gb25.streamgates.net/radios-audio/100Workout/icecast.audio
-
-#RADIOBROWSERUUID:5ae9af57-5254-44c7-8632-8d638468ca38
-#EXTINF:1,Radios 100FM   רדיוס
-https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio
-
-#RADIOBROWSERUUID:e24a4c7d-c489-413b-a337-60a6c252444f
-#EXTINF:1,Radios 100FM - 100% 80s
-http://gb25.streamgates.net/radios-audio/10080s/icecast.audio
-
-#RADIOBROWSERUUID:beea8de9-e9cf-4453-bd00-28808b7358c1
-#EXTINF:1,Radios 100FM - 100% Blues
-https://gb25.streamgates.net/radios-audio/100Blues/playlist.m3u8
-
-#RADIOBROWSERUUID:a67789d0-acdd-406f-9c9b-9a7be43acd27
-#EXTINF:1,Radios 100FM - 100% Britpop
-https://gb25.streamgates.net/radios-audio/100Britpop/playlist.m3u8
-
-#RADIOBROWSERUUID:9c168cf3-7035-4c16-b1dc-5c9c4f75e692
-#EXTINF:1,Radios 100FM - 100% Chillout
-https://gb25.streamgates.net/radios-audio/100Chillout/playlist.m3u8
-
-#RADIOBROWSERUUID:1858bca2-f8bc-4322-9e66-4dc011d9d2d1
-#EXTINF:1,Radios 100FM - 100% Classic
-https://gb25.streamgates.net/radios-audio/100Classic/playlist.m3u8
-
-#RADIOBROWSERUUID:1ea694eb-6bf3-4978-9878-5b444c65647d
-#EXTINF:1,Radios 100FM - 100% Classic Rock
-https://gb25.streamgates.net/radios-audio/100ClassicRock/playlist.m3u8
-
-#RADIOBROWSERUUID:b483dae4-b4fd-4381-af9a-d175522a0369
-#EXTINF:1,Radios 100FM - 100% Club
-https://gb25.streamgates.net/radios-audio/100Club/icecast.audio
-
-#RADIOBROWSERUUID:34407a8b-65b1-4b1e-9eb9-8fa2a4c14e08
-#EXTINF:1,Radios 100FM - 100% Country
-https://gb25.streamgates.net/radios-audio/100Country/playlist.m3u8
-
-#RADIOBROWSERUUID:263e7078-2beb-4bdb-8a46-17dbeb08bab2
-#EXTINF:1,Radios 100FM - 100% Covers
-https://gb25.streamgates.net/radios-audio/100Covers/playlist.m3u8
-
-#RADIOBROWSERUUID:f847233b-97c2-408a-a118-9304621bda96
-#EXTINF:1,Radios 100FM - 100% Disney
-https://gb25.streamgates.net/radios-audio/100Disney/icecast.audio
-
-#RADIOBROWSERUUID:1ae5b25f-1302-4620-a512-0291da6c268d
-#EXTINF:1,Radios 100FM - 100% Eurovision
-https://gb25.streamgates.net/radios-audio/100Special/playlist.m3u8
-
-#RADIOBROWSERUUID:7ac3b647-d224-4ca4-a287-3d47821bde7b
-#EXTINF:1,Radios 100FM - 100% Gamer
-https://gb25.streamgates.net/radios-audio/100Gamer/icecast.audio
-
-#RADIOBROWSERUUID:daaa91cd-d383-4c37-940b-bee1325dd2f6
-#EXTINF:1,Radios 100FM - 100% Hits
-https://gb25.streamgates.net/radios-audio/100Hits/playlist.m3u8
-
-#RADIOBROWSERUUID:029c330c-922e-421c-a321-5031c82c355b
-#EXTINF:1,Radios 100FM - 100% Jazz
-https://gb25.streamgates.net/radios-audio/100Jazz/icecast.audio
-
-#RADIOBROWSERUUID:74aeee22-8186-4e4f-b1d7-36b635dad886
-#EXTINF:1,Radios 100FM - 100% K-pop
-https://gb25.streamgates.net/radios-audio/100kpop/icecast.audio
-
-#RADIOBROWSERUUID:feea8677-9402-4b43-af6f-adc7ee682342
-#EXTINF:1,Radios 100FM - 100% Kids
-https://gb25.streamgates.net/radios-audio/100Kids/icecast.audio
-
-#RADIOBROWSERUUID:87c879a3-fa7b-4dbc-8f27-b3ae7d770ef0
-#EXTINF:1,Radios 100FM - 100% Latin
-https://gb25.streamgates.net/radios-audio/100Latin/playlist.m3u8
-
-#RADIOBROWSERUUID:99d7bfb6-1220-4488-a614-b2ebeffdc9f6
-#EXTINF:1,Radios 100FM - 100% Legends
-https://gb25.streamgates.net/radios-audio/100Legends/playlist.m3u8
-
-#RADIOBROWSERUUID:afb162fd-98c6-41a9-a12c-2a3366439506
-#EXTINF:1,Radios 100FM - 100% Love
-https://gb25.streamgates.net/radios-audio/100Love/playlist.m3u8
-
-#RADIOBROWSERUUID:b07e5a4b-6bcf-4f15-a4f2-7bb98b96c1e5
-#EXTINF:1,Radios 100FM - 100% Mizrachit (מזרחי)
-https://gb25.streamgates.net/radios-audio/100Mizrachit/icecast.audio
-
-#RADIOBROWSERUUID:76130e40-61d6-472b-bcc4-bad64a539a3d
-#EXTINF:1,Radios 100FM - 100% Movies
-https://gb25.streamgates.net/radios-audio/100Movies/playlist.m3u8
-
-#RADIOBROWSERUUID:186c4d9b-28bc-4b95-b4ba-b342752dc7f5
-#EXTINF:1,Radios 100FM - 100% Nostalgia
-https://gb25.streamgates.net/radios-audio/100Nostalgia/playlist.m3u8
-
-#RADIOBROWSERUUID:f4318e61-7d93-4d94-9de3-c7f93f73e585
-#EXTINF:1,Radios 100FM - 100% Oldies
-http://gb25.streamgates.net/radios-audio/100Oldies/icecast.audio
-
-#RADIOBROWSERUUID:80f92cbc-ebc7-4325-ba5e-0803bcbf5c02
-#EXTINF:1,Radios 100FM - 100% Relax
-https://gb25.streamgates.net/radios-audio/100Relax/icecast.audio
-
-#RADIOBROWSERUUID:5bc37db7-b7a8-4b25-ac10-e671169ed5de
-#EXTINF:1,Radios 100FM - 100% Retro
-https://gb25.streamgates.net/radios-audio/100Retro/icecast.audio
-
-#RADIOBROWSERUUID:2f278549-4fb8-4d0d-8c85-f9243c35b119
-#EXTINF:1,Radios 100FM - 100% Rock
-https://gb25.streamgates.net/radios-audio/100Rock/playlist.m3u8
-
-#RADIOBROWSERUUID:1d81506a-fcd3-46a6-a14e-b3656c3736e0
-#EXTINF:1,Radios 100FM - 100% Selfie
-https://gb25.streamgates.net/radios-audio/100Selfie/playlist.m3u8
-
-#RADIOBROWSERUUID:ecd6c262-3ebf-40e8-9388-7e03e6a7330b
-#EXTINF:1,Radios 100FM - 100% StandUp
-https://gb25.streamgates.net/radios-audio/100StandUp/icecast.audio
-
-#RADIOBROWSERUUID:85b06d10-6007-4891-af95-51e00448e0af
-#EXTINF:1,Radios 100FM - 100% Stars (ערוץ הכוכבים)
-https://gb25.streamgates.net/radios-audio/100Stars/icecast.audio
-
-#RADIOBROWSERUUID:68ada8ff-e09b-4c6e-ad48-cdd009d97c70
-#EXTINF:1,Radios 100FM - 100% Tiktok
-https://gb25.streamgates.net/radios-audio/100Tiktok/icecast.audio
-
-#RADIOBROWSERUUID:0c071206-7e91-46f2-8f2e-0bac6d8afcfa
-#EXTINF:1,Radios 100FM - 100% Top40
-https://gb25.streamgates.net/radios-audio/100Top40/icecast.audio
-
-#RADIOBROWSERUUID:c01d6ea8-e039-4973-8971-19419be39b0d
-#EXTINF:1,Radios 100FM - 100% Workout
-https://gb25.streamgates.net/radios-audio/100Workout/playlist.m3u8
-
-#RADIOBROWSERUUID:73a1c99b-67b4-49d0-b7df-7493dcc31873
-#EXTINF:1,Radios 100FM - 100% World Music
-https://gb25.streamgates.net/radios-audio/100World/playlist.m3u8
-
-#RADIOBROWSERUUID:5f6f5879-d17d-4245-95e7-7594ff65ed4a
-#EXTINF:1,Radios 100FM - 100% Yehudi (יהודי)
-https://gb25.streamgates.net/radios-audio/100yehudi/playlist.m3u8
-
-#RADIOBROWSERUUID:d60c0b3d-d41e-46c1-9bdd-593bd811881b
-#EXTINF:1,Radios Nostalgia 96.3FM (רדיוס נוסטלגי)
-https://cdna.streamgates.net/radios-audio/Nostalgia_963fm/icecast.audio
-
-#RADIOBROWSERUUID:d81cba95-90cb-493c-b921-133ab74daa0f
-#EXTINF:1,Rak Musica
-https://play.radioking.io/rak-musica/670240
-
-#RADIOBROWSERUUID:00355ea7-ab3b-4789-bc03-ebe0107015bf
-#EXTINF:1,Star 33 Radiostation
-https://online.star33radio.com:1115/stream
-
-#RADIOBROWSERUUID:08993f63-44f2-4fa0-8541-99194d5fd838
-#EXTINF:1,Tel Aviv 102FM רדיו תל אביב
-https://102.livecdn.biz/102fm_aac
-
-#RADIOBROWSERUUID:6cc6a49d-6169-4e68-838b-161731a9f1ec
-#EXTINF:1,TIMBR Radio
-https://radio.betteradio.live/listen/better_radio/live
-
-#RADIOBROWSERUUID:3a752591-4cc0-4949-bd5d-2fb2b1935cd3
-#EXTINF:1,toker
-https://live.toker.fm:6060/
-
-#RADIOBROWSERUUID:0285cac9-9f41-4a51-82ad-0ef6695f533a
-#EXTINF:1,toker fm
-https://live.toker.fm:6060/
-
-#RADIOBROWSERUUID:c0929697-50c6-4865-bc14-58e1a48ea20c
-#EXTINF:1,Up2Dance Radio
-https://icecast.live/up2dance
-
-#RADIOBROWSERUUID:c0c35a84-b5f4-4783-b27e-ab348c3f7e42
-#EXTINF:1,yStream
-https://ystream.live/ystream-mp3
-
-#RADIOBROWSERUUID:e77ab056-eda4-4438-8e0f-6e8522e75343
-#EXTINF:1,Ze Rock Radio
-https://icecast.live/proxy/zerock/zerock
-
-#RADIOBROWSERUUID:5597e254-6357-4e57-bf73-6320b5952258
-#EXTINF:1,Мессианское онлайн радио Орэну
-https://listen7.myradio24.com/orenu
-
-#RADIOBROWSERUUID:23f2df70-a018-4aa0-a1f6-3fb497cf9d53
-#EXTINF:1,Мессианское радио Орэну
-https://listen7.myradio24.com/orenu
-
-#RADIOBROWSERUUID:1e95d61c-88ad-4d59-82b4-f512c2a45aa6
-#EXTINF:1,Первое радио 89.1FM
-https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio
-
-#RADIOBROWSERUUID:63d80255-3707-4c84-a4de-3da487c5f2bf
-#EXTINF:1,אקו eco 99fm
-http://99.mediacast.co.il/99fm_aac?hash=1559501510715.m4a
-
-#RADIOBROWSERUUID:1ac65585-0443-4f95-8d67-f232ec5915a2
-#EXTINF:1,ברסלב פוריו: דעת רבנו
-https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
-
-#RADIOBROWSERUUID:29632b43-283d-4156-8210-596b439c554c
-#EXTINF:1,ברסלב פוריו: הלכות ודף יומי
-https://cast.breslevforyou.co.il/listen/halachot/radio.mp3
-
-#RADIOBROWSERUUID:567c0d2b-e276-4db4-b4e1-0b0904c3d491
-#EXTINF:1,ברסלב פוריו: ספרי ברסלב
-https://cast.breslevforyou.co.il/listen/books/radio.mp3
-
-#RADIOBROWSERUUID:25d7d098-ff20-4568-ad8a-c8e23e2ac18a
-#EXTINF:1,ברסלב פוריו: קצר וקולע
-https://cast.breslevforyou.co.il/listen/shorts/radio.mp3
-
-#RADIOBROWSERUUID:38c81bbc-f8c3-4447-ae0e-ff8880017e04
-#EXTINF:1,ברסלב פוריו: תורה וזימרה
-https://cast.breslevforyou.co.il/listen/music-toravezimra/radio.mp3
-
-#RADIOBROWSERUUID:fc22f9c5-efa0-4099-9e37-c1d3448c25ce
-#EXTINF:1,גלגלצ - Glglz
-http://glzwizzlv.bynetcdn.com/glglz_mp3
-
-#RADIOBROWSERUUID:e616624f-4df0-4a84-abb9-1f176e2b4ff8
-#EXTINF:1,גלגלצ עשורים
-https://glzwizzlv.bynetcdn.com/glglz_alt_mp3
-
-#RADIOBROWSERUUID:c7a3001d-f31b-4f7a-90fe-ea4b689150e9
-#EXTINF:1,גלי ישראל Galey Yisrael
-https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio
-
-#RADIOBROWSERUUID:1fb7e37b-a0cb-4c70-a386-0b002de3bafe
-#EXTINF:1,גלי צה"ל
-http://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz
-
-#RADIOBROWSERUUID:fbf80cc4-281b-4f39-9973-75486a6d54e6
-#EXTINF:1,גלצ
-https://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz
-
-#RADIOBROWSERUUID:fe82bb92-ccd6-4180-9c0e-44e847ac912f
-#EXTINF:1,גלצ
-http://glzwizzlv.bynetcdn.com/glz_mp3?awCollectionId=misc&awEpisodeId=glz
-
-#RADIOBROWSERUUID:80d7414f-1ff8-4c1a-b081-6888a7bcf564
-#EXTINF:1,הקצה - Hakatze
-http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
-
-#RADIOBROWSERUUID:20818139-130d-4179-abba-a8020933ab19
-#EXTINF:1,כאן רקע Kan Reka
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-20818139-130d-4179-abba-a8020933ab19",KAN Reka
 https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_reka/live.livx/playlist.m3u8?renditions
-
-#RADIOBROWSERUUID:60f56ca4-3e39-45a6-ad94-cee362330fd5
-#EXTINF:1,נושמים מזרחית - Noshmim Mizrahit
-http://www.rs.mizrahit.fm:7777/
-
-#RADIOBROWSERUUID:8c009e29-7a57-4695-9bd7-7ed39b5dd470
-#EXTINF:1,קבלה לעם אנגלית - Kabbalah eng
-http://icecast.kab.tv/live1-eng-574bcfd5.mp3
-
-#RADIOBROWSERUUID:268e07ee-b1b5-4604-9b13-53c6e167abad
-#EXTINF:1,קבלה לעם עברית - Kabbalah heb
-http://icecast.kab.tv/live1-heb-574bcfd5.mp3
-
-#RADIOBROWSERUUID:7be389c9-5e57-46ec-a607-c8dbb04b0f4e
-#EXTINF:1,קבלה לעם צרפתית - Kabbalah fre
-http://icecast.kab.tv/live1-fre-574bcfd5.mp3
-
-#RADIOBROWSERUUID:b0bb7dd9-f47a-4da3-9546-ad7fb54c19ca
-#EXTINF:1,קבלה לעם רוסית - Kabbalah rus
-http://icecast.kab.tv/live1-rus-574bcfd5.mp3
-
-#RADIOBROWSERUUID:92abc8dc-8af4-495e-824d-36f89f7ebd57
-#EXTINF:1,קול ברמה - Kol Barama
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-91935dcb-e4fb-49fc-81d9-8b8f8e2549d5" tvg-logo="http://cdn-profiles.tunein.com/s14201/images/logog.png",103FM
+https://cdn.cybercdn.live/103FM/Live/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-5357dc24-46cc-4671-9b55-26b811820c6c" tvg-logo="https://www.radio.net/images/broadcasts/39/23/20612/1/c300.png",Eco 99FM
+https://eco-live.mediacast.co.il/99fm_aac
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-962f863e-0601-11e8-ae97-52543be04c81" tvg-logo="https://digital.100fm.co.il/logo192.png",Radios 100FM
+http://gb25.streamgates.net/radios-audio/100Workout/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-4a3e0c55-774e-47db-929b-e8841d38a871",Radio Haifa
+https://1075.livecdn.biz/radiohaifa
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-e673a4df-e224-4787-a8ec-52c391992bb6" tvg-logo="https://1015.radiodarom.co.il/Upload/Media/RadioStationLogo/radioStation_6_Logo_27072021180024.png",Radio Darom
+https://cdn.cybercdn.live/Darom_1015FM/Live/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-51342243-d0eb-4265-b2b4-7d5c7c836f1a" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/zdB75EspkE93lzmOQQDmaI8tmOGtVzW2xzsuaqdU.jpg",Radio Jerusalem 101FM
+https://radio.streamgates.net/stream/101fm
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-c7a3001d-f31b-4f7a-90fe-ea4b689150e9",Galei Israel
+https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-b83ca2b1-4674-4944-9110-35c41fe25d70" tvg-logo="https://96fm.co.il/wp-content/uploads/2022/10/cropped-Logo-192x192.png",Kol Rega
+https://cdn.cybercdn.live/Kol_Rega/Live_Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-a757be45-799e-40b4-a23e-ee57ac55512b",Kol Chai
+https://media2.93fm.co.il/live-new
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-92abc8dc-8af4-495e-824d-36f89f7ebd57" tvg-logo="https://kol-barama.co.il/wp-content/themes/qs-starter/images/favicon/apple-touch-icon-120x120.png",Kol Barama
 http://kb.cdnwz.net/kol_barama
-
-#RADIOBROWSERUUID:e13d3c86-a635-436d-96a8-cde0fe08a4d0
-#EXTINF:1,קול השפלה - Kol Hashfela
-http://1036kh.cdnwz.net/1036kh
-
-#RADIOBROWSERUUID:a757be45-799e-40b4-a23e-ee57ac55512b
-#EXTINF:1,קול חי - Kol Chai
-https://media2.93fm.co.il/live-new
-
-#RADIOBROWSERUUID:22cb6f71-ca0e-4f53-9093-c4760e646d2d
-#EXTINF:1,קול חי - Kol Chai
-https://media2.93fm.co.il/live-new
-
-#RADIOBROWSERUUID:7390f369-9957-4ec2-bd83-cb28bac23302
-#EXTINF:1,קול חי מיוזיק - Kol Chai Music
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-40bbb648-fa7b-469b-86bc-153f6b4aec54" tvg-logo="https://www.xoox.co.il/service/radio/img/radio_m14.jpg",Radio Lev HaMedina
+https://cdn.cybercdn.live/Lev_Hamedina/Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-9443edb8-3a88-463d-9e61-b88de4727a4d" tvg-logo="https://www.90fm.co.il/resource/images/logo.png",Radio 90FM
+https://cdn.cybercdn.live/Emtza_Haderech/Live_Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-0324180d-596a-4b6b-a486-67e606e23d36" tvg-logo="https://www.jointil.com/broadcast/images/joint.radio350X350.png",#joint radio Beat Trance
+https://jointil.com/stream-beat
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-13d86ff8-058f-44e6-ba21-ccd065fb5dca" tvg-logo="https://www.jointil.com/broadcast/images/joint.radio350X350.png",#joint radio Blues Rock
+https://jointil.com/stream-blues
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-9684cbbc-ea62-422c-bc93-20cf4ed4bac1" tvg-logo="https://www.jointil.com/broadcast/images/joint.radio350X350.png",#joint radio Reggae
+https://jointil.com/stream-reggae
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-7cee6800-7c93-497f-9c9d-7efc55756757",#Radio CS
+https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2g
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-bf1cebbf-a58d-41a4-95f2-8abd5e50f6bf",.assalam
+https://backup.qurango.net/radio/ahmad_khader_altarabulsi
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-49aa910d-859e-4f2b-a1ca-04f163de07bb",100fm - 100% Movies
+http://gb25.streamgates.net/radios-audio/100Movies/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b42c9d1b-22c2-41a0-b13c-207a8c92f982" tvg-logo="https://www.hatahana.co.il/wp-content/uploads/2023/03/logo.png",101.5fm רדיו התחנה
+https://cdn.cybercdn.live/Hatahana_1015/Live_Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-8cca0e0b-ccd9-416e-89cc-325ecc325f69" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/idOPKeykio01mD3JccdAJwveMAqfDOGsKgiJ43SN.jpeg",104.5fm radio זשכםמ
+https://radio.streamgates.net/stream/1045fm
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1a524655-ad7a-454b-ac8d-855188b740a3" tvg-logo="https://u.jimcdn.com/cms/o/se2cdc31361e4fa6c/img/favicon.png?t=1401133514",AVIVmedia
+http://176.9.7.145:8127/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-73c94920-e308-48f4-962e-f67abf8af331" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Glglz - Rock
+https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-abfcd777-432c-4c66-b622-d8582080e743" tvg-logo="https://mizrahit.fm/wp-content/uploads/2020/04/diki-logo-official-e1734684643817-700x525.jpg",Mizrahit FM Best
+http://rs.mizrahit.fm:7777/arabellavie
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-692ae6f6-a6bd-4b69-991c-818a674b0e20",Radio 100% 90s
+https://gb25.streamgates.net/radios-audio/10090s/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-f522ee54-34f3-49fd-91c3-5498273f205b",Radio 100% Latina
+https://gb25.streamgates.net/radios-audio/100Latin/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b5b9d7ed-2c9f-4f8a-98ac-440631f2b100" tvg-logo="https://radiosahar.co.il/images/logo.png",Radio Sahar
+https://live.ecast.co.il/stream/sahar/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-37e8f5fa-23b1-4e8f-ba02-5323e5ead172" tvg-logo="https://www.radio-yasoo.com/index.files/image009.jpg",Radio Yasoo
+http://radio-yasoo.ath.cx:7500/;
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-beea8de9-e9cf-4453-bd00-28808b7358c1" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-blues.png",Radios 100FM - 100% Blues
+https://gb25.streamgates.net/radios-audio/100Blues/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-a67789d0-acdd-406f-9c9b-9a7be43acd27" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-britpop.png",Radios 100FM - 100% Britpop
+https://gb25.streamgates.net/radios-audio/100Britpop/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-9c168cf3-7035-4c16-b1dc-5c9c4f75e692" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-chillout.png",Radios 100FM - 100% Chillout
+https://gb25.streamgates.net/radios-audio/100Chillout/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1858bca2-f8bc-4322-9e66-4dc011d9d2d1" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-classic.png",Radios 100FM - 100% Classic
+https://gb25.streamgates.net/radios-audio/100Classic/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1ea694eb-6bf3-4978-9878-5b444c65647d" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-classicrock.png",Radios 100FM - 100% Classic Rock
+https://gb25.streamgates.net/radios-audio/100ClassicRock/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-34407a8b-65b1-4b1e-9eb9-8fa2a4c14e08" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-country.png",Radios 100FM - 100% Country
+https://gb25.streamgates.net/radios-audio/100Country/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-daaa91cd-d383-4c37-940b-bee1325dd2f6" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-hits.png",Radios 100FM - 100% Hits
+https://gb25.streamgates.net/radios-audio/100Hits/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-029c330c-922e-421c-a321-5031c82c355b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-jazz.png",Radios 100FM - 100% Jazz
+https://gb25.streamgates.net/radios-audio/100Jazz/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-74aeee22-8186-4e4f-b1d7-36b635dad886" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-kpop.png",Radios 100FM - 100% K-pop
+https://gb25.streamgates.net/radios-audio/100kpop/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-87c879a3-fa7b-4dbc-8f27-b3ae7d770ef0" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-latin.png",Radios 100FM - 100% Latin
+https://gb25.streamgates.net/radios-audio/100Latin/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b07e5a4b-6bcf-4f15-a4f2-7bb98b96c1e5" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-mizrachit.png",Radios 100FM - 100% Mizrachit (מזרחי)
+https://gb25.streamgates.net/radios-audio/100Mizrachit/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-f4318e61-7d93-4d94-9de3-c7f93f73e585" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-oldies.png",Radios 100FM - 100% Oldies
+http://gb25.streamgates.net/radios-audio/100Oldies/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-5bc37db7-b7a8-4b25-ac10-e671169ed5de" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-retro.png",Radios 100FM - 100% Retro
+https://gb25.streamgates.net/radios-audio/100Retro/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-2f278549-4fb8-4d0d-8c85-f9243c35b119" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-rock.png",Radios 100FM - 100% Rock
+https://gb25.streamgates.net/radios-audio/100Rock/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-73a1c99b-67b4-49d0-b7df-7493dcc31873" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-world.png",Radios 100FM - 100% World Music
+https://gb25.streamgates.net/radios-audio/100World/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-d81cba95-90cb-493c-b921-133ab74daa0f" tvg-logo="https://rak-musica.webnode.be/",Rak Musica
+https://play.radioking.io/rak-musica/670240
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0929697-50c6-4865-bc14-58e1a48ea20c" tvg-logo="https://up2dance.com/wp-content/uploads/2021/01/Up2Dance-Radio-01-01-768x742.png",Up2Dance Radio
+https://icecast.live/up2dance
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0c35a84-b5f4-4783-b27e-ab348c3f7e42" tvg-logo="https://ystream.live/assets/img/icon-512.png",yStream
+https://ystream.live/ystream-mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e77ab056-eda4-4438-8e0f-6e8522e75343" tvg-logo="https://zerockradio.com/favicon.ico",Ze Rock Radio
+https://icecast.live/proxy/zerock/zerock
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1e95d61c-88ad-4d59-82b4-f512c2a45aa6" tvg-logo="https://dyjvnjd6yl5jx.cloudfront.net/wp-content/uploads/2020/11/d0bbd0bed0b3d0be-d0bdd0bed0b2d18bd0b9-d0bcd0b0d0bbd18bd0b9.png",Первое радио 89.1FM
+https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-60f56ca4-3e39-45a6-ad94-cee362330fd5" tvg-logo="https://www.mizrahit.fm/wp-content/uploads/2014/03/favicon.png",נושמים מזרחית - Noshmim Mizrahit
+http://www.rs.mizrahit.fm:7777/
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-6698d366-17a6-4969-a28e-185c8dc1f91b" tvg-logo="https://kcm.fm/favicon.ico",קול חי מיוזיק - Kol Chai Music
 https://media2.93fm.co.il/livemusic
-
-#RADIOBROWSERUUID:1b9eafe1-e6e2-4e9a-8f64-281b6ae31665
-#EXTINF:1,קול חי מיוזיק - Kol Chai Music
-https://media2.93fm.co.il/livemusic
-
-#RADIOBROWSERUUID:9077fcb2-fbac-4d22-910f-378f5ae12dac
-#EXTINF:1,קול חי מיוזיק - Kol Chai Music
-https://media2.93fm.co.il/livemusic
-
-#RADIOBROWSERUUID:6698d366-17a6-4969-a28e-185c8dc1f91b
-#EXTINF:1,קול חי מיוזיק - Kol Chai Music
-https://media2.93fm.co.il/livemusic
-
-#RADIOBROWSERUUID:712c3a1d-8387-4cf1-b354-4be74b153ee0
-#EXTINF:1,קול פליי | kol-play
-https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
-
-#RADIOBROWSERUUID:8173aae8-4df9-4eb9-903c-6bdd6300003f
-#EXTINF:1,רדיו תל אביב 102 FM
-https://102.livecdn.biz/102fm_aac
-
-#RADIOBROWSERUUID:82333dc7-7622-4cf1-a8d8-2068e0b79ec9
-#EXTINF:1,תל אביב Tel Aviv 102FM
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9" tvg-logo="http://102fm.co.il/favicon.ico",תל אביב Tel Aviv 102FM
 http://102.livecdn.biz/102fm_aac
-
-#RADIOBROWSERUUID:c4b67d8b-217b-450c-b28c-364510e47a11
-#EXTINF:1,إذاعة الصلاة | Prayer Radio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-f30e4028-6047-4cb3-ad6a-9073a89ef74f" tvg-logo="https://radio.sandrokob.com/icon-512.png",????? ?????? | Prayer Radio
 https://radio.sandrokob.com/stream
-
-#RADIOBROWSERUUID:3b20727f-de34-40b3-84ba-f7ba1ed9821b
-#EXTINF:1,اذاعة الشمس - A-Shams
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-006ffcf8-e541-11e8-a9cc-52543be04c81" tvg-logo="https://jewishmusicstream.com/favicon.ico",Jewish Music Stream
+https://stream.jewishmusicstream.com:8000/
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-fe0b12d8-2953-11e9-a80b-52543be04c81",Kabbalah Fr
+http://icecast.kab.tv/live1-spa-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-5f6f5879-d17d-4245-95e7-7594ff65ed4a" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-yehudi.png",Radios 100FM - 100% Yehudi (יהודי)
+https://gb25.streamgates.net/radios-audio/100yehudi/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-3a752591-4cc0-4949-bd5d-2fb2b1935cd3",toker
+https://live.toker.fm:6060/
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-29632b43-283d-4156-8210-596b439c554c" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: הלכות ודף יומי
+https://cast.breslevforyou.co.il/listen/halachot/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-567c0d2b-e276-4db4-b4e1-0b0904c3d491" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: ספרי ברסלב
+https://cast.breslevforyou.co.il/listen/books/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-25d7d098-ff20-4568-ad8a-c8e23e2ac18a" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: קצר וקולע
+https://cast.breslevforyou.co.il/listen/shorts/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-38c81bbc-f8c3-4447-ae0e-ff8880017e04" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: תורה וזימרה
+https://cast.breslevforyou.co.il/listen/music-toravezimra/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-8c009e29-7a57-4695-9bd7-7ed39b5dd470" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם אנגלית - Kabbalah eng
+http://icecast.kab.tv/live1-eng-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-268e07ee-b1b5-4604-9b13-53c6e167abad" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם עברית - Kabbalah heb
+http://icecast.kab.tv/live1-heb-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-7be389c9-5e57-46ec-a607-c8dbb04b0f4e" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם צרפתית - Kabbalah fre
+http://icecast.kab.tv/live1-fre-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-b0bb7dd9-f47a-4da3-9546-ad7fb54c19ca" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם רוסית - Kabbalah rus
+http://icecast.kab.tv/live1-rus-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-4e044620-577e-4622-8114-461d2b1d55bf",Abdulbasit Abdulsamad
+https://radio.mp3islam.com/listen/abdulbasit/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-9687cb4b-6c60-429e-a7f0-28180e746075",AudioVersity
+https://1062onair.runi.ac.il/idc123.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-e7230036-0803-4aea-aa87-938db8b2d4eb",ELI NISMAN
+http://listen6.myradio24.com:9000/25715
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-044e0f59-3df8-42f2-a50b-670b2956e278",Eli Nisman Radio
+https://listen6.myradio24.com/25715
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-396ed271-76d3-4771-8faf-3db7cadb126a" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Glglz - רגוע (סופשבוע)
+https://glzwizzlv.bynetcdn.com/glglz_sofshavua_mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-d902048f-5fcf-445a-9494-77d74dee9e43" tvg-logo="http://www.radio-addict.com/media/stream/0d07fb2e-42a2-437c-a946-640aeb96bbff_A13AAF1D18123B91C6F9ADBDFB904221_IMG_20230327_180423853.jpg",GUITAR - J. WILLIAMS
+http://drive.uber.radio/uber/crjohnwilliamsguitarist/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-2687dea7-8484-4156-ae36-5aa5ca56bc7b",Israeli voice radio
+https://icecast.live/ivr
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-b1a2d866-eeff-427f-9d92-f53b290e16c9",Ivri 6
+https://streaming.radio.co/sa06221901/listen
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-c7d74330-9ead-467e-8f33-0ed78d26917d",KHZ - רדיו קול הצפון
+https://live.ecast.co.il/stream/khz
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-ed1d2969-5c0e-4575-a0ac-dd76b29c9ddd",kol hai
+https://live.kcm.fm/livemusic
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Nachman
+https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-353e22a8-1026-4b8e-bef4-5b94b91f049d" tvg-logo="https://radiofranceisrael.com/uploads/user-music/1811/site-logo/sitelogo_91_1787912087_6825f8.jpg",Radio France Israël
+https://stream10.vestaradio.com/Radio-France-Israel
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-03a782b9-13b8-462a-9da5-0a19a7f44a0f" tvg-logo="https://radiolove.co.il/favicon.ico",Radio Love Soft Romantic
+https://liveradio.co.il:9000/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-508a19e3-3d7b-4b0c-9d75-cb7c228522b0" tvg-logo="https://www.radionahariya.com/assets/icons/apple-touch-icon.png",Radio Nahariya
+https://cast.radionahariya.com:8443/main.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-12bdb972-b398-4b3b-b7bd-c960ee884b78",Radio Nas
+https://cdna.streamgates.net/RadioNas/Live-Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-66ddc564-98ec-4901-a9e7-91fc2e64fcaa" tvg-logo="https://static.wixstatic.com/media/9faaae_a396c0df8aa54320bd31c04ddaab6b3c~mv2.png/v1/fill/w_426,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9faaae_a396c0df8aa54320bd31c04ddaab6b3c~mv2.png",Radio Qualita
+https://www.radioking.com/play/radio-qualita
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-e35759c0-9e8f-422d-8da4-46d032c64e4e",RadioPlus
+http://s3.yesstreaming.net:7049/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-e24a4c7d-c489-413b-a337-60a6c252444f" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-80s.png",Radios 100FM - 100% 80s
+http://gb25.streamgates.net/radios-audio/10080s/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-b483dae4-b4fd-4381-af9a-d175522a0369" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-club.png",Radios 100FM - 100% Club
+https://gb25.streamgates.net/radios-audio/100Club/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-263e7078-2beb-4bdb-8a46-17dbeb08bab2" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-covers.png",Radios 100FM - 100% Covers
+https://gb25.streamgates.net/radios-audio/100Covers/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-f847233b-97c2-408a-a118-9304621bda96" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-disney.png",Radios 100FM - 100% Disney
+https://gb25.streamgates.net/radios-audio/100Disney/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-1ae5b25f-1302-4620-a512-0291da6c268d" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-eurovision.png",Radios 100FM - 100% Eurovision
+https://gb25.streamgates.net/radios-audio/100Special/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-7ac3b647-d224-4ca4-a287-3d47821bde7b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-gamer.png",Radios 100FM - 100% Gamer
+https://gb25.streamgates.net/radios-audio/100Gamer/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-feea8677-9402-4b43-af6f-adc7ee682342" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-kids.png",Radios 100FM - 100% Kids
+https://gb25.streamgates.net/radios-audio/100Kids/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-99d7bfb6-1220-4488-a614-b2ebeffdc9f6" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-legends.png",Radios 100FM - 100% Legends
+https://gb25.streamgates.net/radios-audio/100Legends/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-afb162fd-98c6-41a9-a12c-2a3366439506" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-love.png",Radios 100FM - 100% Love
+https://gb25.streamgates.net/radios-audio/100Love/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-76130e40-61d6-472b-bcc4-bad64a539a3d" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-movies.png",Radios 100FM - 100% Movies
+https://gb25.streamgates.net/radios-audio/100Movies/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-186c4d9b-28bc-4b95-b4ba-b342752dc7f5" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-nostalgia.png",Radios 100FM - 100% Nostalgia
+https://gb25.streamgates.net/radios-audio/100Nostalgia/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-80f92cbc-ebc7-4325-ba5e-0803bcbf5c02" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-relax.png",Radios 100FM - 100% Relax
+https://gb25.streamgates.net/radios-audio/100Relax/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-1d81506a-fcd3-46a6-a14e-b3656c3736e0" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-selfie.png",Radios 100FM - 100% Selfie
+https://gb25.streamgates.net/radios-audio/100Selfie/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-ecd6c262-3ebf-40e8-9388-7e03e6a7330b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-standup.png",Radios 100FM - 100% StandUp
+https://gb25.streamgates.net/radios-audio/100StandUp/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-85b06d10-6007-4891-af95-51e00448e0af" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-stars.png",Radios 100FM - 100% Stars (ערוץ הכוכבים)
+https://gb25.streamgates.net/radios-audio/100Stars/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-68ada8ff-e09b-4c6e-ad48-cdd009d97c70" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-tiktok.png",Radios 100FM - 100% Tiktok
+https://gb25.streamgates.net/radios-audio/100Tiktok/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-0c071206-7e91-46f2-8f2e-0bac6d8afcfa" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-top40.png",Radios 100FM - 100% Top40
+https://gb25.streamgates.net/radios-audio/100Top40/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-c01d6ea8-e039-4973-8971-19419be39b0d" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-workout.png",Radios 100FM - 100% Workout
+https://gb25.streamgates.net/radios-audio/100Workout/playlist.m3u8
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-d60c0b3d-d41e-46c1-9bdd-593bd811881b" tvg-logo="https://www.963fm.co.il/wp-content/uploads/2025/11/cropped-F-270x270.png",Radios Nostalgia 96.3FM (רדיוס נוסטלגי)
+https://cdna.streamgates.net/radios-audio/Nostalgia_963fm/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-00355ea7-ab3b-4789-bc03-ebe0107015bf" tvg-logo="https://drive.google.com/file/d/1jrJxOLRQU3ffbWUt0NNNi9LRlpKYUBF2/view?usp=drive_link",Star 33 Radiostation
+https://online.star33radio.com:1115/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-6cc6a49d-6169-4e68-838b-161731a9f1ec" tvg-logo="https://timbr.music/apple-touch-icon.png",TIMBR Radio
+https://radio.betteradio.live/listen/better_radio/live
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-23f2df70-a018-4aa0-a1f6-3fb497cf9d53" tvg-logo="https://orenu.co.il/wp-content/uploads/2022/02/Radio_Orenu_2022_4.png",Мессианское радио Орэну
+https://listen7.myradio24.com/orenu
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-e616624f-4df0-4a84-abb9-1f176e2b4ff8",גלגלצ עשורים
+https://glzwizzlv.bynetcdn.com/glglz_alt_mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-80d7414f-1ff8-4c1a-b081-6888a7bcf564" tvg-logo="https://www.kzradio.net/wp-content/uploads/2018/11/kzlogo.jpg",הקצה - Hakatze
+http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-e13d3c86-a635-436d-96a8-cde0fe08a4d0" tvg-logo="https://static.wixstatic.com/media/cbf57a_82d58bf0f55940b8b288c481497d43c7~mv2.png/v1/crop/x_54,y_238,w_1861,h_624/fill/w_376,h_124,al_c,q_85,usm_0.66_1.00_0.01/kol.webp",קול השפלה - Kol Hashfela
+http://1036kh.cdnwz.net/1036kh
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-712c3a1d-8387-4cf1-b354-4be74b153ee0" tvg-logo="https://kol-play.co.il/wp-content/themes/kolplay/images/fv-icon.png",קול פליי | kol-play
+https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-3b20727f-de34-40b3-84ba-f7ba1ed9821b" tvg-logo="https://s.ashams.com/static/css/images/logo-header.png",اذاعة الشمس - A-Shams
 https://cdna.streamgates.net/Ashams/Live/icecast.audio
