@@ -148,13 +148,17 @@ https://cdn.cybercdn.live/103FM/Live/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-5357dc24-46cc-4671-9b55-26b811820c6c" tvg-logo="https://www.radio.net/images/broadcasts/39/23/20612/1/c300.png",Eco 99FM
 https://eco-live.mediacast.co.il/99fm_aac
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-962f863e-0601-11e8-ae97-52543be04c81" tvg-logo="https://digital.100fm.co.il/logo192.png",Radios 100FM
-http://gb25.streamgates.net/radios-audio/100Workout/icecast.audio
+https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9" tvg-logo="http://102fm.co.il/favicon.ico",Radio Tel Aviv 102FM
+http://102.livecdn.biz/102fm_aac
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-4a3e0c55-774e-47db-929b-e8841d38a871",Radio Haifa
 https://1075.livecdn.biz/radiohaifa
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-e673a4df-e224-4787-a8ec-52c391992bb6" tvg-logo="https://1015.radiodarom.co.il/Upload/Media/RadioStationLogo/radioStation_6_Logo_27072021180024.png",Radio Darom
 https://cdn.cybercdn.live/Darom_1015FM/Live/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-51342243-d0eb-4265-b2b4-7d5c7c836f1a" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/zdB75EspkE93lzmOQQDmaI8tmOGtVzW2xzsuaqdU.jpg",Radio Jerusalem 101FM
 https://radio.streamgates.net/stream/101fm
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-8cca0e0b-ccd9-416e-89cc-325ecc325f69" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/idOPKeykio01mD3JccdAJwveMAqfDOGsKgiJ43SN.jpeg",Radio North 104.5FM
+https://radio.streamgates.net/stream/1045fm
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-c7a3001d-f31b-4f7a-90fe-ea4b689150e9",Galei Israel
 https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-b83ca2b1-4674-4944-9110-35c41fe25d70" tvg-logo="https://96fm.co.il/wp-content/uploads/2022/10/cropped-Logo-192x192.png",Kol Rega
@@ -181,8 +185,6 @@ https://backup.qurango.net/radio/ahmad_khader_altarabulsi
 http://gb25.streamgates.net/radios-audio/100Movies/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b42c9d1b-22c2-41a0-b13c-207a8c92f982" tvg-logo="https://www.hatahana.co.il/wp-content/uploads/2023/03/logo.png",101.5fm רדיו התחנה
 https://cdn.cybercdn.live/Hatahana_1015/Live_Audio/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-8cca0e0b-ccd9-416e-89cc-325ecc325f69" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/idOPKeykio01mD3JccdAJwveMAqfDOGsKgiJ43SN.jpeg",104.5fm radio זשכםמ
-https://radio.streamgates.net/stream/1045fm
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1a524655-ad7a-454b-ac8d-855188b740a3" tvg-logo="https://u.jimcdn.com/cms/o/se2cdc31361e4fa6c/img/favicon.png?t=1401133514",AVIVmedia
 http://176.9.7.145:8127/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-73c94920-e308-48f4-962e-f67abf8af331" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Glglz - Rock
@@ -241,8 +243,6 @@ https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio
 http://www.rs.mizrahit.fm:7777/
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-6698d366-17a6-4969-a28e-185c8dc1f91b" tvg-logo="https://kcm.fm/favicon.ico",קול חי מיוזיק - Kol Chai Music
 https://media2.93fm.co.il/livemusic
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9" tvg-logo="http://102fm.co.il/favicon.ico",תל אביב Tel Aviv 102FM
-http://102.livecdn.biz/102fm_aac
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-f30e4028-6047-4cb3-ad6a-9073a89ef74f" tvg-logo="https://radio.sandrokob.com/icon-512.png",????? ?????? | Prayer Radio
 https://radio.sandrokob.com/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-006ffcf8-e541-11e8-a9cc-52543be04c81" tvg-logo="https://jewishmusicstream.com/favicon.ico",Jewish Music Stream
