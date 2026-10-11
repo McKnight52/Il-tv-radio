@@ -201,7 +201,7 @@ https://listen6.myradio24.com/25715
 https://glzwizzlv.bynetcdn.com/glglz_alt_mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-396ed271-76d3-4771-8faf-3db7cadb126a" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Galgalatz - Relaxed (Weekend)
 https://glzwizzlv.bynetcdn.com/glglz_sofshavua_mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-73c94920-e308-48f4-962e-f67abf8af331" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Glglz - Rock
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-73c94920-e308-48f4-962e-f67abf8af331" tvg-logo="https://glz.co.il/Content/assets/favicons/glglz/favicon-192x192.png",Galgalatz - Rock
 https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-80d7414f-1ff8-4c1a-b081-6888a7bcf564" tvg-logo="https://www.kzradio.net/wp-content/uploads/2018/11/kzlogo.jpg",Hakatze (KZRadio)
 http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
@@ -217,8 +217,6 @@ https://live.kcm.fm/livemusic
 https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-60f56ca4-3e39-45a6-ad94-cee362330fd5" tvg-logo="https://www.mizrahit.fm/wp-content/uploads/2014/03/favicon.png",Noshmim Mizrahit
 https://rs.mizrahit.fm:7777/arabellavie
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-692ae6f6-a6bd-4b69-991c-818a674b0e20",Radio 100% 90s
-https://gb25.streamgates.net/radios-audio/10090s/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-7cee6800-7c93-497f-9c9d-7efc55756757",Radio CS
 https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2g
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-03a782b9-13b8-462a-9da5-0a19a7f44a0f" tvg-logo="https://radiolove.co.il/favicon.ico",Radio Love Soft Romantic
@@ -229,6 +227,8 @@ http://s3.yesstreaming.net:7049/stream
 http://radio-yasoo.ath.cx:7500/;
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e24a4c7d-c489-413b-a337-60a6c252444f" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-80s.png",Radios 100FM - 100% 80s
 http://gb25.streamgates.net/radios-audio/10080s/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-692ae6f6-a6bd-4b69-991c-818a674b0e20",Radios 100FM - 100% 90s
+https://gb25.streamgates.net/radios-audio/10090s/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-beea8de9-e9cf-4453-bd00-28808b7358c1" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-blues.png",Radios 100FM - 100% Blues
 https://gb25.streamgates.net/radios-audio/100Blues/playlist.m3u8
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-a67789d0-acdd-406f-9c9b-9a7be43acd27" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-britpop.png",Radios 100FM - 100% Britpop
@@ -255,7 +255,7 @@ https://gb25.streamgates.net/radios-audio/100Gamer/icecast.audio
 https://gb25.streamgates.net/radios-audio/100Hits/playlist.m3u8
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-029c330c-922e-421c-a321-5031c82c355b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-jazz.png",Radios 100FM - 100% Jazz
 https://gb25.streamgates.net/radios-audio/100Jazz/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-74aeee22-8186-4e4f-b1d7-36b635dad886" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-kpop.png",Radios 100FM - 100% K-pop
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-74aeee22-8186-4e4f-b1d7-36b635dad886" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-kpop.png",Radios 100FM - 100% K-Pop
 https://gb25.streamgates.net/radios-audio/100kpop/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-feea8677-9402-4b43-af6f-adc7ee682342" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-kids.png",Radios 100FM - 100% Kids
 https://gb25.streamgates.net/radios-audio/100Kids/icecast.audio
@@ -283,9 +283,9 @@ https://gb25.streamgates.net/radios-audio/100Rock/playlist.m3u8
 https://gb25.streamgates.net/radios-audio/100Selfie/playlist.m3u8
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-85b06d10-6007-4891-af95-51e00448e0af" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-stars.png",Radios 100FM - 100% Stars (ערוץ הכוכבים)
 https://gb25.streamgates.net/radios-audio/100Stars/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-68ada8ff-e09b-4c6e-ad48-cdd009d97c70" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-tiktok.png",Radios 100FM - 100% Tiktok
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-68ada8ff-e09b-4c6e-ad48-cdd009d97c70" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-tiktok.png",Radios 100FM - 100% TikTok
 https://gb25.streamgates.net/radios-audio/100Tiktok/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-0c071206-7e91-46f2-8f2e-0bac6d8afcfa" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-top40.png",Radios 100FM - 100% Top40
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-0c071206-7e91-46f2-8f2e-0bac6d8afcfa" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-top40.png",Radios 100FM - 100% Top 40
 https://gb25.streamgates.net/radios-audio/100Top40/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c01d6ea8-e039-4973-8971-19419be39b0d" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-workout.png",Radios 100FM - 100% Workout
 https://gb25.streamgates.net/radios-audio/100Workout/playlist.m3u8
@@ -345,7 +345,7 @@ https://cast.radionahariya.com:8443/main.mp3
 https://www.radioking.com/play/radio-qualita
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-b5b9d7ed-2c9f-4f8a-98ac-440631f2b100" tvg-logo="https://radiosahar.co.il/images/logo.png",Radio Sahar
 https://live.ecast.co.il/stream/sahar/stream
-#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-ecd6c262-3ebf-40e8-9388-7e03e6a7330b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-standup.png",Radios 100FM - 100% StandUp
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-ecd6c262-3ebf-40e8-9388-7e03e6a7330b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-standup.png",Radios 100FM - 100% Stand-Up
 https://gb25.streamgates.net/radios-audio/100StandUp/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-00355ea7-ab3b-4789-bc03-ebe0107015bf" tvg-logo="https://drive.google.com/file/d/1jrJxOLRQU3ffbWUt0NNNi9LRlpKYUBF2/view?usp=drive_link",Star 33 Radiostation
 https://online.star33radio.com:1115/stream
