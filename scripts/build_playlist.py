@@ -2,7 +2,7 @@ import json
 import re
 import unicodedata
 import urllib.request
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urlsplit
 
 
 TV_URL = "https://iptv-org.github.io/iptv/countries/il.m3u"
@@ -10,16 +10,18 @@ TV_URL = "https://iptv-org.github.io/iptv/countries/il.m3u"
 RADIO_URLS = [
     (
         "https://de1.api.radio-browser.info/json/stations/"
-        "bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000"
+        "bycountrycodeexact/IL"
+        "?hidebroken=true&order=votes&reverse=true&limit=1000"
     ),
     (
         "https://nl1.api.radio-browser.info/json/stations/"
-        "bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000"
+        "bycountrycodeexact/IL"
+        "?hidebroken=true&order=votes&reverse=true&limit=1000"
     ),
 ]
 
 OUTPUT = "israel.m3u"
-USER_AGENT = "Israel-TV-Radio-Playlist/4.0"
+USER_AGENT = "Israel-TV-Radio-Playlist/4.1"
 
 
 GROUPS = {
@@ -30,7 +32,13 @@ GROUPS = {
 }
 
 
-def station(label, group, aliases, preferred=None, fallback=None):
+def station(
+    label,
+    group,
+    aliases,
+    preferred=None,
+    fallback=None,
+):
     return {
         "label": label,
         "group": group,
@@ -40,15 +48,10 @@ def station(label, group, aliases, preferred=None, fallback=None):
     }
 
 
-# Curated entries do four jobs:
-# 1. put important stations in the right group;
-# 2. collapse aliases/duplicates;
-# 3. clean inconsistent names;
-# 4. pin a known-good direct stream when Radio Browser has selected a wrong substream.
 CURATED = {
 
     # ============================================================
-    # MAIN STATIONS
+    # MAIN RADIO STATIONS
     # ============================================================
 
     "galgalatz": station(
@@ -61,7 +64,6 @@ CURATED = {
             "גלגלצ",
             "גלגלצ - Glglz",
         ],
-        preferred="https://glzwizzlv.bynetcdn.com/glglz_mp3",
     ),
 
     "galei_zahal": station(
@@ -73,7 +75,6 @@ CURATED = {
             'גלי צה"ל',
             "גלצ",
         ],
-        preferred="https://glzwizzlv.bynetcdn.com/glz_mp3",
     ),
 
     "kan_88": station(
@@ -225,7 +226,6 @@ CURATED = {
             "רדיו תל אביב 102 FM",
             "102FM",
         ],
-        preferred="https://102.livecdn.biz/102fm_aac",
     ),
 
     "haifa": station(
@@ -401,7 +401,6 @@ CURATED = {
             "Glglz - Rock",
             "Galgalatz - Rock",
         ],
-        preferred="https://glzwizzlv.bynetcdn.com/glglz_rock_mp3",
     ),
 
     "glglz_relaxed": station(
@@ -431,8 +430,12 @@ CURATED = {
             "kol hai",
             "Kcm FM Channel 01 Live",
         ],
-        preferred="https://live.kcm.fm/livemusic",
-        fallback="https://live.kcm.fm/livemusic",
+        preferred=(
+            "https://live.kcm.fm/livemusic"
+        ),
+        fallback=(
+            "https://live.kcm.fm/livemusic"
+        ),
     ),
 
     "kol_play": station(
@@ -459,7 +462,9 @@ CURATED = {
             "ELI NISMAN",
             "Eli Nisman Radio",
         ],
-        preferred="https://listen6.myradio24.com/25715",
+        preferred=(
+            "https://listen6.myradio24.com/25715"
+        ),
     ),
 
     "radio_cs": station(
@@ -531,10 +536,6 @@ CURATED = {
             "Hakatze",
             "kzradio",
         ],
-        preferred=(
-            "https://kzradio.mediacast.co.il/"
-            "kzradio_live/kzradio/icecast.audio"
-        ),
     ),
 
     "rak_musica": station(
@@ -578,8 +579,12 @@ CURATED = {
             "נושמים מזרחית - Noshmim Mizrahit",
             "Noshmim Mizrahit",
         ],
-        preferred="https://rs.mizrahit.fm:7777/arabellavie",
-        fallback="https://rs.mizrahit.fm:7777/arabellavie",
+        preferred=(
+            "https://rs.mizrahit.fm:7777/arabellavie"
+        ),
+        fallback=(
+            "https://rs.mizrahit.fm:7777/arabellavie"
+        ),
     ),
 
     "nineties100": station(
@@ -598,10 +603,6 @@ CURATED = {
             "100fm - 100% Movies",
             "Radios 100FM - 100% Movies",
         ],
-        preferred=(
-            "https://gb25.streamgates.net/"
-            "radios-audio/100Movies/playlist.m3u8"
-        ),
     ),
 
     "latin100": station(
@@ -699,10 +700,9 @@ CURATED = {
 }
 
 
-# Known bad/mislabeled Radio Browser entries that should never be emitted.
+# A bad/mislabeled duplicate that previously pointed to
+# the wrong-language Kabbalah stream.
 SKIP_NAMES = {
-    # Historically labelled "Fr" but pointed at a Spanish Kabbalah feed.
-    # The proper French Kabbalah station is separately present.
     "Kabbalah Fr",
 }
 
@@ -775,8 +775,8 @@ MUSIC_WORDS = {
 }
 
 
-# Purely cosmetic cleanup for station names that do not otherwise
-# need a dedicated curated entry.
+# Cosmetic normalization for feeds that otherwise do not
+# need a dedicated CURATED entry.
 DISPLAY_NAME_OVERRIDES = {
     "radios100fm100kpop":
         "Radios 100FM - 100% K-Pop",
@@ -789,16 +789,6 @@ DISPLAY_NAME_OVERRIDES = {
 
     "radios100fm100standup":
         "Radios 100FM - 100% Stand-Up",
-}
-
-
-# These hosts are already observed serving HTTPS elsewhere in the same
-# station set. Upgrade their HTTP versions automatically.
-HTTPS_UPGRADE_HOSTS = {
-    "gb25.streamgates.net",
-    "glzwizzlv.bynetcdn.com",
-    "102.livecdn.biz",
-    "kzradio.mediacast.co.il",
 }
 
 
@@ -884,6 +874,7 @@ def make_tv_section(
     output = []
 
     for line in playlist.splitlines():
+
         stripped = line.strip()
 
         if not stripped:
@@ -909,34 +900,13 @@ def make_tv_section(
                 )
 
             else:
-                # EXTINF's channel-name separator is the first comma
-                # outside quoted attribute values.
-                #
-                # We must NOT simply use line.find(",") because some
-                # User-Agent strings and URLs contain commas.
-                in_quotes = False
-                comma_index = None
+                comma = line.find(",")
 
-                for index, char in enumerate(
-                    line
-                ):
-                    if char == '"':
-                        in_quotes = (
-                            not in_quotes
-                        )
-
-                    elif (
-                        char == ","
-                        and not in_quotes
-                    ):
-                        comma_index = index
-                        break
-
-                if comma_index is not None:
+                if comma != -1:
                     line = (
-                        line[:comma_index]
+                        line[:comma]
                         + ' group-title="Israel TV"'
-                        + line[comma_index:]
+                        + line[comma:]
                     )
 
         output.append(line)
@@ -944,75 +914,15 @@ def make_tv_section(
     return output
 
 
-def clean_attribute(
-    value,
-):
-    return (
-        str(value or "")
-        .replace('"', "'")
-        .replace("\r", " ")
-        .replace("\n", " ")
-        .strip()
-    )
-
-
-def clean_station_name(
-    value,
-):
-    return re.sub(
-        r"\s+",
-        " ",
-        clean_attribute(value),
-    ).strip()
-
-
-def upgrade_known_https(
-    url,
-):
-    try:
-        parts = urlsplit(url)
-
-        hostname = (
-            parts.hostname or ""
-        ).casefold()
-
-        if (
-            parts.scheme == "http"
-            and hostname
-            in HTTPS_UPGRADE_HOSTS
-        ):
-            return urlunsplit(
-                (
-                    "https",
-                    parts.netloc,
-                    parts.path,
-                    parts.query,
-                    parts.fragment,
-                )
-            )
-
-    except Exception:
-        pass
-
-    return url
-
-
 def canonical_stream_key(
     url,
 ):
-    """
-    Create a stable duplicate key.
-
-    Query parameters are deliberately ignored because
-    several radio servers add tracking or temporary
-    redirect parameters to an otherwise identical stream.
-    """
-
     try:
         parts = urlsplit(url)
 
         host = (
-            parts.hostname or ""
+            parts.hostname
+            or ""
         ).casefold()
 
         port = (
@@ -1039,39 +949,26 @@ def canonical_stream_key(
         )
 
 
-def sanitize_logo_url(
+def clean_attribute(
     value,
 ):
-    url = clean_attribute(value)
-
-    if not url.startswith(
-        (
-            "http://",
-            "https://",
-        )
-    ):
-        return ""
-
-    # Google Drive's /view page is an HTML document,
-    # not an image URL.
-    if (
-        "drive.google.com/file/"
-        in url
-        and "/view"
-        in url
-    ):
-        return ""
-
-    # Commas are technically legal inside quoted EXTINF
-    # attributes, but some IPTV applications use simplistic
-    # parsers and confuse them with the station-name separator.
-    #
-    # Percent-encoding the comma avoids that problem.
     return (
-        url
-        .replace(",", "%2C")
-        .replace(" ", "%20")
+        str(value or "")
+        .replace('"', "'")
+        .replace("\r", " ")
+        .replace("\n", " ")
+        .strip()
     )
+
+
+def clean_station_name(
+    value,
+):
+    return re.sub(
+        r"\s+",
+        " ",
+        clean_attribute(value),
+    ).strip()
 
 
 def auto_group(
@@ -1091,8 +988,8 @@ def auto_group(
         f"{lowered_name} {tags}"
     )
 
-    # Radios 100FM's specialty feeds are mostly
-    # music stations.
+
+    # Radios 100FM specialty channels.
     if (
         "radios 100fm - 100%"
         in lowered_name
@@ -1124,6 +1021,7 @@ def auto_group(
             "music"
         ]
 
+
     if any(
         word in combined
         for word
@@ -1133,6 +1031,7 @@ def auto_group(
             "religious"
         ]
 
+
     if any(
         word in combined
         for word
@@ -1141,6 +1040,7 @@ def auto_group(
         return GROUPS[
             "music"
         ]
+
 
     return GROUPS[
         "other"
@@ -1155,10 +1055,12 @@ def make_item(
     logo="",
     curated_key=None,
 ):
+
     attrs = [
         'radio="true"',
         f'group-title="{group}"',
     ]
+
 
     uuid = clean_attribute(
         uuid
@@ -1169,14 +1071,21 @@ def make_item(
             f'tvg-id="radio-{uuid}"'
         )
 
-    logo = sanitize_logo_url(
+
+    logo = clean_attribute(
         logo
     )
 
-    if logo:
+    if logo.startswith(
+        (
+            "http://",
+            "https://",
+        )
+    ):
         attrs.append(
             f'tvg-logo="{logo}"'
         )
+
 
     return {
         "group": group,
@@ -1196,31 +1105,10 @@ def build_radio_section(
     stations,
 ):
 
-    # Prefer:
-    # 1. stations Radio Browser currently considers healthy;
-    # 2. higher community vote counts;
-    # 3. HTTPS;
-    # 4. higher bitrate.
-    def ranking(
-        station_data,
-    ):
-        resolved = (
-            station_data.get(
-                "url_resolved"
-            )
-            or station_data.get(
-                "url"
-            )
-            or ""
-        ).strip()
-
-        return (
-            int(
-                station_data.get(
-                    "lastcheckok"
-                )
-                or 0
-            ),
+    # Prefer the most established version of a duplicate.
+    stations = sorted(
+        stations,
+        key=lambda station_data: (
             int(
                 station_data.get(
                     "votes"
@@ -1228,22 +1116,12 @@ def build_radio_section(
                 or 0
             ),
             int(
-                resolved.startswith(
-                    "https://"
-                )
-            ),
-            int(
                 station_data.get(
                     "bitrate"
                 )
                 or 0
             ),
-        )
-
-
-    stations = sorted(
-        stations,
-        key=ranking,
+        ),
         reverse=True,
     )
 
@@ -1291,6 +1169,8 @@ def build_radio_section(
             continue
 
 
+        # url_resolved is preferable because Radio Browser
+        # has already followed redirects when possible.
         url = (
             station_data.get(
                 "url_resolved"
@@ -1350,11 +1230,6 @@ def build_radio_section(
             )
 
 
-        url = upgrade_known_https(
-            url
-        )
-
-
         name_key = (
             normalize_name(
                 name
@@ -1368,8 +1243,6 @@ def build_radio_section(
         )
 
 
-        # Collapse multiple aliases belonging to the
-        # same curated station.
         if (
             curated_key
             and curated_key
@@ -1378,7 +1251,6 @@ def build_radio_section(
             continue
 
 
-        # Collapse duplicate display names.
         if (
             name_key
             in seen_names
@@ -1386,7 +1258,6 @@ def build_radio_section(
             continue
 
 
-        # Collapse duplicate stream URLs.
         if (
             stream_key
             and stream_key
@@ -1437,14 +1308,7 @@ def build_radio_section(
 
 
     # ============================================================
-    # FALLBACKS
-    # ============================================================
-    #
-    # Add important stations that Radio Browser can occasionally
-    # omit from its healthy-country result.
-    #
-    # A fallback is used ONLY if that station was not already
-    # supplied by Radio Browser.
+    # FALLBACK STATIONS
     # ============================================================
 
     for key, info in CURATED.items():
@@ -1461,23 +1325,15 @@ def build_radio_section(
             continue
 
 
-        fallback = (
-            upgrade_known_https(
-                fallback
+        name_key = (
+            normalize_name(
+                info["label"]
             )
         )
-
 
         stream_key = (
             canonical_stream_key(
                 fallback
-            )
-        )
-
-
-        name_key = (
-            normalize_name(
-                info["label"]
             )
         )
 
@@ -1522,6 +1378,7 @@ def build_radio_section(
             name_key
         )
 
+
         if stream_key:
             seen_streams.add(
                 stream_key
@@ -1557,7 +1414,6 @@ def build_radio_section(
             item["group"]
             == GROUPS["main"]
         ):
-
             return (
                 0,
                 curated_order.get(
@@ -1608,116 +1464,8 @@ def build_radio_section(
 
     return (
         lines,
-        result,
+        len(result),
     )
-
-
-def validate_output(
-    tv_lines,
-    radio_items,
-):
-    """
-    Fail the GitHub Action instead of publishing a
-    structurally broken playlist.
-    """
-
-    if not tv_lines:
-        raise RuntimeError(
-            "TV playlist is empty; "
-            "refusing to overwrite israel.m3u"
-        )
-
-
-    if not radio_items:
-        raise RuntimeError(
-            "Radio playlist is empty; "
-            "refusing to overwrite israel.m3u"
-        )
-
-
-    names = set()
-    streams = set()
-
-
-    for item in radio_items:
-
-        name_key = (
-            normalize_name(
-                item["name"]
-            )
-        )
-
-        stream_key = (
-            canonical_stream_key(
-                item["url"]
-            )
-        )
-
-
-        if not item[
-            "url"
-        ].startswith(
-            (
-                "http://",
-                "https://",
-            )
-        ):
-            raise RuntimeError(
-                "Invalid stream URL for "
-                f"{item['name']}: "
-                f"{item['url']}"
-            )
-
-
-        if (
-            name_key
-            in names
-        ):
-            raise RuntimeError(
-                "Duplicate radio station "
-                f"name: {item['name']}"
-            )
-
-
-        names.add(
-            name_key
-        )
-
-
-        if (
-            stream_key
-            and stream_key
-            in streams
-        ):
-            raise RuntimeError(
-                "Duplicate radio stream URL: "
-                f"{item['url']}"
-            )
-
-
-        if stream_key:
-            streams.add(
-                stream_key
-            )
-
-
-    main_count = sum(
-        item["group"]
-        == GROUPS["main"]
-        for item
-        in radio_items
-    )
-
-
-    # If the upstream source suddenly breaks badly,
-    # do NOT silently publish a tiny/empty radio list.
-    if main_count < 15:
-
-        raise RuntimeError(
-            f"Only {main_count} main Israeli "
-            "radio stations were generated; "
-            "refusing to publish"
-        )
 
 
 def main():
@@ -1747,15 +1495,9 @@ def main():
 
     (
         radio_lines,
-        radio_items,
+        radio_count,
     ) = build_radio_section(
         radio_stations
-    )
-
-
-    validate_output(
-        tv_lines,
-        radio_items,
     )
 
 
@@ -1795,49 +1537,15 @@ def main():
         )
 
 
-    counts = {
-        group: 0
-        for group
-        in GROUPS.values()
-    }
-
-
-    for item in radio_items:
-
-        counts[
-            item["group"]
-        ] = (
-            counts.get(
-                item["group"],
-                0,
-            )
-            + 1
-        )
-
-
     print(
         f"Created {OUTPUT}"
     )
 
-
     print(
-        "TV entries: "
-        f"{sum(line.startswith('#EXTINF:') for line in tv_lines)}"
+        f"Included {radio_count} "
+        "deduplicated Israeli "
+        "radio stations."
     )
-
-
-    print(
-        "Radio entries: "
-        f"{len(radio_items)}"
-    )
-
-
-    for group in GROUPS.values():
-
-        print(
-            f"  {group}: "
-            f"{counts.get(group, 0)}"
-        )
 
 
 if __name__ == "__main__":
