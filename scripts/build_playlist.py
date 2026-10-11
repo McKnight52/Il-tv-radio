@@ -2,17 +2,25 @@ import json
 import re
 import unicodedata
 import urllib.request
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlunsplit
+
 
 TV_URL = "https://iptv-org.github.io/iptv/countries/il.m3u"
 
 RADIO_URLS = [
-    "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000",
-    "https://nl1.api.radio-browser.info/json/stations/bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000",
+    (
+        "https://de1.api.radio-browser.info/json/stations/"
+        "bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000"
+    ),
+    (
+        "https://nl1.api.radio-browser.info/json/stations/"
+        "bycountrycodeexact/IL?hidebroken=true&order=votes&reverse=true&limit=1000"
+    ),
 ]
 
 OUTPUT = "israel.m3u"
-USER_AGENT = "Israel-TV-Radio-Playlist/3.0"
+USER_AGENT = "Israel-TV-Radio-Playlist/4.0"
+
 
 GROUPS = {
     "main": "Israel Radio | Main",
@@ -22,22 +30,28 @@ GROUPS = {
 }
 
 
-# key:
-# (
-#     display name,
-#     group,
-#     aliases,
-#     preferred stream,
-#     fallback stream
-# )
-#
-# Preferred stream:
-# Overrides Radio Browser when we know its chosen stream is wrong/outdated.
-#
-# Fallback stream:
-# Adds the station if Radio Browser temporarily omits it.
+def station(label, group, aliases, preferred=None, fallback=None):
+    return {
+        "label": label,
+        "group": group,
+        "aliases": aliases,
+        "preferred": preferred,
+        "fallback": fallback,
+    }
+
+
+# Curated entries do four jobs:
+# 1. put important stations in the right group;
+# 2. collapse aliases/duplicates;
+# 3. clean inconsistent names;
+# 4. pin a known-good direct stream when Radio Browser has selected a wrong substream.
 CURATED = {
-    "galgalatz": (
+
+    # ============================================================
+    # MAIN STATIONS
+    # ============================================================
+
+    "galgalatz": station(
         "Galgalatz",
         "main",
         [
@@ -47,11 +61,10 @@ CURATED = {
             "גלגלצ",
             "גלגלצ - Glglz",
         ],
-        None,
-        None,
+        preferred="https://glzwizzlv.bynetcdn.com/glglz_mp3",
     ),
 
-    "galei_zahal": (
+    "galei_zahal": station(
         "Galei Zahal",
         "main",
         [
@@ -60,11 +73,10 @@ CURATED = {
             'גלי צה"ל',
             "גלצ",
         ],
-        None,
-        None,
+        preferred="https://glzwizzlv.bynetcdn.com/glz_mp3",
     ),
 
-    "kan_88": (
+    "kan_88": station(
         "KAN 88",
         "main",
         [
@@ -72,12 +84,11 @@ CURATED = {
             "88 FM",
             "88FM",
             "כאן 88",
+            "Kan Israel 88 FM",
         ],
-        None,
-        None,
     ),
 
-    "kan_bet": (
+    "kan_bet": station(
         "KAN Bet",
         "main",
         [
@@ -88,11 +99,9 @@ CURATED = {
             "כאן ב",
             "כאן ב׳",
         ],
-        None,
-        None,
     ),
 
-    "kan_gimel": (
+    "kan_gimel": station(
         "KAN Gimel",
         "main",
         [
@@ -101,11 +110,9 @@ CURATED = {
             "KAN gimel (real)",
             "כאן גימל",
         ],
-        None,
-        None,
     ),
 
-    "kan_kol_hamusica": (
+    "kan_kol_hamusica": station(
         "KAN Kol HaMusica",
         "main",
         [
@@ -113,11 +120,9 @@ CURATED = {
             "KAN Kol HaMusica כאן קול המוזיקה",
             "כאן קול המוזיקה",
         ],
-        None,
-        None,
     ),
 
-    "kan_tarbut": (
+    "kan_tarbut": station(
         "KAN Tarbut",
         "main",
         [
@@ -126,11 +131,9 @@ CURATED = {
             "Kan Israel Tarbut",
             "כאן תרבות",
         ],
-        None,
-        None,
     ),
 
-    "kan_reka": (
+    "kan_reka": station(
         "KAN Reka",
         "main",
         [
@@ -139,11 +142,9 @@ CURATED = {
             "כאן רקע",
             "כאן רקע Kan Reka",
         ],
-        None,
-        None,
     ),
 
-    "kan_moreshet": (
+    "kan_moreshet": station(
         "KAN Moreshet",
         "main",
         [
@@ -152,11 +153,13 @@ CURATED = {
             "כאן מורשת",
             "כאן מורשת - Kan Moreshet",
         ],
-        None,
-        "https://kanlivep2event-i.akamaihd.net/hls/live/749629/749629/playlist.m3u8",
+        fallback=(
+            "https://kanlivep2event-i.akamaihd.net/"
+            "hls/live/749629/749629/playlist.m3u8"
+        ),
     ),
 
-    "makan": (
+    "makan": station(
         "Makan Radio",
         "main",
         [
@@ -166,11 +169,13 @@ CURATED = {
             "راديو مكان",
             "راديو مكان - Kan Israel Makan",
         ],
-        None,
-        "https://kanlivep2event-i.akamaihd.net/hls/live/749628/749628/playlist.m3u8",
+        fallback=(
+            "https://kanlivep2event-i.akamaihd.net/"
+            "hls/live/749628/749628/playlist.m3u8"
+        ),
     ),
 
-    "103fm": (
+    "103fm": station(
         "103FM",
         "main",
         [
@@ -178,11 +183,9 @@ CURATED = {
             "103FM",
             "רדיו 103FM",
         ],
-        None,
-        None,
     ),
 
-    "eco99": (
+    "eco99": station(
         "Eco 99FM",
         "main",
         [
@@ -191,11 +194,9 @@ CURATED = {
             "אקו eco 99fm",
             "99FM",
         ],
-        None,
-        None,
     ),
 
-    "radios100": (
+    "radios100": station(
         "Radios 100FM",
         "main",
         [
@@ -203,11 +204,17 @@ CURATED = {
             "Radios 100FM רדיוס",
             "רדיוס 100FM",
         ],
-        "https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio",
-        "https://cdn.cybercdn.live/Radios_100FM/Audio/icecast.audio",
+        preferred=(
+            "https://cdn.cybercdn.live/"
+            "Radios_100FM/Audio/icecast.audio"
+        ),
+        fallback=(
+            "https://cdn.cybercdn.live/"
+            "Radios_100FM/Audio/icecast.audio"
+        ),
     ),
 
-    "102fm": (
+    "102fm": station(
         "Radio Tel Aviv 102FM",
         "main",
         [
@@ -218,11 +225,10 @@ CURATED = {
             "רדיו תל אביב 102 FM",
             "102FM",
         ],
-        None,
-        None,
+        preferred="https://102.livecdn.biz/102fm_aac",
     ),
 
-    "haifa": (
+    "haifa": station(
         "Radio Haifa 107.5FM",
         "main",
         [
@@ -231,11 +237,9 @@ CURATED = {
             "רדיו חיפה",
             "רדיו חיפה 107.5FM",
         ],
-        None,
-        None,
     ),
 
-    "darom": (
+    "darom": station(
         "Radio Darom",
         "main",
         [
@@ -244,11 +248,9 @@ CURATED = {
             "101.5fm נותנים למוזיקה לדבר רדיו דרום",
             "רדיו דרום",
         ],
-        None,
-        None,
     ),
 
-    "hatahana": (
+    "hatahana": station(
         "Radio Hatahana 101.5FM",
         "main",
         [
@@ -256,11 +258,9 @@ CURATED = {
             "Radio Hatahana",
             "רדיו התחנה",
         ],
-        None,
-        None,
     ),
 
-    "jerusalem": (
+    "jerusalem": station(
         "Radio Jerusalem 101FM",
         "main",
         [
@@ -268,11 +268,9 @@ CURATED = {
             "Radio Jerusalem",
             "רדיו ירושלים",
         ],
-        None,
-        None,
     ),
 
-    "north": (
+    "north": station(
         "Radio North 104.5FM",
         "main",
         [
@@ -281,11 +279,9 @@ CURATED = {
             "Radio North 104.5FM",
             "רדיו צפון 104.5FM",
         ],
-        None,
-        None,
     ),
 
-    "galei_israel": (
+    "galei_israel": station(
         "Galei Israel",
         "main",
         [
@@ -294,11 +290,9 @@ CURATED = {
             "Galei Israel",
             "גלי ישראל",
         ],
-        None,
-        None,
     ),
 
-    "kol_rega": (
+    "kol_rega": station(
         "Kol Rega",
         "main",
         [
@@ -306,11 +300,9 @@ CURATED = {
             "Kol Rega קול רגע 91.5/96",
             "קול רגע",
         ],
-        None,
-        None,
     ),
 
-    "kol_chai": (
+    "kol_chai": station(
         "Kol Chai",
         "main",
         [
@@ -318,11 +310,9 @@ CURATED = {
             "קול חי",
             "קול חי - Kol Chai",
         ],
-        None,
-        None,
     ),
 
-    "kol_barama": (
+    "kol_barama": station(
         "Kol Barama",
         "main",
         [
@@ -330,11 +320,9 @@ CURATED = {
             "קול ברמה",
             "קול ברמה - Kol Barama",
         ],
-        None,
-        None,
     ),
 
-    "lev_hamedina": (
+    "lev_hamedina": station(
         "Radio Lev HaMedina",
         "main",
         [
@@ -342,33 +330,27 @@ CURATED = {
             "radio lev hamedina",
             "רדיו לב המדינה",
         ],
-        None,
-        None,
     ),
 
-    "radio90": (
+    "radio90": station(
         "Radio 90FM",
         "main",
         [
             "Radio 90FM",
             "90FM",
         ],
-        None,
-        None,
     ),
 
-    "pervoe": (
+    "pervoe": station(
         "Pervoe Radio 89.1FM",
         "main",
         [
             "Первое радио 89.1FM",
             "Pervoe Radio 89.1FM",
         ],
-        None,
-        None,
     ),
 
-    "ashams": (
+    "ashams": station(
         "Radio A-Shams 98.1FM",
         "main",
         [
@@ -376,11 +358,9 @@ CURATED = {
             "A-Shams",
             "Radio A-Shams",
         ],
-        None,
-        None,
     ),
 
-    "nas": (
+    "nas": station(
         "Radio Nas 103.3FM",
         "main",
         [
@@ -388,22 +368,18 @@ CURATED = {
             "Nas Radio",
             "راديو الناس",
         ],
-        None,
-        None,
     ),
 
-    "kol_hashfela": (
+    "kol_hashfela": station(
         "Kol Hashfela 103.6FM",
         "main",
         [
             "קול השפלה - Kol Hashfela",
             "Kol Hashfela",
         ],
-        None,
-        None,
     ),
 
-    "nostalgia963": (
+    "nostalgia963": station(
         "Radios Nostalgia 96.3FM",
         "main",
         [
@@ -411,11 +387,42 @@ CURATED = {
             "Radios Nostalgia 96.3FM",
             "רדיוס נוסטלגיה 96.3FM",
         ],
-        None,
-        None,
     ),
 
-    "kol_chai_music": (
+
+    # ============================================================
+    # MUSIC
+    # ============================================================
+
+    "galgalatz_rock": station(
+        "Galgalatz - Rock",
+        "music",
+        [
+            "Glglz - Rock",
+            "Galgalatz - Rock",
+        ],
+        preferred="https://glzwizzlv.bynetcdn.com/glglz_rock_mp3",
+    ),
+
+    "glglz_relaxed": station(
+        "Galgalatz - Relaxed (Weekend)",
+        "music",
+        [
+            "Glglz - רגוע (סופשבוע)",
+            "Galgalatz - Relaxed (Weekend)",
+        ],
+    ),
+
+    "glglz_decades": station(
+        "Galgalatz - Decades",
+        "music",
+        [
+            "גלגלצ עשורים",
+            "Galgalatz - Decades",
+        ],
+    ),
+
+    "kol_chai_music": station(
         "Kol Chai Music",
         "music",
         [
@@ -424,191 +431,194 @@ CURATED = {
             "kol hai",
             "Kcm FM Channel 01 Live",
         ],
-        "https://live.kcm.fm/livemusic",
-        "https://live.kcm.fm/livemusic",
+        preferred="https://live.kcm.fm/livemusic",
+        fallback="https://live.kcm.fm/livemusic",
     ),
 
-    "kol_play": (
+    "kol_play": station(
         "Kol Play",
         "music",
         [
             "קול פליי | kol-play",
             "Kol Play",
         ],
-        "https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio",
-        "https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio",
+        preferred=(
+            "https://cdn.cybercdn.live/"
+            "Kol_Barama/Music/icecast.audio"
+        ),
+        fallback=(
+            "https://cdn.cybercdn.live/"
+            "Kol_Barama/Music/icecast.audio"
+        ),
     ),
 
-    "eli_nisman": (
+    "eli_nisman": station(
         "Eli Nisman Radio",
         "music",
         [
             "ELI NISMAN",
             "Eli Nisman Radio",
         ],
-        "https://listen6.myradio24.com/25715",
-        None,
+        preferred="https://listen6.myradio24.com/25715",
     ),
 
-    "radio_cs": (
+    "radio_cs": station(
         "Radio CS",
         "music",
         [
             "#Radio CS",
             "Radio CS",
         ],
-        None,
-        None,
     ),
 
-    "john_williams": (
+    "john_williams": station(
         "John Williams Guitar",
         "music",
         [
             "GUITAR - J. WILLIAMS",
+            "John Williams Guitar",
         ],
-        None,
-        None,
     ),
 
-    "israeli_voice": (
+    "israeli_voice": station(
         "Israeli Voice Radio",
         "music",
         [
             "Israeli voice radio",
+            "Israeli Voice Radio",
             "Hedva Shaltiel",
         ],
-        None,
-        None,
     ),
 
-    "ivri6": (
+    "ivri6": station(
         "Ivri 6",
         "music",
         [
             "Ivri 6",
         ],
-        None,
-        None,
     ),
 
-    "radioplus": (
+    "radioplus": station(
         "Radio Plus",
         "music",
         [
             "RadioPlus",
             "Radio Plus",
         ],
-        None,
-        None,
     ),
 
-    "radio_love": (
+    "radio_love": station(
         "Radio Love Soft Romantic",
         "music",
         [
             "Radio Love Soft Romantic",
         ],
-        None,
-        None,
     ),
 
-    "radio_yasoo": (
+    "radio_yasoo": station(
         "Radio Yasoo",
         "music",
         [
             "Radio Yasoo",
         ],
-        None,
-        None,
     ),
 
-    "glglz_relaxed": (
-        "Galgalatz - Relaxed (Weekend)",
-        "music",
-        [
-            "Glglz - רגוע (סופשבוע)",
-        ],
-        None,
-        None,
-    ),
-
-    "glglz_decades": (
-        "Galgalatz - Decades",
-        "music",
-        [
-            "גלגלצ עשורים",
-        ],
-        None,
-        None,
-    ),
-
-    "hakatze": (
+    "hakatze": station(
         "Hakatze (KZRadio)",
         "music",
         [
             "הקצה - Hakatze",
+            "Hakatze",
             "kzradio",
         ],
-        None,
-        None,
+        preferred=(
+            "https://kzradio.mediacast.co.il/"
+            "kzradio_live/kzradio/icecast.audio"
+        ),
     ),
 
-    "rak_musica": (
+    "rak_musica": station(
         "Rak Musica",
         "music",
         [
             "Rak Musica",
         ],
-        None,
-        None,
     ),
 
-    "timbr": (
+    "timbr": station(
         "TIMBR Radio",
         "music",
         [
             "TIMBR Radio",
         ],
-        None,
-        None,
     ),
 
-    "movies100": (
-        "Radios 100FM - 100% Movies",
+    "ystream": station(
+        "yStream",
         "music",
         [
-            "100fm - 100% Movies",
-            "Radios 100FM - 100% Movies",
+            "yStream",
         ],
-        None,
-        None,
     ),
 
-    "latin100": (
-        "Radios 100FM - 100% Latin",
+    "zerock": station(
+        "Ze Rock Radio",
         "music",
         [
-            "Radio 100% Latina",
-            "Radios 100FM - 100% Latin",
+            "Ze Rock Radio",
         ],
-        None,
-        None,
     ),
 
-    "noshmim": (
+    "noshmim": station(
         "Noshmim Mizrahit",
         "music",
         [
             "Mizrahit FM Best",
             "Mizrahit_Fm",
             "נושמים מזרחית - Noshmim Mizrahit",
+            "Noshmim Mizrahit",
         ],
-        "https://rs.mizrahit.fm:7777/arabellavie",
-        "https://rs.mizrahit.fm:7777/arabellavie",
+        preferred="https://rs.mizrahit.fm:7777/arabellavie",
+        fallback="https://rs.mizrahit.fm:7777/arabellavie",
     ),
 
-    "toker": (
+    "nineties100": station(
+        "Radios 100FM - 100% 90s",
+        "music",
+        [
+            "Radio 100% 90s",
+            "Radios 100FM - 100% 90s",
+        ],
+    ),
+
+    "movies100": station(
+        "Radios 100FM - 100% Movies",
+        "music",
+        [
+            "100fm - 100% Movies",
+            "Radios 100FM - 100% Movies",
+        ],
+        preferred=(
+            "https://gb25.streamgates.net/"
+            "radios-audio/100Movies/playlist.m3u8"
+        ),
+    ),
+
+    "latin100": station(
+        "Radios 100FM - 100% Latin",
+        "music",
+        [
+            "Radio 100% Latina",
+            "Radios 100FM - 100% Latin",
+        ],
+    ),
+
+
+    # ============================================================
+    # RELIGIOUS
+    # ============================================================
+
+    "toker": station(
         "Toker FM",
         "religious",
         [
@@ -616,11 +626,17 @@ CURATED = {
             "toker fm",
             "Toker FM",
         ],
-        "https://broadcast.adpronet.com/radio/6060/radio.mp3",
-        "https://broadcast.adpronet.com/radio/6060/radio.mp3",
+        preferred=(
+            "https://broadcast.adpronet.com/"
+            "radio/6060/radio.mp3"
+        ),
+        fallback=(
+            "https://broadcast.adpronet.com/"
+            "radio/6060/radio.mp3"
+        ),
     ),
 
-    "prayer_radio": (
+    "prayer_radio": station(
         "إذاعة الصلاة | Prayer Radio",
         "religious",
         [
@@ -628,32 +644,27 @@ CURATED = {
             "إذاعة الصلاة | Prayer Radio",
             "Prayer Radio",
         ],
-        None,
-        None,
     ),
 
-    "assalam": (
+    "assalam": station(
         "Assalam Quran Radio",
         "religious",
         [
             ".assalam",
             "assalam",
+            "Assalam Quran Radio",
         ],
-        None,
-        None,
     ),
 
-    "abdulbasit": (
+    "abdulbasit": station(
         "Abdulbasit Abdulsamad",
         "religious",
         [
             "Abdulbasit Abdulsamad",
         ],
-        None,
-        None,
     ),
 
-    "orenu": (
+    "orenu": station(
         "Radio Orenu",
         "religious",
         [
@@ -661,37 +672,37 @@ CURATED = {
             "Мессианское онлайн радио Орэну",
             "Radio Orenu",
         ],
-        None,
-        None,
     ),
 
-    "breslev": (
+    "breslev": station(
         "Breslev For You",
         "religious",
         [
             "Nachman",
             "ברסלב פוריו: דעת רבנו",
+            "Breslev For You",
         ],
-        None,
-        None,
     ),
 
-    "radio_sahar": (
+
+    # ============================================================
+    # OTHER / MIXED
+    # ============================================================
+
+    "radio_sahar": station(
         "Radio Sahar",
         "other",
         [
             "Radio Sahar",
         ],
-        None,
-        None,
     ),
 }
 
 
-# This Radio Browser entry currently resolves to the Spanish Kabbalah
-# stream even though it is labelled "Fr". A separate correct French
-# station is already present, so discard the broken/mislabeled duplicate.
+# Known bad/mislabeled Radio Browser entries that should never be emitted.
 SKIP_NAMES = {
+    # Historically labelled "Fr" but pointed at a Spanish Kabbalah feed.
+    # The proper French Kabbalah station is separately present.
     "Kabbalah Fr",
 }
 
@@ -764,6 +775,33 @@ MUSIC_WORDS = {
 }
 
 
+# Purely cosmetic cleanup for station names that do not otherwise
+# need a dedicated curated entry.
+DISPLAY_NAME_OVERRIDES = {
+    "radios100fm100kpop":
+        "Radios 100FM - 100% K-Pop",
+
+    "radios100fm100tiktok":
+        "Radios 100FM - 100% TikTok",
+
+    "radios100fm100top40":
+        "Radios 100FM - 100% Top 40",
+
+    "radios100fm100standup":
+        "Radios 100FM - 100% Stand-Up",
+}
+
+
+# These hosts are already observed serving HTTPS elsewhere in the same
+# station set. Upgrade their HTTP versions automatically.
+HTTPS_UPGRADE_HOSTS = {
+    "gb25.streamgates.net",
+    "glzwizzlv.bynetcdn.com",
+    "102.livecdn.biz",
+    "kzradio.mediacast.co.il",
+}
+
+
 def normalize_name(text):
     text = unicodedata.normalize(
         "NFKC",
@@ -780,16 +818,11 @@ def normalize_name(text):
 
 ALIASES = {}
 
-for key, (
-    label,
-    _,
-    aliases,
-    _,
-    _,
-) in CURATED.items():
-
-    # Include both the chosen display label and every known alias.
-    for alias in [label, *aliases]:
+for key, info in CURATED.items():
+    for alias in [
+        info["label"],
+        *info["aliases"],
+    ]:
         ALIASES[
             normalize_name(alias)
         ] = key
@@ -817,7 +850,6 @@ def download_text(
         request,
         timeout=30,
     ) as response:
-
         return response.read().decode(
             "utf-8-sig"
         )
@@ -865,6 +897,7 @@ def make_tv_section(
         if stripped.startswith(
             "#EXTINF:"
         ):
+
             if re.search(
                 r'group-title="[^"]*"',
                 line,
@@ -876,13 +909,34 @@ def make_tv_section(
                 )
 
             else:
-                comma = line.find(",")
+                # EXTINF's channel-name separator is the first comma
+                # outside quoted attribute values.
+                #
+                # We must NOT simply use line.find(",") because some
+                # User-Agent strings and URLs contain commas.
+                in_quotes = False
+                comma_index = None
 
-                if comma != -1:
+                for index, char in enumerate(
+                    line
+                ):
+                    if char == '"':
+                        in_quotes = (
+                            not in_quotes
+                        )
+
+                    elif (
+                        char == ","
+                        and not in_quotes
+                    ):
+                        comma_index = index
+                        break
+
+                if comma_index is not None:
                     line = (
-                        line[:comma]
+                        line[:comma_index]
                         + ' group-title="Israel TV"'
-                        + line[comma:]
+                        + line[comma_index:]
                     )
 
         output.append(line)
@@ -890,22 +944,75 @@ def make_tv_section(
     return output
 
 
+def clean_attribute(
+    value,
+):
+    return (
+        str(value or "")
+        .replace('"', "'")
+        .replace("\r", " ")
+        .replace("\n", " ")
+        .strip()
+    )
+
+
+def clean_station_name(
+    value,
+):
+    return re.sub(
+        r"\s+",
+        " ",
+        clean_attribute(value),
+    ).strip()
+
+
+def upgrade_known_https(
+    url,
+):
+    try:
+        parts = urlsplit(url)
+
+        hostname = (
+            parts.hostname or ""
+        ).casefold()
+
+        if (
+            parts.scheme == "http"
+            and hostname
+            in HTTPS_UPGRADE_HOSTS
+        ):
+            return urlunsplit(
+                (
+                    "https",
+                    parts.netloc,
+                    parts.path,
+                    parts.query,
+                    parts.fragment,
+                )
+            )
+
+    except Exception:
+        pass
+
+    return url
+
+
 def canonical_stream_key(
     url,
 ):
     """
-    Make a comparison key for duplicate streams.
+    Create a stable duplicate key.
 
-    Query parameters are deliberately ignored because the
-    same stream often appears with different tracking tokens.
+    Query parameters are deliberately ignored because
+    several radio servers add tracking or temporary
+    redirect parameters to an otherwise identical stream.
     """
 
     try:
         parts = urlsplit(url)
 
         host = (
-            parts.hostname
-            or ""
+            parts.hostname or ""
         ).casefold()
 
         port = (
@@ -926,34 +1033,49 @@ def canonical_stream_key(
 
     except Exception:
         return (
-            url.casefold().strip()
+            url
+            .casefold()
+            .strip()
         )
 
 
-def clean(
+def sanitize_logo_url(
     value,
 ):
+    url = clean_attribute(value)
+
+    if not url.startswith(
+        (
+            "http://",
+            "https://",
+        )
+    ):
+        return ""
+
+    # Google Drive's /view page is an HTML document,
+    # not an image URL.
+    if (
+        "drive.google.com/file/"
+        in url
+        and "/view"
+        in url
+    ):
+        return ""
+
+    # Commas are technically legal inside quoted EXTINF
+    # attributes, but some IPTV applications use simplistic
+    # parsers and confuse them with the station-name separator.
+    #
+    # Percent-encoding the comma avoids that problem.
     return (
-        str(value or "")
-        .replace('"', "'")
-        .replace("\r", " ")
-        .replace("\n", " ")
-        .strip()
+        url
+        .replace(",", "%2C")
+        .replace(" ", "%20")
     )
 
 
-def clean_name(
-    value,
-):
-    return re.sub(
-        r"\s+",
-        " ",
-        clean(value),
-    ).strip()
-
-
 def auto_group(
-    station,
+    station_data,
     name,
 ):
     lowered_name = (
@@ -961,7 +1083,7 @@ def auto_group(
     )
 
     tags = (
-        station.get("tags")
+        station_data.get("tags")
         or ""
     ).casefold()
 
@@ -969,14 +1091,15 @@ def auto_group(
         f"{lowered_name} {tags}"
     )
 
-    # All Radios 100FM specialty channels are music
-    # except the explicitly religious and spoken-comedy feeds.
+    # Radios 100FM's specialty feeds are mostly
+    # music stations.
     if (
         "radios 100fm - 100%"
         in lowered_name
         or "radio 100%"
         in lowered_name
     ):
+
         if (
             "yehudi"
             in lowered_name
@@ -989,6 +1112,8 @@ def auto_group(
 
         if (
             "standup"
+            in lowered_name
+            or "stand-up"
             in lowered_name
         ):
             return GROUPS[
@@ -1035,19 +1160,20 @@ def make_item(
         f'group-title="{group}"',
     ]
 
+    uuid = clean_attribute(
+        uuid
+    )
+
     if uuid:
         attrs.append(
-            f'tvg-id="radio-{clean(uuid)}"'
+            f'tvg-id="radio-{uuid}"'
         )
 
-    logo = clean(logo)
+    logo = sanitize_logo_url(
+        logo
+    )
 
-    if logo.startswith(
-        (
-            "http://",
-            "https://",
-        )
-    ):
+    if logo:
         attrs.append(
             f'tvg-logo="{logo}"'
         )
@@ -1069,22 +1195,58 @@ def make_item(
 def build_radio_section(
     stations,
 ):
-    # Prefer well-voted / higher-bitrate entries when
-    # Radio Browser contains several versions of a station.
+
+    # Prefer:
+    # 1. stations Radio Browser currently considers healthy;
+    # 2. higher community vote counts;
+    # 3. HTTPS;
+    # 4. higher bitrate.
+    def ranking(
+        station_data,
+    ):
+        resolved = (
+            station_data.get(
+                "url_resolved"
+            )
+            or station_data.get(
+                "url"
+            )
+            or ""
+        ).strip()
+
+        return (
+            int(
+                station_data.get(
+                    "lastcheckok"
+                )
+                or 0
+            ),
+            int(
+                station_data.get(
+                    "votes"
+                )
+                or 0
+            ),
+            int(
+                resolved.startswith(
+                    "https://"
+                )
+            ),
+            int(
+                station_data.get(
+                    "bitrate"
+                )
+                or 0
+            ),
+        )
+
+
     stations = sorted(
         stations,
-        key=lambda station: (
-            int(
-                station.get("votes")
-                or 0
-            ),
-            int(
-                station.get("bitrate")
-                or 0
-            ),
-        ),
+        key=ranking,
         reverse=True,
     )
+
 
     seen_names = set()
     seen_streams = set()
@@ -1092,19 +1254,21 @@ def build_radio_section(
 
     result = []
 
-    for station in stations:
+
+    for station_data in stations:
 
         if int(
-            station.get(
+            station_data.get(
                 "lastcheckok"
             )
             or 0
         ) != 1:
             continue
 
+
         original_name = (
-            clean_name(
-                station.get(
+            clean_station_name(
+                station_data.get(
                     "name"
                 )
             )
@@ -1113,19 +1277,25 @@ def build_radio_section(
         if not original_name:
             continue
 
-        if (
+
+        original_name_key = (
             normalize_name(
                 original_name
             )
+        )
+
+        if (
+            original_name_key
             in SKIP_KEYS
         ):
             continue
 
+
         url = (
-            station.get(
+            station_data.get(
                 "url_resolved"
             )
-            or station.get(
+            or station_data.get(
                 "url"
             )
             or ""
@@ -1134,42 +1304,56 @@ def build_radio_section(
         if not url:
             continue
 
+
         curated_key = (
             ALIASES.get(
-                normalize_name(
-                    original_name
-                )
+                original_name_key
             )
         )
 
+
         if curated_key:
-            (
-                label,
-                group_key,
-                _,
-                preferred_stream,
-                _,
-            ) = CURATED[
+
+            info = CURATED[
                 curated_key
             ]
 
-            name = label
-            group = GROUPS[
-                group_key
+            name = info[
+                "label"
             ]
 
-            if preferred_stream:
-                url = (
-                    preferred_stream
-                )
+            group = GROUPS[
+                info["group"]
+            ]
+
+            if info[
+                "preferred"
+            ]:
+                url = info[
+                    "preferred"
+                ]
+
 
         else:
-            name = original_name
+
+            name = (
+                DISPLAY_NAME_OVERRIDES
+                .get(
+                    original_name_key,
+                    original_name,
+                )
+            )
 
             group = auto_group(
-                station,
+                station_data,
                 name,
             )
+
+
+        url = upgrade_known_https(
+            url
+        )
+
 
         name_key = (
             normalize_name(
@@ -1183,9 +1367,9 @@ def build_radio_section(
             )
         )
 
-        # Curated aliases such as:
-        # ELI NISMAN / Eli Nisman Radio
-        # are treated as one station.
+
+        # Collapse multiple aliases belonging to the
+        # same curated station.
         if (
             curated_key
             and curated_key
@@ -1193,11 +1377,117 @@ def build_radio_section(
         ):
             continue
 
+
+        # Collapse duplicate display names.
         if (
             name_key
             in seen_names
         ):
             continue
+
+
+        # Collapse duplicate stream URLs.
+        if (
+            stream_key
+            and stream_key
+            in seen_streams
+        ):
+            continue
+
+
+        if curated_key:
+            seen_curated.add(
+                curated_key
+            )
+
+
+        seen_names.add(
+            name_key
+        )
+
+
+        if stream_key:
+            seen_streams.add(
+                stream_key
+            )
+
+
+        result.append(
+            make_item(
+                group=group,
+                name=name,
+                url=url,
+                uuid=(
+                    station_data.get(
+                        "stationuuid"
+                    )
+                    or ""
+                ),
+                logo=(
+                    station_data.get(
+                        "favicon"
+                    )
+                    or ""
+                ),
+                curated_key=(
+                    curated_key
+                ),
+            )
+        )
+
+
+    # ============================================================
+    # FALLBACKS
+    # ============================================================
+    #
+    # Add important stations that Radio Browser can occasionally
+    # omit from its healthy-country result.
+    #
+    # A fallback is used ONLY if that station was not already
+    # supplied by Radio Browser.
+    # ============================================================
+
+    for key, info in CURATED.items():
+
+        fallback = info[
+            "fallback"
+        ]
+
+        if (
+            not fallback
+            or key
+            in seen_curated
+        ):
+            continue
+
+
+        fallback = (
+            upgrade_known_https(
+                fallback
+            )
+        )
+
+
+        stream_key = (
+            canonical_stream_key(
+                fallback
+            )
+        )
+
+
+        name_key = (
+            normalize_name(
+                info["label"]
+            )
+        )
+
+
+        if (
+            name_key
+            in seen_names
+        ):
+            continue
+
 
         if (
             stream_key
@@ -1206,10 +1496,27 @@ def build_radio_section(
         ):
             continue
 
-        if curated_key:
-            seen_curated.add(
-                curated_key
+
+        result.append(
+            make_item(
+                group=GROUPS[
+                    info["group"]
+                ],
+                name=info[
+                    "label"
+                ],
+                url=fallback,
+                uuid=(
+                    f"fallback-{key}"
+                ),
+                curated_key=key,
             )
+        )
+
+
+        seen_curated.add(
+            key
+        )
 
         seen_names.add(
             name_key
@@ -1220,79 +1527,10 @@ def build_radio_section(
                 stream_key
             )
 
-        result.append(
-            make_item(
-                group,
-                name,
-                url,
-                station.get(
-                    "stationuuid"
-                )
-                or "",
-                station.get(
-                    "favicon"
-                )
-                or "",
-                curated_key,
-            )
-        )
 
-
-    # Add important stations that Radio Browser may
-    # occasionally omit from its currently healthy set.
-    for key, (
-        label,
-        group_key,
-        _,
-        _,
-        fallback_stream,
-    ) in CURATED.items():
-
-        if not fallback_stream:
-            continue
-
-        if key in seen_curated:
-            continue
-
-        stream_key = (
-            canonical_stream_key(
-                fallback_stream
-            )
-        )
-
-        if (
-            stream_key
-            in seen_streams
-        ):
-            continue
-
-        result.append(
-            make_item(
-                GROUPS[
-                    group_key
-                ],
-                label,
-                fallback_stream,
-                f"fallback-{key}",
-                "",
-                key,
-            )
-        )
-
-        seen_curated.add(
-            key
-        )
-
-        seen_names.add(
-            normalize_name(
-                label
-            )
-        )
-
-        seen_streams.add(
-            stream_key
-        )
-
+    # ============================================================
+    # SORTING
+    # ============================================================
 
     group_order = {
         GROUPS["main"]: 0,
@@ -1300,6 +1538,7 @@ def build_radio_section(
         GROUPS["religious"]: 2,
         GROUPS["other"]: 3,
     }
+
 
     curated_order = {
         key: index
@@ -1313,10 +1552,12 @@ def build_radio_section(
     def sort_key(
         item,
     ):
+
         if (
             item["group"]
             == GROUPS["main"]
         ):
+
             return (
                 0,
                 curated_order.get(
@@ -1329,6 +1570,7 @@ def build_radio_section(
                     "name"
                 ].casefold(),
             )
+
 
         return (
             group_order.get(
@@ -1346,24 +1588,136 @@ def build_radio_section(
         key=sort_key
     )
 
+
     lines = []
 
     for item in result:
-        lines.extend(
-            [
-                item[
-                    "extinf"
-                ],
-                item[
-                    "url"
-                ],
+
+        lines.append(
+            item[
+                "extinf"
             ]
         )
 
+        lines.append(
+            item[
+                "url"
+            ]
+        )
+
+
     return (
         lines,
-        len(result),
+        result,
     )
+
+
+def validate_output(
+    tv_lines,
+    radio_items,
+):
+    """
+    Fail the GitHub Action instead of publishing a
+    structurally broken playlist.
+    """
+
+    if not tv_lines:
+        raise RuntimeError(
+            "TV playlist is empty; "
+            "refusing to overwrite israel.m3u"
+        )
+
+
+    if not radio_items:
+        raise RuntimeError(
+            "Radio playlist is empty; "
+            "refusing to overwrite israel.m3u"
+        )
+
+
+    names = set()
+    streams = set()
+
+
+    for item in radio_items:
+
+        name_key = (
+            normalize_name(
+                item["name"]
+            )
+        )
+
+        stream_key = (
+            canonical_stream_key(
+                item["url"]
+            )
+        )
+
+
+        if not item[
+            "url"
+        ].startswith(
+            (
+                "http://",
+                "https://",
+            )
+        ):
+            raise RuntimeError(
+                "Invalid stream URL for "
+                f"{item['name']}: "
+                f"{item['url']}"
+            )
+
+
+        if (
+            name_key
+            in names
+        ):
+            raise RuntimeError(
+                "Duplicate radio station "
+                f"name: {item['name']}"
+            )
+
+
+        names.add(
+            name_key
+        )
+
+
+        if (
+            stream_key
+            and stream_key
+            in streams
+        ):
+            raise RuntimeError(
+                "Duplicate radio stream URL: "
+                f"{item['url']}"
+            )
+
+
+        if stream_key:
+            streams.add(
+                stream_key
+            )
+
+
+    main_count = sum(
+        item["group"]
+        == GROUPS["main"]
+        for item
+        in radio_items
+    )
+
+
+    # If the upstream source suddenly breaks badly,
+    # do NOT silently publish a tiny/empty radio list.
+    if main_count < 15:
+
+        raise RuntimeError(
+            f"Only {main_count} main Israeli "
+            "radio stations were generated; "
+            "refusing to publish"
+        )
 
 
 def main():
@@ -1372,7 +1726,7 @@ def main():
         "Downloading Israeli TV playlist..."
     )
 
-    tv = download_text(
+    tv_playlist = download_text(
         TV_URL
     )
 
@@ -1381,20 +1735,27 @@ def main():
         "Downloading Israeli radio database..."
     )
 
-    radio = download_radio()
+    radio_stations = download_radio()
 
 
     tv_lines = (
         make_tv_section(
-            tv
+            tv_playlist
         )
     )
 
+
     (
         radio_lines,
-        radio_count,
+        radio_items,
     ) = build_radio_section(
-        radio
+        radio_stations
+    )
+
+
+    validate_output(
+        tv_lines,
+        radio_items,
     )
 
 
@@ -1434,16 +1795,49 @@ def main():
         )
 
 
+    counts = {
+        group: 0
+        for group
+        in GROUPS.values()
+    }
+
+
+    for item in radio_items:
+
+        counts[
+            item["group"]
+        ] = (
+            counts.get(
+                item["group"],
+                0,
+            )
+            + 1
+        )
+
+
     print(
         f"Created {OUTPUT}"
     )
 
+
     print(
-        f"Included "
-        f"{radio_count} "
-        f"deduplicated Israeli "
-        f"radio stations."
+        "TV entries: "
+        f"{sum(line.startswith('#EXTINF:') for line in tv_lines)}"
     )
+
+
+    print(
+        "Radio entries: "
+        f"{len(radio_items)}"
+    )
+
+
+    for group in GROUPS.values():
+
+        print(
+            f"  {group}: "
+            f"{counts.get(group, 0)}"
+        )
 
 
 if __name__ == "__main__":
