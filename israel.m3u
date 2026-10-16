@@ -175,6 +175,8 @@ https://live.kcm.fm/livemusic
 https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-60f56ca4-3e39-45a6-ad94-cee362330fd5" tvg-logo="https://www.mizrahit.fm/wp-content/uploads/2014/03/favicon.png",Noshmim Mizrahit
 https://rs.mizrahit.fm:7777/arabellavie
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c6d2c435-0e91-4c63-b56f-919edebc93fd" tvg-logo="https://radioangelika.com/wp-content/themes/angelika/assets/img/logo-300.png",Radio Angelika
+https://radioangelika.com/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-7cee6800-7c93-497f-9c9d-7efc55756757",Radio CS
 https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2g
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-03a782b9-13b8-462a-9da5-0a19a7f44a0f" tvg-logo="https://radiolove.co.il/favicon.ico",Radio Love Soft Romantic
