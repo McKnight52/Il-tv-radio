@@ -65,10 +65,6 @@ https://d2dffl3588mvfk.cloudfront.net/out/v1/d8e15050ca4148aab0ee387a5e2eb46b/in
 http://213.91.179.28:8000/play/a0bw
 #EXTINF:-1 tvg-id="ShelanuTV.il@SD" tvg-logo="https://i.imgur.com/UVz2Ojq.png" group-title="Israel TV",Shelanu.TV (720p)
 https://1247634592.rsc.cdn77.org/1247634592/playlist.m3u8
-#EXTINF:-1 tvg-id="Sport3.il@SD" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Israel TV",Sport 3 (Israel) (1080p)
-http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BWGFFCU59AE6AEV3KF3FXTBA/12251/index.m3u8
-#EXTINF:-1 tvg-id="Sport4.il@SD" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Israel TV",Sport 4 (Israel) (1080p)
-http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BWGFFCU59AE6AEV3KF3FXTBA/2389/index.m3u8
 #EXTINF:-1 tvg-id="TeenNick.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/TeenNick_2019_logo.svg/960px-TeenNick_2019_logo.svg.png" group-title="Israel TV",TeenNick (Israel) (406p)
 http://89.33.29.115:8080/TeenNick/index.m3u8
 #EXTINF:-1 tvg-id="VacationChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/vacation-channel-il-hd.png" group-title="Israel TV",Vacation Channel
@@ -305,3 +301,5 @@ https://live.ecast.co.il/stream/sahar/stream
 https://gb25.streamgates.net/radios-audio/100StandUp/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-00355ea7-ab3b-4789-bc03-ebe0107015bf" tvg-logo="https://drive.google.com/file/d/1jrJxOLRQU3ffbWUt0NNNi9LRlpKYUBF2/view?usp=drive_link",Star 33 Radiostation
 https://online.star33radio.com:1115/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-bbb4b5d5-257d-446d-887b-0f09551cc962",Душа Кавказа
+https://www.kavkazportal.com/live
