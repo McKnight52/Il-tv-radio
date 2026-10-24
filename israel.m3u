@@ -157,6 +157,8 @@ https://glzwizzlv.bynetcdn.com/glglz_sofshavua_mp3
 https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-80d7414f-1ff8-4c1a-b081-6888a7bcf564" tvg-logo="https://www.kzradio.net/wp-content/uploads/2018/11/kzlogo.jpg",Hakatze (KZRadio)
 http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-34ccc82a-2ee3-4f71-b9b4-11bf66ef07bc",imsostablee Radio
+https://c44.radioboss.fm:8178/stream-mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-2687dea7-8484-4156-ae36-5aa5ca56bc7b",Israeli Voice Radio
 https://icecast.live/ivr
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b1a2d866-eeff-427f-9d92-f53b290e16c9",Ivri 6
