@@ -179,8 +179,6 @@ https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2
 https://liveradio.co.il:9000/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e35759c0-9e8f-422d-8da4-46d032c64e4e",Radio Plus
 http://s3.yesstreaming.net:7049/stream
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-37e8f5fa-23b1-4e8f-ba02-5323e5ead172" tvg-logo="https://www.radio-yasoo.com/index.files/image009.jpg",Radio Yasoo
-http://radio-yasoo.ath.cx:7500/;
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e24a4c7d-c489-413b-a337-60a6c252444f" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-80s.png",Radios 100FM - 100% 80s
 http://gb25.streamgates.net/radios-audio/10080s/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-692ae6f6-a6bd-4b69-991c-818a674b0e20",Radios 100FM - 100% 90s
