@@ -173,8 +173,6 @@ https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
 https://rs.mizrahit.fm:7777/arabellavie
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c6d2c435-0e91-4c63-b56f-919edebc93fd" tvg-logo="https://radioangelika.com/wp-content/themes/angelika/assets/img/logo-300.png",Radio Angelika
 https://radioangelika.com/stream
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-7cee6800-7c93-497f-9c9d-7efc55756757",Radio CS
-https://n0a.radiojar.com/0tpy1h0kxtzuv?rj-ttl=5&rj-tok=AAABhdgGORQA-2acfyF3_4WY2g
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-03a782b9-13b8-462a-9da5-0a19a7f44a0f" tvg-logo="https://radiolove.co.il/favicon.ico",Radio Love Soft Romantic
 https://liveradio.co.il:9000/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e35759c0-9e8f-422d-8da4-46d032c64e4e",Radio Plus
@@ -255,8 +253,6 @@ https://icecast.live/up2dance
 https://ystream.live/ystream-mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e77ab056-eda4-4438-8e0f-6e8522e75343" tvg-logo="https://zerockradio.com/favicon.ico",Ze Rock Radio
 https://icecast.live/proxy/zerock/zerock
-#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-4e044620-577e-4622-8114-461d2b1d55bf",Abdulbasit Abdulsamad
-https://radio.mp3islam.com/listen/abdulbasit/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-bf1cebbf-a58d-41a4-95f2-8abd5e50f6bf",Assalam Quran Radio
 https://backup.qurango.net/radio/ahmad_khader_altarabulsi
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Breslev For You
