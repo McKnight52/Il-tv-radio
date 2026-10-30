@@ -253,8 +253,6 @@ https://icecast.live/up2dance
 https://ystream.live/ystream-mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e77ab056-eda4-4438-8e0f-6e8522e75343" tvg-logo="https://zerockradio.com/favicon.ico",Ze Rock Radio
 https://icecast.live/proxy/zerock/zerock
-#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-bf1cebbf-a58d-41a4-95f2-8abd5e50f6bf",Assalam Quran Radio
-https://backup.qurango.net/radio/ahmad_khader_altarabulsi
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Breslev For You
 https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-006ffcf8-e541-11e8-a9cc-52543be04c81" tvg-logo="https://jewishmusicstream.com/favicon.ico",Jewish Music Stream
