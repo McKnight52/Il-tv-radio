@@ -37,7 +37,7 @@ http://stream.mcquack.net/381/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/379/index.m3u8
 #EXTINF:-1 tvg-id="i24NEWSArabic.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Israel TV",i24NEWS Arabic (1080p)
-https://i24newsarabic-cdn.encoders.immergo.tv/master.m3u8
+https://hlspackager.akamaized.net/live/DB/i24_ARABIC/HLS/i24_ARABIC.m3u8
 #EXTINF:-1 tvg-id="i24NEWSFrench.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Israel TV",i24NEWS French (1080p)
 https://i24newsfrench-cdn.encoders.immergo.tv/master.m3u8
 #EXTINF:-1 tvg-id="i24NEWSHebrew.il@SD" tvg-logo="https://www.i24news.tv/images/favicon.png" group-title="Israel TV",i24NEWS Hebrew (1080p)
@@ -251,8 +251,6 @@ https://radio.betteradio.live/listen/better_radio/live
 https://icecast.live/up2dance
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0c35a84-b5f4-4783-b27e-ab348c3f7e42" tvg-logo="https://ystream.live/assets/img/icon-512.png",yStream
 https://ystream.live/ystream-mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e77ab056-eda4-4438-8e0f-6e8522e75343" tvg-logo="https://zerockradio.com/favicon.ico",Ze Rock Radio
-https://icecast.live/proxy/zerock/zerock
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Breslev For You
 https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-006ffcf8-e541-11e8-a9cc-52543be04c81" tvg-logo="https://jewishmusicstream.com/favicon.ico",Jewish Music Stream
