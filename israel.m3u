@@ -119,20 +119,18 @@ https://cdn.cybercdn.live/Hatahana_1015/Live_Audio/icecast.audio
 https://radio.streamgates.net/stream/101fm
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-8cca0e0b-ccd9-416e-89cc-325ecc325f69" tvg-logo="https://static.rlive.co.il/storage/uploads/stations/idOPKeykio01mD3JccdAJwveMAqfDOGsKgiJ43SN.jpeg",Radio North 104.5FM
 https://radio.streamgates.net/stream/1045fm
-#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-c7a3001d-f31b-4f7a-90fe-ea4b689150e9",Galei Israel
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-d793e2f9-5532-4033-96a0-33d021ec0c86" tvg-logo="https://www.gly.co.il/Upload/Media/RadioStationLogo/radioStation_2_Logo_26042021170757.svg",Galei Israel
 https://cdn.cybercdn.live/Galei_Israel/Live/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-b83ca2b1-4674-4944-9110-35c41fe25d70" tvg-logo="https://96fm.co.il/wp-content/uploads/2022/10/cropped-Logo-192x192.png",Kol Rega
 https://cdn.cybercdn.live/Kol_Rega/Live_Audio/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-a757be45-799e-40b4-a23e-ee57ac55512b",Kol Chai
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-22cb6f71-ca0e-4f53-9093-c4760e646d2d",Kol Chai
 https://media2.93fm.co.il/live-new
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-92abc8dc-8af4-495e-824d-36f89f7ebd57" tvg-logo="https://kol-barama.co.il/wp-content/themes/qs-starter/images/favicon/apple-touch-icon-120x120.png",Kol Barama
 http://kb.cdnwz.net/kol_barama
-#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-40bbb648-fa7b-469b-86bc-153f6b4aec54" tvg-logo="https://www.xoox.co.il/service/radio/img/radio_m14.jpg",Radio Lev HaMedina
-https://cdn.cybercdn.live/Lev_Hamedina/Audio/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-241af301-da67-417b-8267-f38177100b6d",Radio Lev HaMedina
+http://cdn.cybercdn.live/Lev_Hamedina/Audio/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-9443edb8-3a88-463d-9e61-b88de4727a4d" tvg-logo="https://www.90fm.co.il/resource/images/logo.png",Radio 90FM
 https://cdn.cybercdn.live/Emtza_Haderech/Live_Audio/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-1e95d61c-88ad-4d59-82b4-f512c2a45aa6" tvg-logo="https://dyjvnjd6yl5jx.cloudfront.net/wp-content/uploads/2020/11/d0bbd0bed0b3d0be-d0bdd0bed0b2d18bd0b9-d0bcd0b0d0bbd18bd0b9.png",Pervoe Radio 89.1FM
-https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-3b20727f-de34-40b3-84ba-f7ba1ed9821b" tvg-logo="https://s.ashams.com/static/css/images/logo-header.png",Radio A-Shams 98.1FM
 https://cdna.streamgates.net/Ashams/Live/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-12bdb972-b398-4b3b-b7bd-c960ee884b78",Radio Nas 103.3FM
@@ -143,7 +141,7 @@ https://cdna.streamgates.net/radios-audio/Nostalgia_963fm/icecast.audio
 https://jointil.com/stream-beat
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-13d86ff8-058f-44e6-ba21-ccd065fb5dca" tvg-logo="https://www.jointil.com/broadcast/images/joint.radio350X350.png",#joint radio Blues Rock
 https://jointil.com/stream-blues
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-9684cbbc-ea62-422c-bc93-20cf4ed4bac1" tvg-logo="https://www.jointil.com/broadcast/images/joint.radio350X350.png",#joint radio Reggae
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-06327e45-5b95-4164-b335-a1a5b8095a1b" tvg-logo="https://jointil.com/broadcast/images/joint.radio350X350.png",#Joint Radio Reggae
 https://jointil.com/stream-reggae
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1a524655-ad7a-454b-ac8d-855188b740a3" tvg-logo="https://u.jimcdn.com/cms/o/se2cdc31361e4fa6c/img/favicon.png?t=1401133514",AVIVmedia
 http://176.9.7.145:8127/stream
@@ -159,13 +157,11 @@ https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
 http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-34ccc82a-2ee3-4f71-b9b4-11bf66ef07bc",imsostablee Radio
 https://c44.radioboss.fm:8178/stream-mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-2687dea7-8484-4156-ae36-5aa5ca56bc7b",Israeli Voice Radio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-0eb7423c-bb73-4772-8d12-ea602e875d9f",Israeli Voice Radio
 https://icecast.live/ivr
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b1a2d866-eeff-427f-9d92-f53b290e16c9",Ivri 6
 https://streaming.radio.co/sa06221901/listen
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-d902048f-5fcf-445a-9494-77d74dee9e43" tvg-logo="http://www.radio-addict.com/media/stream/0d07fb2e-42a2-437c-a946-640aeb96bbff_A13AAF1D18123B91C6F9ADBDFB904221_IMG_20230327_180423853.jpg",John Williams Guitar
-http://drive.uber.radio/uber/crjohnwilliamsguitarist/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-6698d366-17a6-4969-a28e-185c8dc1f91b" tvg-logo="https://kcm.fm/favicon.ico",Kol Chai Music
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-7390f369-9957-4ec2-bd83-cb28bac23302" tvg-logo="http://kcm.fm/favicon.ico",Kol Chai Music
 https://live.kcm.fm/livemusic
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-712c3a1d-8387-4cf1-b354-4be74b153ee0" tvg-logo="https://kol-play.co.il/wp-content/themes/kolplay/images/fv-icon.png",Kol Play
 https://cdn.cybercdn.live/Kol_Barama/Music/icecast.audio
@@ -253,13 +249,13 @@ https://icecast.live/up2dance
 https://ystream.live/ystream-mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Breslev For You
 https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-006ffcf8-e541-11e8-a9cc-52543be04c81" tvg-logo="https://jewishmusicstream.com/favicon.ico",Jewish Music Stream
-https://stream.jewishmusicstream.com:8000/
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-7b7b87ce-eeab-439a-91aa-7e37597a0ed0",Music-ToraVeZimra
+https://cast.breslevforyou.co.il/listen/music-toravezimra/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-23f2df70-a018-4aa0-a1f6-3fb497cf9d53" tvg-logo="https://orenu.co.il/wp-content/uploads/2022/02/Radio_Orenu_2022_4.png",Radio Orenu
 https://listen7.myradio24.com/orenu
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-5f6f5879-d17d-4245-95e7-7594ff65ed4a" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-yehudi.png",Radios 100FM - 100% Yehudi (יהודי)
 https://gb25.streamgates.net/radios-audio/100yehudi/playlist.m3u8
-#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-3a752591-4cc0-4949-bd5d-2fb2b1935cd3",Toker FM
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-fallback-toker",Toker FM
 https://broadcast.adpronet.com/radio/6060/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-29632b43-283d-4156-8210-596b439c554c" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: הלכות ודף יומי
 https://cast.breslevforyou.co.il/listen/halachot/radio.mp3
@@ -267,8 +263,6 @@ https://cast.breslevforyou.co.il/listen/halachot/radio.mp3
 https://cast.breslevforyou.co.il/listen/books/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-25d7d098-ff20-4568-ad8a-c8e23e2ac18a" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: קצר וקולע
 https://cast.breslevforyou.co.il/listen/shorts/radio.mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-38c81bbc-f8c3-4447-ae0e-ff8880017e04" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-152x152.png",ברסלב פוריו: תורה וזימרה
-https://cast.breslevforyou.co.il/listen/music-toravezimra/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-8c009e29-7a57-4695-9bd7-7ed39b5dd470" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם אנגלית - Kabbalah eng
 http://icecast.kab.tv/live1-eng-574bcfd5.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-268e07ee-b1b5-4604-9b13-53c6e167abad" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם עברית - Kabbalah heb
@@ -277,8 +271,6 @@ http://icecast.kab.tv/live1-heb-574bcfd5.mp3
 http://icecast.kab.tv/live1-fre-574bcfd5.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-b0bb7dd9-f47a-4da3-9546-ad7fb54c19ca" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם רוסית - Kabbalah rus
 http://icecast.kab.tv/live1-rus-574bcfd5.mp3
-#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-9687cb4b-6c60-429e-a7f0-28180e746075",AudioVersity
-https://1062onair.runi.ac.il/idc123.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-c7d74330-9ead-467e-8f33-0ed78d26917d",KHZ - רדיו קול הצפון
 https://live.ecast.co.il/stream/khz
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-353e22a8-1026-4b8e-bef4-5b94b91f049d" tvg-logo="https://radiofranceisrael.com/uploads/user-music/1811/site-logo/sitelogo_91_1787912087_6825f8.jpg",Radio France Israël
@@ -291,6 +283,8 @@ https://www.radioking.com/play/radio-qualita
 https://live.ecast.co.il/stream/sahar/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-ecd6c262-3ebf-40e8-9388-7e03e6a7330b" tvg-logo="https://d203uamca1bsc4.cloudfront.net/app/thumbnails/t-standup.png",Radios 100FM - 100% Stand-Up
 https://gb25.streamgates.net/radios-audio/100StandUp/icecast.audio
+#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-d49053be-1450-42f7-94dc-fbc6406c719e",Reichmann AudioVersity
+https://1062onair.runi.ac.il/idc123.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-00355ea7-ab3b-4789-bc03-ebe0107015bf" tvg-logo="https://drive.google.com/file/d/1jrJxOLRQU3ffbWUt0NNNi9LRlpKYUBF2/view?usp=drive_link",Star 33 Radiostation
 https://online.star33radio.com:1115/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-bbb4b5d5-257d-446d-887b-0f09551cc962",Душа Кавказа
