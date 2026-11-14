@@ -273,6 +273,8 @@ http://icecast.kab.tv/live1-heb-574bcfd5.mp3
 http://icecast.kab.tv/live1-fre-574bcfd5.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-b0bb7dd9-f47a-4da3-9546-ad7fb54c19ca" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/46/Bnei_Baruch.png",קבלה לעם רוסית - Kabbalah rus
 http://icecast.kab.tv/live1-rus-574bcfd5.mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-17b1a2ed-edad-42cf-b956-c6548e4026d3" tvg-logo="https://radio.sandrokob.online/icon-512.png",إذاعة الصلاة | Prayer Radio
+https://radio.sandrokob.online/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-c7d74330-9ead-467e-8f33-0ed78d26917d",KHZ - רדיו קול הצפון
 https://live.ecast.co.il/stream/khz
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-353e22a8-1026-4b8e-bef4-5b94b91f049d" tvg-logo="https://radiofranceisrael.com/uploads/user-music/1811/site-logo/sitelogo_91_1787912087_6825f8.jpg",Radio France Israël
