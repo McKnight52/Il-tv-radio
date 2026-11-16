@@ -243,8 +243,8 @@ https://gb25.streamgates.net/radios-audio/100Workout/playlist.m3u8
 https://gb25.streamgates.net/radios-audio/100World/playlist.m3u8
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-d81cba95-90cb-493c-b921-133ab74daa0f" tvg-logo="https://rak-musica.webnode.be/",Rak Musica
 https://play.radioking.io/rak-musica/670240
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-6cc6a49d-6169-4e68-838b-161731a9f1ec" tvg-logo="https://timbr.music/apple-touch-icon.png",TIMBR Radio
-https://radio.betteradio.live/listen/better_radio/live
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-ceff7328-3fb5-4965-bad7-6bdab363d8f8" tvg-logo="https://timbr.music/apple-touch-icon.png",TIMBR Radio
+https://stream.timbr.music/live
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0929697-50c6-4865-bc14-58e1a48ea20c" tvg-logo="https://up2dance.com/wp-content/uploads/2021/01/Up2Dance-Radio-01-01-768x742.png",Up2Dance Radio
 https://icecast.live/up2dance
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0c35a84-b5f4-4783-b27e-ab348c3f7e42" tvg-logo="https://ystream.live/assets/img/icon-512.png",yStream
