@@ -157,8 +157,8 @@ https://glzwizzlv.bynetcdn.com/glglz_sofshavua_mp3
 https://glzwizzlv.bynetcdn.com/glglz_rock_mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-80d7414f-1ff8-4c1a-b081-6888a7bcf564" tvg-logo="https://www.kzradio.net/wp-content/uploads/2018/11/kzlogo.jpg",Hakatze (KZRadio)
 http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio
-#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-34ccc82a-2ee3-4f71-b9b4-11bf66ef07bc",imsostablee Radio
-https://c44.radioboss.fm:8178/stream-mp3
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-dcbd792b-1547-440b-82ae-23b6f926283e",Imsostablee Radio
+https://c44.radioboss.fm:8178/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-0eb7423c-bb73-4772-8d12-ea602e875d9f",Israeli Voice Radio
 https://icecast.live/ivr
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-b1a2d866-eeff-427f-9d92-f53b290e16c9",Ivri 6
@@ -250,7 +250,7 @@ https://icecast.live/up2dance
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c0c35a84-b5f4-4783-b27e-ab348c3f7e42" tvg-logo="https://ystream.live/assets/img/icon-512.png",yStream
 https://ystream.live/ystream-mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e77ab056-eda4-4438-8e0f-6e8522e75343" tvg-logo="https://zerockradio.com/favicon.ico",Ze Rock Radio
-https://icecast.live/proxy/zerock/zerock
+https://rocky.kupernet.com/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-a46e3a39-40cc-441f-b9f6-9fbaecaa4de3" tvg-logo="https://breslevforyou.co.il/assets/favicon/favicon-512x512.png",Breslev For You
 https://cast.breslevforyou.co.il/listen/radiobreslev/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Religious" tvg-id="radio-7b7b87ce-eeab-439a-91aa-7e37597a0ed0",Music-ToraVeZimra
