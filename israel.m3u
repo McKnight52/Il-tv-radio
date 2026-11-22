@@ -175,6 +175,8 @@ https://jointil.com/stream-blues
 https://jointil.com/stream-reggae
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-1a524655-ad7a-454b-ac8d-855188b740a3" tvg-logo="https://u.jimcdn.com/cms/o/se2cdc31361e4fa6c/img/favicon.png?t=1401133514",AVIVmedia
 http://176.9.7.145:8127/stream
+#EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-c7b5533b-7aa7-4eb8-a7ba-418123522728",DizGraf Radio
+https://radio.dizgraf.com/listen/dizgraf_radio/radio.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e7230036-0803-4aea-aa87-938db8b2d4eb",Eli Nisman Radio
 https://listen6.myradio24.com/25715
 #EXTINF:-1 radio="true" group-title="Israel Radio | Music" tvg-id="radio-e616624f-4df0-4a84-abb9-1f176e2b4ff8",Galgalatz - Decades
@@ -307,8 +309,6 @@ http://icecast.kab.tv/live1-rus-574bcfd5.mp3
 https://radio.sandrokob.online/stream
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-c7d74330-9ead-467e-8f33-0ed78d26917d",KHZ - רדיו קול הצפון
 https://live.ecast.co.il/stream/khz
-#EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-353e22a8-1026-4b8e-bef4-5b94b91f049d" tvg-logo="https://radiofranceisrael.com/uploads/user-music/1811/site-logo/sitelogo_91_1787912087_6825f8.jpg",Radio France Israël
-https://stream10.vestaradio.com/Radio-France-Israel
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-508a19e3-3d7b-4b0c-9d75-cb7c228522b0" tvg-logo="https://www.radionahariya.com/assets/icons/apple-touch-icon.png",Radio Nahariya
 https://cast.radionahariya.com:8443/main.mp3
 #EXTINF:-1 radio="true" group-title="Israel Radio | Other" tvg-id="radio-66ddc564-98ec-4901-a9e7-91fc2e64fcaa" tvg-logo="https://static.wixstatic.com/media/9faaae_a396c0df8aa54320bd31c04ddaab6b3c~mv2.png/v1/fill/w_426,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9faaae_a396c0df8aa54320bd31c04ddaab6b3c~mv2.png",Radio Qualita
