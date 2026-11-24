@@ -14,6 +14,12 @@
     ],
     "radio-fallback-makan": [
       "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+    ],
+    "KnessetChannel.il@SD": [
+      "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
+    ],
+    "Makan33.il@SD": [
+      "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
     ]
   },
   "tv_api": "https://iptv-org.github.io/api/streams.json",
@@ -32,7 +38,10 @@
       "Kan Moreshet",
       "Reshet Moreshet",
       "כאן מורשת",
-      "רשת מורשת"
+      "רשת מורשת",
+      "Kan Israel Reshet Moreshet 92.5 FM",
+      "כאן מורשת - Kan Moreshet",
+      "Kan Moreshet (כאן מורשת)"
     ],
     "radio-fallback-makan": [
       "Makan Radio",
@@ -41,7 +50,14 @@
       "MAKAN - Arabic Radio",
       "מכאן",
       "רדיו מכאן",
-      "مكان"
+      "مكان",
+      "راديو مكان - Kan Israel Makan",
+      "Kan Israel Makan",
+      "راديو مكان",
+      "כאן מכאן",
+      "רדיו מַכַּאן (راديو مكان / Radio Makan)",
+      "Kan Makan (مكان)",
+      "مكان (כאן מַכַּאן)"
     ],
     "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": [
       "Radio Tel Aviv 102FM",
@@ -74,6 +90,9 @@
     ],
     "KnessetChannel.il@SD": [
       "knesset.tv"
+    ],
+    "Makan33.il@SD": [
+      "kan.org.il"
     ]
   },
   "locally_failed_urls": [
@@ -85,11 +104,12 @@
   ],
   "official_pages": {
     "Keshet12.il@SD": "https://www.mako.co.il/mako-vod",
-    "Channel13.il@SD": "https://www.13tv.co.il/",
+    "Channel13.il@SD": "https://13tv.co.il/live",
     "KnessetChannel.il@SD": "https://www.knesset.tv/live/",
     "KanEducational.il@SD": "https://www.kan.org.il/",
     "radio-fallback-kan_moreshet": "https://www.kan.org.il/",
     "radio-fallback-makan": "https://www.kan.org.il/",
-    "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": "https://www.102fm.co.il/"
+    "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": "https://www.102fm.co.il/",
+    "Makan33.il@SD": "https://www.kan.org.il/"
   }
 }
