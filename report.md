@@ -1,9 +1,9 @@
 # IPTV report — 2026-11-24
 Total: 145
-Working TV: 24
+Working TV: 25
 Working radio: 105
-Failed: 16
-Replacements: 0
+Failed: 15
+Replacements: 1
 Mass failure freeze: False
 Unavailable entries: 0 (proposed only during freeze)
 
@@ -42,7 +42,7 @@ Unavailable entries: 0 (proposed only during freeze)
 | Kan 11 (1080p) | ok | 2026-11-24 | 0 | 0 | active |
 | Kan Educational (720p) | HTTP 403 | never | 1 | 0 | active / uncertain |
 | Keshet 12 (1080p) | HTTP 403 | never | 1 | 1 | active |
-| Knesset Channel (576p) | HTTP 403 | never | 1 | 1 | active |
+| Knesset Channel (576p) | ok | 2026-11-24 | 0 | 0 | active |
 | Makan 33 (1080p) | HTTP 403 | 2026-11-24 | 1 | 0 | active / uncertain |
 | Music IL (720p) | ok | 2026-11-24 | 0 | 0 | active |
 | Now 14 (1080p) | ok | 2026-11-24 | 0 | 0 | active |
@@ -166,15 +166,18 @@ Unavailable entries: 0 (proposed only during freeze)
 | Душа Кавказа | ok | 2026-11-24 | 0 | 0 | active |
 
 ## Replacements
+- Knesset Channel (576p): http://stream.mcquack.net/48/index.m3u8 → https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8 (configured broadcaster candidate)
 
 ## Repair attempts
 ### Channel 13 (Israel) (1080p) — HTTP 403
 Candidates discovered: 1
-Official viewing/reference page: https://www.13tv.co.il/
+Official viewing/reference page: https://13tv.co.il/live
 - IPTV-org API: https://d2xg1g9o5vns8m.cloudfront.net/[path withheld] — source authorization needs review
 ### Channel 24 (Israel) (1080p) — HTTP 403
-Candidates discovered: 0
-- No distinct eligible candidate found, or mass-failure freeze is active.
+Candidates discovered: 2
+Official viewing/reference page: https://www.mako.co.il/24tv
+- configured broadcaster candidate: https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/video_10801920_p_1.m3u8 — HTTP 403
+- configured broadcaster candidate: https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24/index_2200.m3u8 — HTTP 403
 ### Good Life (576p) — HTTP 403
 Candidates discovered: 0
 - No distinct eligible candidate found, or mass-failure freeze is active.
@@ -192,16 +195,18 @@ Candidates discovered: 1
 Official viewing/reference page: https://www.kan.org.il/
 - configured broadcaster candidate: https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8 — connection/DNS error: HTTPSConnectionPool(host='kan23.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024691/2024691/m
 ### Keshet 12 (1080p) — HTTP 403
-Candidates discovered: 0
+Candidates discovered: 2
 Official viewing/reference page: https://www.mako.co.il/mako-vod
-- No distinct eligible candidate found, or mass-failure freeze is active.
+- configured broadcaster candidate: https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8 — HTTP 403
+- configured broadcaster candidate: https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index_2200.m3u8 — HTTP 403
 ### Knesset Channel (576p) — HTTP 403
-Candidates discovered: 1
+Candidates discovered: 1 (search stopped after success)
 Official viewing/reference page: https://www.knesset.tv/live/
-- IPTV-org API: https://contact.gostreaming.tv/[path withheld] — source authorization needs review
+- configured broadcaster candidate: https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8 — ok
 ### Makan 33 (1080p) — HTTP 403
-Candidates discovered: 0
-- No distinct eligible candidate found, or mass-failure freeze is active.
+Candidates discovered: 1
+Official viewing/reference page: https://www.kan.org.il/
+- configured broadcaster candidate: https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8 — connection/DNS error: HTTPSConnectionPool(host='makan.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024680/2024680/m
 ### Viva Premium (1080p) — HTTP 403
 Candidates discovered: 0
 - No distinct eligible candidate found, or mass-failure freeze is active.
@@ -215,10 +220,11 @@ Candidates discovered: 0
 Candidates discovered: 0
 - No distinct eligible candidate found, or mass-failure freeze is active.
 ### KAN Moreshet — HTTP 403
-Candidates discovered: 0
-Official viewing/reference page: https://www.kan.org.il/
-- No distinct eligible candidate found, or mass-failure freeze is active.
-### Makan Radio — HTTP 403
 Candidates discovered: 1
 Official viewing/reference page: https://www.kan.org.il/
+- configured broadcaster candidate: http://kanlive.akamaized.net/kanmoreshet/smil:kanmoreshet_mp4.smil/playlist.m3u8 — connection/DNS error: HTTPConnectionPool(host='kanlive.akamaized.net', port=80): Max retries exceeded with url: /kanmoreshet/smil:kanmoreshet_
+### Makan Radio — HTTP 403
+Candidates discovered: 2
+Official viewing/reference page: https://www.kan.org.il/
 - configured broadcaster candidate: https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8 — connection/DNS error: HTTPSConnectionPool(host='makanradio.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024818/2024
+- configured broadcaster candidate: http://kanlive.akamaized.net/makan/smil:makan_mp4.smil/playlist.m3u8 — connection/DNS error: HTTPConnectionPool(host='kanlive.akamaized.net', port=80): Max retries exceeded with url: /makan/smil:makan_mp4.smil/pla

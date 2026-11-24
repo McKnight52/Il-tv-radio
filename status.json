@@ -68,7 +68,20 @@
     "url": "http://stream.mcquack.net/42/index.m3u8",
     "uncertain": true,
     "disposition": "active",
-    "attempts": []
+    "attempts": [
+      {
+        "url": "https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/video_10801920_p_1.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "HTTP 403"
+      },
+      {
+        "url": "https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24/index_2200.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "HTTP 403"
+      }
+    ]
   },
   "ComedyChannel.il@SD": {
     "failures": 0,
@@ -258,26 +271,38 @@
     "url": "http://stream.mcquack.net/294/index.m3u8",
     "uncertain": false,
     "disposition": "active",
-    "attempts": []
+    "attempts": [
+      {
+        "url": "https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "HTTP 403"
+      },
+      {
+        "url": "https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index_2200.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "HTTP 403"
+      }
+    ]
   },
   "KnessetChannel.il@SD": {
     "last_check": "2026-11-24",
-    "result": "HTTP 403",
-    "observed_failures": 1,
-    "last_failed_day": "2026-11-24",
-    "failures": 1,
-    "last_counted_day": "2026-11-24",
-    "url": "http://stream.mcquack.net/48/index.m3u8",
+    "result": "ok",
+    "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
     "uncertain": false,
     "disposition": "active",
     "attempts": [
       {
-        "url": "https://contact.gostreaming.tv/[path withheld]",
-        "source": "IPTV-org API",
-        "skip": "source authorization needs review",
-        "result": "source authorization needs review"
+        "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "ok"
       }
-    ]
+    ],
+    "failures": 0,
+    "observed_failures": 0,
+    "last_success": "2026-11-24"
   },
   "Makan33.il@SD": {
     "failures": 0,
@@ -289,7 +314,14 @@
     "url": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/makan/live.livx/playlist.m3u8",
     "uncertain": true,
     "disposition": "active",
-    "attempts": []
+    "attempts": [
+      {
+        "url": "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "connection/DNS error: HTTPSConnectionPool(host='makan.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024680/2024680/m"
+      }
+    ]
   },
   "MusicIL.il@SD": {
     "failures": 0,
@@ -526,7 +558,14 @@
     "url": "https://kanlivep2event-i.akamaihd.net/hls/live/749629/749629/playlist.m3u8",
     "uncertain": true,
     "disposition": "active",
-    "attempts": []
+    "attempts": [
+      {
+        "url": "http://kanlive.akamaized.net/kanmoreshet/smil:kanmoreshet_mp4.smil/playlist.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "connection/DNS error: HTTPConnectionPool(host='kanlive.akamaized.net', port=80): Max retries exceeded with url: /kanmoreshet/smil:kanmoreshet_"
+      }
+    ]
   },
   "radio-fallback-makan": {
     "last_check": "2026-11-24",
@@ -542,6 +581,12 @@
         "source": "configured broadcaster candidate",
         "skip": "",
         "result": "connection/DNS error: HTTPSConnectionPool(host='makanradio.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024818/2024"
+      },
+      {
+        "url": "http://kanlive.akamaized.net/makan/smil:makan_mp4.smil/playlist.m3u8",
+        "source": "configured broadcaster candidate",
+        "skip": "",
+        "result": "connection/DNS error: HTTPConnectionPool(host='kanlive.akamaized.net', port=80): Max retries exceeded with url: /makan/smil:makan_mp4.smil/pla"
       }
     ]
   },
