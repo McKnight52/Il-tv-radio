@@ -39,7 +39,9 @@
   },
   "EconomyChannel.il@SD": {
     "last_check": "2026-11-24",
-    "result": "media probe timeout"
+    "result": "ok",
+    "failures": 0,
+    "last_success": "2026-11-24"
   },
   "Foody.il@SD": {
     "failures": 0,
@@ -277,7 +279,7 @@
     "failures": 0,
     "last_success": "2026-11-24",
     "last_check": "2026-11-24",
-    "result": "ok"
+    "result": "HTTP timeout"
   },
   "radio-4a3e0c55-774e-47db-929b-e8841d38a871": {
     "failures": 0,

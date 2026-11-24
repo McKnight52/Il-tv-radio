@@ -1,7 +1,7 @@
 # IPTV report — 2026-11-24
 Total: 145
-Working TV: 24
-Working radio: 105
+Working TV: 25
+Working radio: 104
 Failed: 16
 Replacements: 0
 Mass failure freeze: False
@@ -15,7 +15,7 @@ Mass failure freeze: False
 | Channel 16 (1080p) | ok | 2026-11-24 | 0 |
 | Channel 24 (Israel) (1080p) | HTTP 403 | never | 0 |
 | Comedy Channel (1080p) | ok | 2026-11-24 | 0 |
-| Economy Channel (1080p) | media probe timeout | never | 0 |
+| Economy Channel (1080p) | ok | 2026-11-24 | 0 |
 | Foody (1080p) | ok | 2026-11-24 | 0 |
 | Good Life (576p) | HTTP 403 | never | 0 |
 | Hala TV (1080p) [Not 24/7] | ok | 2026-11-24 | 0 |
@@ -59,7 +59,7 @@ Mass failure freeze: False
 | 103FM | ok | 2026-11-24 | 0 |
 | Eco 99FM | ok | 2026-11-24 | 0 |
 | Radios 100FM | ok | 2026-11-24 | 0 |
-| Radio Tel Aviv 102FM | ok | 2026-11-24 | 0 |
+| Radio Tel Aviv 102FM | HTTP timeout | 2026-11-24 | 0 |
 | Radio Haifa 107.5FM | ok | 2026-11-24 | 0 |
 | Radio Darom | ok | 2026-11-24 | 0 |
 | Radio Hatahana 101.5FM | ok | 2026-11-24 | 0 |
