@@ -1,157 +1,224 @@
 # IPTV report — 2026-11-24
 Total: 145
-Working TV: 25
-Working radio: 104
+Working TV: 24
+Working radio: 105
 Failed: 16
 Replacements: 0
 Mass failure freeze: False
+Unavailable entries: 0 (proposed only during freeze)
 
-| Channel | Result | Last success | Failed days |
-|---|---|---|---|
-| Angel TV Hebrew (720p) | ok | 2026-11-24 | 0 |
-| Arutz HaYeladim (720p) | ok | 2026-11-24 | 0 |
-| Channel 9 (Israel) (1080p) | ok | 2026-11-24 | 0 |
-| Channel 13 (Israel) (1080p) | HTTP 403 | never | 0 |
-| Channel 16 (1080p) | ok | 2026-11-24 | 0 |
-| Channel 24 (Israel) (1080p) | HTTP 403 | never | 0 |
-| Comedy Channel (1080p) | ok | 2026-11-24 | 0 |
-| Economy Channel (1080p) | ok | 2026-11-24 | 0 |
-| Foody (1080p) | ok | 2026-11-24 | 0 |
-| Good Life (576p) | HTTP 403 | never | 0 |
-| Hala TV (1080p) [Not 24/7] | ok | 2026-11-24 | 0 |
-| Hidabroot (1080p) | ok | 2026-11-24 | 0 |
-| Hop! (1080p) | HTTP 403 | never | 0 |
-| HOT Drama (1080p) | HTTP 403 | never | 0 |
-| HOT Zone (1080p) | HTTP 403 | never | 0 |
-| i24NEWS Arabic (1080p) | ok | 2026-11-24 | 0 |
-| i24NEWS French (1080p) | ok | 2026-11-24 | 0 |
-| i24NEWS Hebrew (1080p) | ok | 2026-11-24 | 0 |
-| Junior (720p) | ok | 2026-11-24 | 0 |
-| Kabbalah for the People Israel (504p) [Not 24/7] | ok | 2026-11-24 | 0 |
-| Kan 11 (1080p) | ok | 2026-11-24 | 0 |
-| Kan Educational (720p) | HTTP 403 | never | 0 |
-| Keshet 12 (1080p) | HTTP 403 | never | 0 |
-| Knesset Channel (576p) | HTTP 403 | never | 0 |
-| Makan 33 (1080p) | ok | 2026-11-24 | 0 |
-| Music IL (720p) | ok | 2026-11-24 | 0 |
-| Now 14 (1080p) | ok | 2026-11-24 | 0 |
-| Reality Channel | ok | 2026-11-24 | 0 |
-| RTG int. | ok | 2026-11-24 | 0 |
-| Shelanu.TV (720p) | ok | 2026-11-24 | 0 |
-| The Israeli Network (540p) | ok | 2026-11-24 | 0 |
-| Vacation Channel | ok | 2026-11-24 | 0 |
-| Viva Istanbul (1080p) | ok | 2026-11-24 | 0 |
-| Viva Premium (1080p) | HTTP 403 | never | 0 |
-| Viva Telenovelas (1080p) | ok | 2026-11-24 | 0 |
-| Yam Tichoni (1080p) | HTTP 403 | never | 0 |
-| Yes Movies Action (1080p) | HTTP 403 | never | 0 |
-| Zoom (Israel) (576p) | HTTP 403 | never | 0 |
-| Galgalatz | ok | 2026-11-24 | 0 |
-| Galei Zahal | ok | 2026-11-24 | 0 |
-| KAN 88 | ok | 2026-11-24 | 0 |
-| KAN Bet | ok | 2026-11-24 | 0 |
-| KAN Gimel | ok | 2026-11-24 | 0 |
-| KAN Kol HaMusica | ok | 2026-11-24 | 0 |
-| KAN Tarbut | ok | 2026-11-24 | 0 |
-| KAN Reka | ok | 2026-11-24 | 0 |
-| KAN Moreshet | HTTP 403 | never | 0 |
-| Makan Radio | HTTP 403 | never | 0 |
-| 103FM | ok | 2026-11-24 | 0 |
-| Eco 99FM | ok | 2026-11-24 | 0 |
-| Radios 100FM | ok | 2026-11-24 | 0 |
-| Radio Tel Aviv 102FM | HTTP timeout | 2026-11-24 | 0 |
-| Radio Haifa 107.5FM | ok | 2026-11-24 | 0 |
-| Radio Darom | ok | 2026-11-24 | 0 |
-| Radio Hatahana 101.5FM | ok | 2026-11-24 | 0 |
-| Radio Jerusalem 101FM | ok | 2026-11-24 | 0 |
-| Radio North 104.5FM | ok | 2026-11-24 | 0 |
-| Galei Israel | ok | 2026-11-24 | 0 |
-| Kol Rega | ok | 2026-11-24 | 0 |
-| Kol Chai | ok | 2026-11-24 | 0 |
-| Kol Barama | ok | 2026-11-24 | 0 |
-| Radio Lev HaMedina | ok | 2026-11-24 | 0 |
-| Radio 90FM | ok | 2026-11-24 | 0 |
-| Radio A-Shams 98.1FM | ok | 2026-11-24 | 0 |
-| Radio Nas 103.3FM | ok | 2026-11-24 | 0 |
-| Radios Nostalgia 96.3FM | ok | 2026-11-24 | 0 |
-| #joint radio Beat Trance | ok | 2026-11-24 | 0 |
-| #joint radio Blues Rock | ok | 2026-11-24 | 0 |
-| #Joint Radio Reggae | ok | 2026-11-24 | 0 |
-| AVIVmedia | ok | 2026-11-24 | 0 |
-| DizGraf Radio | ok | 2026-11-24 | 0 |
-| Eli Nisman Radio | ok | 2026-11-24 | 0 |
-| Galgalatz - Decades | ok | 2026-11-24 | 0 |
-| Galgalatz - Relaxed (Weekend) | ok | 2026-11-24 | 0 |
-| Galgalatz - Rock | ok | 2026-11-24 | 0 |
-| Hakatze (KZRadio) | ok | 2026-11-24 | 0 |
-| Imsostablee Radio | ok | 2026-11-24 | 0 |
-| Israeli Voice Radio | ok | 2026-11-24 | 0 |
-| Ivri 6 | ok | 2026-11-24 | 0 |
-| Kol Chai Music | ok | 2026-11-24 | 0 |
-| Kol Play | ok | 2026-11-24 | 0 |
-| Noshmim Mizrahit | ok | 2026-11-24 | 0 |
-| Radio Angelika | ok | 2026-11-24 | 0 |
-| Radio Love Soft Romantic | ok | 2026-11-24 | 0 |
-| Radio Plus | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% 80s | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% 90s | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Blues | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Britpop | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Chillout | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Classic | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Classic Rock | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Club | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Country | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Covers | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Disney | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Eurovision | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Gamer | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Hits | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Jazz | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% K-Pop | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Kids | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Latin | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Legends | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Love | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Mizrachit (מזרחי) | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Movies | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Nostalgia | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Oldies | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Relax | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Retro | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Rock | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Selfie | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Stars (ערוץ הכוכבים) | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% TikTok | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Top 40 | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Workout | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% World Music | ok | 2026-11-24 | 0 |
-| Rak Musica | ok | 2026-11-24 | 0 |
-| TIMBR Radio | ok | 2026-11-24 | 0 |
-| Up2Dance Radio | ok | 2026-11-24 | 0 |
-| yStream | ok | 2026-11-24 | 0 |
-| Ze Rock Radio | ok | 2026-11-24 | 0 |
-| Breslev For You | ok | 2026-11-24 | 0 |
-| Music-ToraVeZimra | ok | 2026-11-24 | 0 |
-| Radio Orenu | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Yehudi (יהודי) | ok | 2026-11-24 | 0 |
-| Toker FM | ok | 2026-11-24 | 0 |
-| ברסלב פוריו: הלכות ודף יומי | ok | 2026-11-24 | 0 |
-| ברסלב פוריו: ספרי ברסלב | ok | 2026-11-24 | 0 |
-| ברסלב פוריו: קצר וקולע | ok | 2026-11-24 | 0 |
-| קבלה לעם אנגלית - Kabbalah eng | ok | 2026-11-24 | 0 |
-| קבלה לעם עברית - Kabbalah heb | ok | 2026-11-24 | 0 |
-| קבלה לעם צרפתית - Kabbalah fre | ok | 2026-11-24 | 0 |
-| קבלה לעם רוסית - Kabbalah rus | ok | 2026-11-24 | 0 |
-| إذاعة الصلاة / Prayer Radio | ok | 2026-11-24 | 0 |
-| KHZ - רדיו קול הצפון | ok | 2026-11-24 | 0 |
-| Radio Nahariya | ok | 2026-11-24 | 0 |
-| Radio Qualita | ok | 2026-11-24 | 0 |
-| Radio Sahar | ok | 2026-11-24 | 0 |
-| RADIO TIKVA | ok | 2026-11-24 | 0 |
-| Radios 100FM - 100% Stand-Up | ok | 2026-11-24 | 0 |
-| Reichmann AudioVersity | ok | 2026-11-24 | 0 |
-| Star 33 Radiostation | ok | 2026-11-24 | 0 |
-| Душа Кавказа | ok | 2026-11-24 | 0 |
+## Sources
+- https://iptv-org.github.io/iptv/countries/il.m3u: 49 entries
+- https://iptv-org.github.io/api/streams.json: 19263 entries
+- https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL: 130 entries
+
+## Initial failures by host
+- stream.mcquack.net: 13
+- kanlivep2event-i.akamaihd.net: 2
+- kancdn.medonecdn.net: 1
+
+| Channel | Result | Last success | Observed failed days | Counted failed days | Disposition |
+|---|---|---|---|---|---|
+| Angel TV Hebrew (720p) | ok | 2026-11-24 | 0 | 0 | active |
+| Arutz HaYeladim (720p) | ok | 2026-11-24 | 0 | 0 | active |
+| Channel 9 (Israel) (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Channel 13 (Israel) (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Channel 16 (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Channel 24 (Israel) (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Comedy Channel (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Economy Channel (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Foody (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Good Life (576p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Hala TV (1080p) [Not 24/7] | ok | 2026-11-24 | 0 | 0 | active |
+| Hidabroot (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Hop! (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| HOT Drama (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| HOT Zone (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| i24NEWS Arabic (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| i24NEWS French (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| i24NEWS Hebrew (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Junior (720p) | ok | 2026-11-24 | 0 | 0 | active |
+| Kabbalah for the People Israel (504p) [Not 24/7] | ok | 2026-11-24 | 0 | 0 | active |
+| Kan 11 (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Kan Educational (720p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Keshet 12 (1080p) | HTTP 403 | never | 1 | 1 | active |
+| Knesset Channel (576p) | HTTP 403 | never | 1 | 1 | active |
+| Makan 33 (1080p) | HTTP 403 | 2026-11-24 | 1 | 0 | active / uncertain |
+| Music IL (720p) | ok | 2026-11-24 | 0 | 0 | active |
+| Now 14 (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Reality Channel | ok | 2026-11-24 | 0 | 0 | active |
+| RTG int. | ok | 2026-11-24 | 0 | 0 | active |
+| Shelanu.TV (720p) | ok | 2026-11-24 | 0 | 0 | active |
+| The Israeli Network (540p) | ok | 2026-11-24 | 0 | 0 | active |
+| Vacation Channel | ok | 2026-11-24 | 0 | 0 | active |
+| Viva Istanbul (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Viva Premium (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Viva Telenovelas (1080p) | ok | 2026-11-24 | 0 | 0 | active |
+| Yam Tichoni (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Yes Movies Action (1080p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Zoom (Israel) (576p) | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Galgalatz | ok | 2026-11-24 | 0 | 0 | active |
+| Galei Zahal | ok | 2026-11-24 | 0 | 0 | active |
+| KAN 88 | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Bet | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Gimel | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Kol HaMusica | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Tarbut | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Reka | ok | 2026-11-24 | 0 | 0 | active |
+| KAN Moreshet | HTTP 403 | never | 1 | 0 | active / uncertain |
+| Makan Radio | HTTP 403 | never | 1 | 0 | active / uncertain |
+| 103FM | ok | 2026-11-24 | 0 | 0 | active |
+| Eco 99FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Tel Aviv 102FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Haifa 107.5FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Darom | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Hatahana 101.5FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Jerusalem 101FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio North 104.5FM | ok | 2026-11-24 | 0 | 0 | active |
+| Galei Israel | ok | 2026-11-24 | 0 | 0 | active |
+| Kol Rega | ok | 2026-11-24 | 0 | 0 | active |
+| Kol Chai | ok | 2026-11-24 | 0 | 0 | active |
+| Kol Barama | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Lev HaMedina | ok | 2026-11-24 | 0 | 0 | active |
+| Radio 90FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio A-Shams 98.1FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Nas 103.3FM | ok | 2026-11-24 | 0 | 0 | active |
+| Radios Nostalgia 96.3FM | ok | 2026-11-24 | 0 | 0 | active |
+| #joint radio Beat Trance | ok | 2026-11-24 | 0 | 0 | active |
+| #joint radio Blues Rock | ok | 2026-11-24 | 0 | 0 | active |
+| #Joint Radio Reggae | ok | 2026-11-24 | 0 | 0 | active |
+| AVIVmedia | ok | 2026-11-24 | 0 | 0 | active |
+| DizGraf Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Eli Nisman Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Galgalatz - Decades | ok | 2026-11-24 | 0 | 0 | active |
+| Galgalatz - Relaxed (Weekend) | ok | 2026-11-24 | 0 | 0 | active |
+| Galgalatz - Rock | ok | 2026-11-24 | 0 | 0 | active |
+| Hakatze (KZRadio) | ok | 2026-11-24 | 0 | 0 | active |
+| Imsostablee Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Israeli Voice Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Ivri 6 | ok | 2026-11-24 | 0 | 0 | active |
+| Kol Chai Music | ok | 2026-11-24 | 0 | 0 | active |
+| Kol Play | ok | 2026-11-24 | 0 | 0 | active |
+| Noshmim Mizrahit | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Angelika | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Love Soft Romantic | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Plus | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% 80s | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% 90s | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Blues | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Britpop | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Chillout | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Classic | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Classic Rock | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Club | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Country | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Covers | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Disney | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Eurovision | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Gamer | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Hits | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Jazz | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% K-Pop | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Kids | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Latin | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Legends | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Love | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Mizrachit (מזרחי) | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Movies | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Nostalgia | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Oldies | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Relax | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Retro | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Rock | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Selfie | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Stars (ערוץ הכוכבים) | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% TikTok | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Top 40 | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Workout | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% World Music | ok | 2026-11-24 | 0 | 0 | active |
+| Rak Musica | ok | 2026-11-24 | 0 | 0 | active |
+| TIMBR Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Up2Dance Radio | ok | 2026-11-24 | 0 | 0 | active |
+| yStream | ok | 2026-11-24 | 0 | 0 | active |
+| Ze Rock Radio | ok | 2026-11-24 | 0 | 0 | active |
+| Breslev For You | ok | 2026-11-24 | 0 | 0 | active |
+| Music-ToraVeZimra | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Orenu | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Yehudi (יהודי) | ok | 2026-11-24 | 0 | 0 | active |
+| Toker FM | ok | 2026-11-24 | 0 | 0 | active |
+| ברסלב פוריו: הלכות ודף יומי | ok | 2026-11-24 | 0 | 0 | active |
+| ברסלב פוריו: ספרי ברסלב | ok | 2026-11-24 | 0 | 0 | active |
+| ברסלב פוריו: קצר וקולע | ok | 2026-11-24 | 0 | 0 | active |
+| קבלה לעם אנגלית - Kabbalah eng | ok | 2026-11-24 | 0 | 0 | active |
+| קבלה לעם עברית - Kabbalah heb | ok | 2026-11-24 | 0 | 0 | active |
+| קבלה לעם צרפתית - Kabbalah fre | ok | 2026-11-24 | 0 | 0 | active |
+| קבלה לעם רוסית - Kabbalah rus | ok | 2026-11-24 | 0 | 0 | active |
+| إذاعة الصلاة / Prayer Radio | ok | 2026-11-24 | 0 | 0 | active |
+| KHZ - רדיו קול הצפון | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Nahariya | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Qualita | ok | 2026-11-24 | 0 | 0 | active |
+| Radio Sahar | ok | 2026-11-24 | 0 | 0 | active |
+| RADIO TIKVA | ok | 2026-11-24 | 0 | 0 | active |
+| Radios 100FM - 100% Stand-Up | ok | 2026-11-24 | 0 | 0 | active |
+| Reichmann AudioVersity | ok | 2026-11-24 | 0 | 0 | active |
+| Star 33 Radiostation | ok | 2026-11-24 | 0 | 0 | active |
+| Душа Кавказа | ok | 2026-11-24 | 0 | 0 | active |
 
 ## Replacements
+
+## Repair attempts
+### Channel 13 (Israel) (1080p) — HTTP 403
+Candidates discovered: 1
+Official viewing/reference page: https://www.13tv.co.il/
+- IPTV-org API: https://d2xg1g9o5vns8m.cloudfront.net/[path withheld] — source authorization needs review
+### Channel 24 (Israel) (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Good Life (576p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Hop! (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### HOT Drama (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### HOT Zone (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Kan Educational (720p) — HTTP 403
+Candidates discovered: 1
+Official viewing/reference page: https://www.kan.org.il/
+- configured broadcaster candidate: https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8 — connection/DNS error: HTTPSConnectionPool(host='kan23.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024691/2024691/m
+### Keshet 12 (1080p) — HTTP 403
+Candidates discovered: 0
+Official viewing/reference page: https://www.mako.co.il/mako-vod
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Knesset Channel (576p) — HTTP 403
+Candidates discovered: 1
+Official viewing/reference page: https://www.knesset.tv/live/
+- IPTV-org API: https://contact.gostreaming.tv/[path withheld] — source authorization needs review
+### Makan 33 (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Viva Premium (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Yam Tichoni (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Yes Movies Action (1080p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Zoom (Israel) (576p) — HTTP 403
+Candidates discovered: 0
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### KAN Moreshet — HTTP 403
+Candidates discovered: 0
+Official viewing/reference page: https://www.kan.org.il/
+- No distinct eligible candidate found, or mass-failure freeze is active.
+### Makan Radio — HTTP 403
+Candidates discovered: 1
+Official viewing/reference page: https://www.kan.org.il/
+- configured broadcaster candidate: https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8 — connection/DNS error: HTTPSConnectionPool(host='makanradio.media.kan.org.il', port=443): Max retries exceeded with url: /hls/live/2024818/2024
