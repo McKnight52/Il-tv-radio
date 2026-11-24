@@ -1,20 +1,4 @@
 #EXTM3U
-
-# Israel TV
-#EXTINF:-1 tvg-id="5Gold.il@SD" tvg-logo="https://i.imgur.com/zFLRfXh.png" group-title="Israel TV",5Gold (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_gold/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Live.il@SD" tvg-logo="https://i.imgur.com/0yr3yvd.png" group-title="Israel TV",5Live (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_live/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Max.il@SD" tvg-logo="https://i.postimg.cc/XNmh01pH/5sport-max-il.png" group-title="Israel TV",5Max (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_max/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Plus.il@SD" tvg-logo="https://i.imgur.com/L3RA9Lv.png" group-title="Israel TV",5Plus (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_plus/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Sport4K.il@SD" tvg-logo="https://i.imgur.com/Msfhpqd.png" group-title="Israel TV",5Sport 4K (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_4k_avc/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Sport.il@SD" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Israel TV",5Sport
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="5Stars.il@SD" tvg-logo="https://i.imgur.com/IQtAKIa.png" group-title="Israel TV",5Stars (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/sport_5_starz/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelTV.in@Hebrew" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Israel TV",Angel TV Hebrew (720p)
 https://janya-digimix.akamaized.net/vglive-sk-150533/hebrew/ngrp:angelhebrew_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ArutzHaYeladim.il@SD" tvg-logo="https://i.imgur.com/n1KusFW.png" group-title="Israel TV",Arutz HaYeladim (720p)
@@ -76,14 +60,6 @@ https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/makan/live.livx/playli
 https://r.il.cdn-redge.media/livehls/oil/freetv/live/music_il/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="Now14.il@SD" tvg-logo="https://i.imgur.com/Iq2Kb69.png" group-title="Israel TV",Now 14 (1080p)
 https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="One2.il@SD" tvg-logo="https://i.imgur.com/JQLhYEs.png" group-title="Israel TV",One 2 (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_2/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="One.il@SD" tvg-logo="https://i.imgur.com/hYrP2P0.png" group-title="Israel TV",One (Israel) (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_1/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="OneDoco.il@SD" tvg-logo="https://images.open-epg.com/18748370.png" group-title="Israel TV",One Doco (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_doco/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="OneEdge.il@SD" tvg-logo="https://images.open-epg.com/x1761.png" group-title="Israel TV",One Edge (1080p)
-https://r.il.cdn-redge.media/livehls/oil/freetv/live/one_edge/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="RealityChannel.il@SD" tvg-logo="https://static.g-cdn.app/streams/yes-reality-channel-il-hd.png" group-title="Israel TV",Reality Channel
 https://d2dffl3588mvfk.cloudfront.net/out/v1/d8e15050ca4148aab0ee387a5e2eb46b/index_1.m3u8
 #EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Israel TV",RTG int.
@@ -109,8 +85,6 @@ http://stream.mcquack.net/380/index.m3u8
 #EXTINF:-1 tvg-id="Zoom.il@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/f/fb/%D7%A1%D7%9E%D7%9C%D7%99%D7%9C_%D7%A2%D7%A8%D7%95%D7%A5_ZOOM_2022.svg/1920px-%D7%A1%D7%9E%D7%9C%D7%99%D7%9C_%D7%A2%D7%A8%D7%95%D7%A5_ZOOM_2022.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Israel TV",Zoom (Israel) (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://stream.mcquack.net/377/index.m3u8
-
-# Israel Radio
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-29cd4b62-14e2-11e9-a80b-52543be04c81" tvg-logo="https://static-media.streema.com/media/cache/34/ee/34ee4ed52c07ad09122cbe047a7c0bfd.jpg",Galgalatz
 https://api.bynetcdn.com/Redirector/glz/glglz/ICE-LIVE
 #EXTINF:-1 radio="true" group-title="Israel Radio | Main" tvg-id="radio-962326cb-0601-11e8-ae97-52543be04c81",Galei Zahal

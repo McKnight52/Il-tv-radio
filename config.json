@@ -1,0 +1,1 @@
+{"workers": 6, "failure_days": 3, "mass_failure_fraction": 0.35, "foreign_runner": true, "max_candidates": 3, "tv_sources": ["https://iptv-org.github.io/iptv/countries/il.m3u"], "radio_source": "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL", "official_urls": {}}
