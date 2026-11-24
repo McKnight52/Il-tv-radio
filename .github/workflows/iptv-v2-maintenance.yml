@@ -1,0 +1,55 @@
+name: Daily IPTV V2 maintenance
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: iptv-v2-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+
+    steps:
+      - name: Checkout IPTV V2 branch
+        uses: actions/checkout@v4
+        with:
+          ref: iptv-v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check and repair IPTV streams
+        run: python maintain.py
+
+      - name: Save updated playlist
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          git add israel.m3u unavailable.m3u status.json replacements.json report.md
+
+          if git diff --cached --quiet; then
+            echo "No changes needed"
+          else
+            git commit -m "Daily IPTV V2 maintenance"
+            git push origin HEAD:refs/heads/iptv-v2
+          fi
