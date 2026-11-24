@@ -1,1 +1,95 @@
-{"workers": 6, "failure_days": 3, "mass_failure_fraction": 0.35, "foreign_runner": true, "max_candidates": 3, "tv_sources": ["https://iptv-org.github.io/iptv/countries/il.m3u"], "radio_source": "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL", "official_urls": {}}
+{
+  "workers": 6,
+  "failure_days": 3,
+  "mass_failure_fraction": 0.35,
+  "foreign_runner": true,
+  "max_candidates": 5,
+  "tv_sources": [
+    "https://iptv-org.github.io/iptv/countries/il.m3u"
+  ],
+  "radio_source": "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL",
+  "official_urls": {
+    "KanEducational.il@SD": [
+      "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8"
+    ],
+    "radio-fallback-makan": [
+      "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+    ]
+  },
+  "tv_api": "https://iptv-org.github.io/api/streams.json",
+  "radio_sources": [
+    "https://de1.api.radio-browser.info/json/stations/bycountrycodeexact/IL",
+    "https://all.api.radio-browser.info/json/stations/bycountrycodeexact/IL"
+  ],
+  "tv_aliases": {
+    "KnessetChannel.il@SD": [
+      "Knesset.il@SD",
+      "Knesset.il"
+    ]
+  },
+  "radio_aliases": {
+    "radio-fallback-kan_moreshet": [
+      "Kan Moreshet",
+      "Reshet Moreshet",
+      "כאן מורשת",
+      "רשת מורשת"
+    ],
+    "radio-fallback-makan": [
+      "Makan Radio",
+      "Kan Makan",
+      "Makan",
+      "MAKAN - Arabic Radio",
+      "מכאן",
+      "רדיו מכאן",
+      "مكان"
+    ],
+    "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": [
+      "Radio Tel Aviv 102FM",
+      "Radio Tel Aviv",
+      "102FM",
+      "102 FM Tel Aviv",
+      "רדיו תל אביב",
+      "רדיו תל אביב 102FM"
+    ]
+  },
+  "approved_hosts": {
+    "KanEducational.il@SD": [
+      "kan.org.il"
+    ],
+    "radio-fallback-kan_moreshet": [
+      "kan.org.il"
+    ],
+    "radio-fallback-makan": [
+      "kan.org.il"
+    ],
+    "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": [
+      "102fm.co.il",
+      "102.livecdn.biz"
+    ],
+    "Channel13.il@SD": [
+      "13tv.co.il"
+    ],
+    "Keshet12.il@SD": [
+      "mako.co.il"
+    ],
+    "KnessetChannel.il@SD": [
+      "knesset.tv"
+    ]
+  },
+  "locally_failed_urls": [
+    "http://stream.mcquack.net/294/index.m3u8",
+    "http://stream.mcquack.net/48/index.m3u8"
+  ],
+  "suspect_hosts": [
+    "stream.mcquack.net"
+  ],
+  "official_pages": {
+    "Keshet12.il@SD": "https://www.mako.co.il/mako-vod",
+    "Channel13.il@SD": "https://www.13tv.co.il/",
+    "KnessetChannel.il@SD": "https://www.knesset.tv/live/",
+    "KanEducational.il@SD": "https://www.kan.org.il/",
+    "radio-fallback-kan_moreshet": "https://www.kan.org.il/",
+    "radio-fallback-makan": "https://www.kan.org.il/",
+    "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": "https://www.102fm.co.il/"
+  }
+}
