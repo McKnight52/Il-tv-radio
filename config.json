@@ -33,6 +33,11 @@
     ],
     "radio-fallback-kan_moreshet": [
       "http://kanlive.akamaized.net/kanmoreshet/smil:kanmoreshet_mp4.smil/playlist.m3u8"
+    ],
+    "Channel13.il@SD": [
+      "https://d18b0e6mopany4.cloudfront.net/out/v1/2f2bc414a3db4698a8e94b89eaf2da2a/index.m3u8",
+      "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8",
+      "https://reshet.g-mana.live/media/4607e158-e4d4-4e18-9160-3dc3ea9bc677/mainManifest.m3u8"
     ]
   },
   "tv_api": "https://iptv-org.github.io/api/streams.json",
@@ -112,7 +117,8 @@
   },
   "locally_failed_urls": [
     "http://stream.mcquack.net/294/index.m3u8",
-    "http://stream.mcquack.net/48/index.m3u8"
+    "http://stream.mcquack.net/48/index.m3u8",
+    "http://stream.mcquack.net/295/index.m3u8"
   ],
   "suspect_hosts": [
     "stream.mcquack.net"
