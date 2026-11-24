@@ -13,13 +13,25 @@
       "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8"
     ],
     "radio-fallback-makan": [
-      "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8"
+      "https://makanradio.media.kan.org.il/hls/live/2024818/2024818/playlist.m3u8",
+      "http://kanlive.akamaized.net/makan/smil:makan_mp4.smil/playlist.m3u8"
     ],
     "KnessetChannel.il@SD": [
       "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/playlist.m3u8"
     ],
     "Makan33.il@SD": [
       "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
+    ],
+    "Keshet12.il@SD": [
+      "https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8",
+      "https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index_2200.m3u8"
+    ],
+    "Channel24.il@SD": [
+      "https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/video_10801920_p_1.m3u8",
+      "https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24/index_2200.m3u8"
+    ],
+    "radio-fallback-kan_moreshet": [
+      "http://kanlive.akamaized.net/kanmoreshet/smil:kanmoreshet_mp4.smil/playlist.m3u8"
     ]
   },
   "tv_api": "https://iptv-org.github.io/api/streams.json",
@@ -57,7 +69,9 @@
       "כאן מכאן",
       "רדיו מַכַּאן (راديو مكان / Radio Makan)",
       "Kan Makan (مكان)",
-      "مكان (כאן מַכַּאן)"
+      "مكان (כאן מַכַּאן)",
+      "Kan Israel Makan 88.8 FM",
+      "Kan Israel MaKan 88.8/93.7"
     ],
     "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": [
       "Radio Tel Aviv 102FM",
@@ -110,6 +124,7 @@
     "radio-fallback-kan_moreshet": "https://www.kan.org.il/",
     "radio-fallback-makan": "https://www.kan.org.il/",
     "radio-82333dc7-7622-4cf1-a8d8-2068e0b79ec9": "https://www.102fm.co.il/",
-    "Makan33.il@SD": "https://www.kan.org.il/"
+    "Makan33.il@SD": "https://www.kan.org.il/",
+    "Channel24.il@SD": "https://www.mako.co.il/24tv"
   }
 }
